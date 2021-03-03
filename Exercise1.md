@@ -1,10 +1,10 @@
-# B: Deploying a Horizon Cloud Service Pod
+# Exercise 1: Deploying a Horizon Cloud Service Pod
 
 **About Pod Deployment**
 Now that you have set up the Horizon Cloud Service on Microsoft Azure pod, you are ready to begin the initial configuration process of your deployment. In this series of exercises, you deploy a Horizon Cloud Service pod and bind it to an existing Active Directory domain. This grants the Horizon Cloud Service control plane access to create and manage resources in Microsoft Azure. These exercises are sequential and build upon one another, so make sure to complete each exercise in this section before going to the next.
 
 
-## **Exercise 1: Deploying the Horizon Cloud Service Pod**
+## **Exercise 1.1: Deploying the Horizon Cloud Service Pod**
 
 Armed with the prerequisite information from your Microsoft Azure tenant, you are now ready to begin deploying the Horizon Cloud Service pod and binding it to an existing Active Directory domain.
 
@@ -24,14 +24,14 @@ Armed with the prerequisite information from your Microsoft Azure tenant, you ar
 
 For more information, see _Getting Started with VMware Horizon Cloud Service on Microsoft Azure_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-6E460805-C323-4200-9A45-45E7BFB31730.html```).
 
-**1.1. Log in to VMware Horizon Cloud Service**
+### **Task 1: Log in to VMware Horizon Cloud Service**
 
    ![ws name.](media/exb.png)
 
   - Log in to Horizon Cloud Service, using your My VMware account ID and password.
 
 
-**1.2 Add a New Horizon Cloud Service Pod**
+### **Task 2: Add a New Horizon Cloud Service Pod**
 
    ![ws name.](media/exb1.png)
 
@@ -40,13 +40,13 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
   - Note: To add a new Microsoft Azure pod to an account with pods previously deployed, you can alternatively click **Settings > Capacity > New > Pod > Microsoft Azure**.
 
 
-**1.3. Add Microsoft Azure Capacity**
+### **Task 3: Add Microsoft Azure Capacity**
 
    ![ws name.](media/exb2.png)
 
   - In the Add Capacity window, select **Microsoft Azure**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
 
-**1.4. Provide Subscription Details**
+### **Task 4: Provide Subscription Details**
 
    ![ws name.](media/exb3.png)
 
@@ -69,7 +69,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 2. In the lower right corner, click **Next**.
 
-**1.5. Provide Pod Setup Details**
+### **Task 5: Provide Pod Setup Details**
 
    ![ws name.](media/exb4.png)
 
@@ -86,7 +86,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 2. Scroll down to the next panel.
 
 
-**1.6. Provide Networking Details**
+### **Task 6: Provide Networking Details**
 
    ![ws name.](media/exb5.png)
 
@@ -106,7 +106,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 2. In the Identity Management panel, accept the default, and click **Next**.
 
-**1.7. Provide Unified Access Gateway Details**
+### **Task 7: Provide Unified Access Gateway Details**
 
    ![ws name.](media/exb6.png)
 
@@ -131,13 +131,13 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
 
 
-**1.8. Review Summary**
+### **Task 8: Review Summary**
 
    ![ws name.](media/exb7.png)
 
   - Review the summary, verify that the information is correct and complete, and then click **Submit**.
 
-**1.9. Verify That the Pod Is Deployed**
+### **Task 9: Verify That the Pod Is Deployed**
 
    ![ws name.](media/exb8.png)
 
@@ -146,12 +146,12 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 After you finish deploying the Horizon Cloud Service pod, proceed to the next exercise to perform the domain bind operation.
 
 
-## **Exercise 2: Binding to the Active Directory Domain**
+## **Exercise 1.2: Binding to the Active Directory Domain**
 
 Machine creation and domain join operations are automated by Horizon Cloud Service. The domain bind operation must be performed on the pod before creating images and farms. You have several Active Directory domain configurations to choose from. For more information about these options, see _Getting Started with VMware Horizon Cloud Service on Microsoft Azure_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```).
 
 
-**2.1. Get Started**
+### **Task 1: Get Started**
 
    ![ws name.](media/exb9.png)
 
@@ -166,7 +166,7 @@ To complete the Active Directory configuration, provide information about the do
 4. Click **General Setup** to expand the fields.
 
 
-**2.2. Configure Active Directory**
+### **Task 2: Configure Active Directory**
 
    ![ws name.](media/exb10.png)
 
@@ -175,7 +175,7 @@ To complete the Active Directory configuration, provide information about the do
 2. On the far right, click **Add**.
 
 
-**2.3. Register Active Directory**
+### **Task 3: Register Active Directory**
 
    ![ws name.](media/exb11.png)
 
@@ -198,7 +198,7 @@ To complete the Active Directory configuration, provide information about the do
 2. In the lower right corner, click **Domain Bind**.
 
 
-**2.4. Provide Domain Join Details**
+### **Task 4: Provide Domain Join Details**
 
    ![ws name.](media/exb12.png)
 
@@ -216,7 +216,7 @@ To complete the Active Directory configuration, provide information about the do
 
 2. In the lower right corner, click **Save**.
 
-**2.5. Add the Administrator**
+### **Task 5: Add the Administrator**
 
    ![ws name.](media/exb13.png)
    
@@ -227,7 +227,7 @@ To complete the Active Directory configuration, provide information about the do
 **Note:** Add the Active Directory group that includes the domain-join account, as described in the prerequisites. This action grants this group permissions to perform management actions in the Administration Console.
 
 
-**2.6. Notice Change in Login Windows**
+### **Task 6: Notice Change in Login Windows**
 
    ![ws name.](media/exb14.png)
 
@@ -236,7 +236,7 @@ To complete the Active Directory configuration, provide information about the do
 2. In the login window, you must log back in, first with your My VMware account, and then with the Active Directory credentials in the group that you just assigned.
 
 
-**2.7. Join the VMware Customer Experience Improvement Program**
+### **Task 7: Join the VMware Customer Experience Improvement Program**
 
 1. With the Horizon Cloud Service pod deployed and the bind operation complete, you can move the Yes/No slider to choose whether or not to join the VMware Customer Experience Improvement Program.
 
@@ -247,7 +247,7 @@ For more information, see _VMware Horizon Cloud Service on Microsoft Azure Admin
 
 After deploying the Horizon Cloud Service pod and completing the bind operation, proceed to the next section to create golden images.
 
-## **Exercise 3: Defining VM Types & Sizes**
+## **Exercise 1.3: Defining VM Types & Sizes**
 
 You can optionally select which VM types and sizes to allow, add sizes to favorites, and customize how VM names are displayed.
 
@@ -255,7 +255,7 @@ Microsoft supports a wide variety of VM types and sizes, which you can learn abo
 
 For more information, see General Purpose virtual machine sizes.
 
-**3.1. Navigate to VM Types & Sizes**
+### **Task 1: Navigate to VM Types & Sizes**
 
    ![ws name.](media/exb15.png)
 
@@ -266,7 +266,7 @@ For more information, see General Purpose virtual machine sizes.
 3. Scroll through the long list of available settings.
 
 
-**3.2. Expand a VM Type & Size**
+### **Task 2: Expand a VM Type & Size**
 
    ![ws name.](media/exb16.png)
 
@@ -275,7 +275,7 @@ In this example, the Dv2 Series is selected, a general purpose type that is good
 
 2. Expand and examine the details of this series.
 
-**3.3. Edit the VM Type**
+### **Task 3: Edit the VM Type**
 
    ![ws name.](media/exb17.png)
 
@@ -284,7 +284,7 @@ In this example, the Dv2 Series is selected, a general purpose type that is good
 2. From the list, select the VM Type & Size that you want to define.
 
 
-**3.4. Add a Tag**
+### **Task 4: Add a Tag**
 
    ![ws name.](media/exb18.png)
 
@@ -294,7 +294,7 @@ In this example, the Dv2 Series is selected, a general purpose type that is good
 
 3. Make sure to use only letters, numbers, and spaces. As you can see, the use of an apostrophe is not allowed.
 
-**3.5. Save the New Tag**
+### **Task 5: Save the New Tag**
 
    ![ws name.](media/exb19.png)
 
@@ -303,7 +303,7 @@ In this example, the Dv2 Series is selected, a general purpose type that is good
 2. In the lower right, click **Save**.
 
 
-**3.6. Verify Success**
+### **Task 6: Verify Success**
 
    ![ws name.](media/exb20.png)
 
