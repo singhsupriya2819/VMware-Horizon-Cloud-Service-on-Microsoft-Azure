@@ -367,3 +367,131 @@ In this exercise, you assign a dedicated desktop. Your end-users are assigned a 
 
 
 ### Task 1: Navigate to New Assignments
+
+   ![ws name.](media/exe30.png)
+   
+1. In the navigation bar on the left, select **Assignments**.
+
+2. In the Assignments window, click **New**.
+
+
+### Task 2: Select Desktops
+
+   ![ws name.](media/exe31.png)
+   
+- In the New Assignment window under Desktops, click **Select**.
+
+**Note:** To assign AppStacks or RDSH applications instead of desktops, you would select **Applications**.
+
+
+### Task 3: Select a Dedicated Desktop Type
+
+   ![ws name.](media/exe32.png)
+   
+1. In the Definitions tab of the New Desktop Assignment window, for Type, select **Dedicated**.
+Under Fixed Attributes, provide the following information:
+  - **Location:** From the pop-up menu, select the location.
+  - **Pod:** From the pop-up menu, select the pod.
+  - **Filter Models:** In the first pop-up menu, select **Type**, and in the second, **VMware Recommended**.
+  - **Model:** Select a **Desktop Model** from the pop-up menu.
+  - **Domain:** From the pop-up menu, select the domain.
+  - **Join Domain:** Slide right to enable.
+  - **Encrypt Disks:** Leave disabled.
+  - **NSX Cloud Managed:** Leave disabled.
+
+3. Scroll down to the Flexible Attributes section.
+
+
+### Task 4: Set the Flexible Attributes
+
+   ![ws name.](media/exe33.png)
+   
+1. Under Flexible Attributes, provide the following information:
+  - **Image:** Select the image from the pop-up menu.
+  - **Assignment Name:** Enter a unique name to identify this assignment. The name must start with a letter, and contains only letters, dashes, and numbers.
+  - **VM Names:** VMs in this assignment inherit the assignment name, and include an appended number, such as Server DTA1 1, Server DTA1 2, and so on.
+  - **Default Protocol:** Choose **Blast Extreme** as the default protocol for end user sessions.
+  - **Preferred Client Type:** Accept the browser default with which to launch assignments associated with this pool.
+  - **Min Desktops:** Enter the minimum number of desktops to be allowed. In this example, it is 1.
+  - **Max Desktops:** Enter the maximum number of desktops to be allowed. In this example, it is 5.
+
+2. In the lower right corner, click **Next**.
+
+
+### Task 5: Schedule Power Management
+
+   ![ws name.](media/exe33.png)
+   
+1. In the Management tab under Schedule Power Management, click **Add a row**.
+
+2. Under Schedule Power Management, provide the following information:
+  - **Name:** Provide a name for this schedule.
+  -** Days:** Select one or more days of the week to schedule.
+  - **Start Time:** Select a time of the day to start the schedule.
+  - **End Time:** Select the time of the day to end the schedule.
+  - **Timezone:** Select the appropriate time zone.
+  - **Min Desktops:** Enter the minimum number of desktops to include.
+
+3. In the lower right, click **Next**.
+
+
+### Task 6: Select a User or Group
+
+   ![ws name.](media/exe34.png)
+   
+1. In the Users tab, select a user or group:
+  - Click the Active Directory search field, and start entering the name of the user or group.
+  - If you do not know the name, click **Search Active Directory** for a list of all names.
+  - In the Active Directory hit list, select the name.
+
+2. In the lower right corner, click **Next**.
+
+
+### Task 7: Submit
+
+   ![ws name.](media/exe35.png)
+   
+1. In the Summary tab, review the summary.
+
+2. In the lower right corner, click Submit.   
+
+
+### Task 8: Verify Completion
+
+   ![ws name.](media/exe36.png)
+   
+1. Verify that the success banner appears at the top of the window.
+
+2. Wait until the green dot appears in the Status column, indicating that the new assignment is now active. This might take a few minutes.
+
+
+### Task 9: Launch Horizon Client
+
+   ![ws name.](media/exe37.png)
+- Launch Horizon Client.
+
+### Task 10: Log in to Horizon Client
+
+   ![ws name.](media/exe38.png)
+   
+1. Enter your login credentials for Horizon Client:
+  - **Username:** Enter the username.
+  - Password: Enter the password.
+
+2. **Click Login**.
+
+
+### Task 11: Launch the Dedicated Desktop
+
+   ![ws name.](media/exe39.png)
+   
+  - In Horizon Client, launch the dedicated virtual desktop.
+
+
+### Task 12: Verify Success
+
+   ![ws name.](media/exe40.png)
+
+  - Verify that the virtual dedicated desktop launches properly.
+
+  - When you finish assigning a dedicated desktop to a user or and group, you have completed the entire workflow. In the next two chapters, you can proceed to explore the Horizon Cloud Service monitoring and analytics features and the VMware Dynamic Environment Management capabilities in greater depth.
