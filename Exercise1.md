@@ -146,10 +146,12 @@ For more information, see Getting Started with VMware Horizon Cloud Service on M
 After you finish deploying the Horizon Cloud Service pod, proceed to the next exercise to perform the domain bind operation.
 
 
-## **Exercise B2: Binding to the Active Directory Domain**
+## **Exercise 2: Binding to the Active Directory Domain**
 
 Machine creation and domain join operations are automated by Horizon Cloud Service. The domain bind operation must be performed on the pod before creating images and farms. You have several Active Directory domain configurations to choose from. For more information about these options, see Getting Started with VMware Horizon Cloud Service on Microsoft Azure(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```).
 
+
+**2.1. Get Started**
 
 
 
