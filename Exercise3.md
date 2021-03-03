@@ -16,7 +16,7 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 1: Create a New Farm
 
-
+   ![ws name.](media/exd1.png)
 
 1. In the navigation bar of Horizon Cloud Service Administration Console, select Inventory.
 
@@ -27,6 +27,7 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 2: Provide General Settings
 
+   ![ws name.](media/exd2.png)
 
 1. In the New Farm window, **Definition** tab, provide the following information, and then scroll down.
   - **Name:** Enter a name to help identify this farm in the system.
@@ -43,6 +44,7 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 3: Provide More General Settings
 
+   ![ws name.](media/exd3.png)
 
 1. Provide the following additional general settings information:
   - **Filter Models:** You can filter the available VM models by type and favorites, and add filters as well.
@@ -60,6 +62,8 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 4: Set Farm Size
 
+   ![ws name.](media/exd4.png)
+
 1. In the **Farm Size** pane, provide the information to enable the farm to automatically scale up or down on demand:
   - **Min Servers:** Specify the minimum number of usable servers in this farm so not all servers are running at the same time.
   - **Max Servers:** Specify the maximum number of servers that can exist at any one time so not all servers will be running at the same time.
@@ -73,6 +77,8 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 5: Provide Advanced Properties
 
+   ![ws name.](media/exd5.png)
+
 1. Under **Advanced Properties**, provide the following information:
   - **Computer OU**: Enter the Active Directory Organizational Unit where the server VMs are to be located. For example, OU=RootOrgName,DC=DomainComponent,DC=eng, and so on. The entries must be comma-separated with no spaces in between.
   - **Run Once Script** (optional): You can enter the full executable path of a script that you want run after system preparation completes.
@@ -83,6 +89,8 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 
 ### Task 6: Provide Rolling Maintenance Information
+
+   ![ws name.](media/exd6.png)
 
 1. In the Management tab, provide the information for Rolling Maintenance.
   - **Rolling Maintenance:** Select the maintenance type, either according to:
@@ -101,6 +109,8 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 ### Task 7: Provide Power Management Information
 
+   ![ws name.](media/exd7.png)
+
 1. In the Power Management panel, provide the information used to optimize the farm for your unique business needs. This is where you determine the thresholds at which new capacity is powered up or down, for automatic shutdown or deallocation of unused servers. Set the thresholds at which the system automatically grows and shrinks the number of powered-on server instances as it responds to demand and use:
   - **Optimized Performance:** Keeps more hosts powered on than are needed to service the current end-user workload. As more users log in, Horizon Cloud Service continues to power on hosts in advance, up to the threshold of the maximum farm size. This option increases capacity costs by having the next server ready before requested, but decreases the chance of a delay when users make the request.
   - **Optimized Power:** Waits as long as possible before powering on the next server instance, and more progressively deallocates unused hosts, leaving fewer available resources for end users. This option decreases capacity costs by using the servers longer before powering new ones, but increases the chance of a delay when users try to log in. You can even set the minimum number to 0, so all servers automatically power down when no users need them. However, the next users who log in experience a delay while the server powers back on, which might take several minutes.
@@ -110,6 +120,8 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 
 ### Task 8: Provide Timeout Handling Information
+
+   ![ws name.](media/exd8.png)
 
 1. In the Timeout Handling panel, provide the required settings. This is where you configure how you want the system to handle different user session types.
   - **Empty Session Timeout:** Specify how to handle idle user sessions: never timeout idle sessions, or timeout after a specified number of minutes. **Note:** When a session is disconnected, the session is preserved in memory. When a session is logged out, the session is not preserved in memory, and any unsaved documents are lost.
@@ -123,6 +135,7 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 ### Task 9: Schedule Power Management
 
+   ![ws name.](media/exd9.png)
 
 1. Under Schedule Power Management, click **Add a row**, and set the power management schedule:
   - **Name:** Provide a recognizable name for this schedule.
@@ -137,6 +150,8 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 ### Task 10: Verify the Summary Information
 
+   ![ws name.](media/exd10.png)
+
 1. In the Summary tab, review all settings to verify they are correct and complete.
 
 2. In the lower right corner, click **Submit**.
@@ -144,6 +159,7 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 ### Task 11: Verify in VMware Horizon Cloud Service
 
+   ![ws name.](media/exd11.png)
 
 Under Status, verify that the green dot is displayed to indicate that the farm has been created properly.
 
@@ -158,14 +174,17 @@ Horizon Cloud Service provides power management capabilities for the Microsoft A
 
 ### Task 1: Verify in Microsoft Azure
 
+
 1. Return to the Microsoft Azure portal.
+
+   ![ws name.](media/exd12.png)
 
 2. Review the hosts that the farm automatically creates there.
 
 
 ### Task 2: Automatic Shutdown or Deallocation
 
-
+   ![ws name.](media/exd13.png)
 You can set up automatic shutdown or deallocation of unused servers. 
 
 1. From the navigation bar, select **Virtual machines**.
@@ -174,6 +193,7 @@ You can set up automatic shutdown or deallocation of unused servers.
 
 ### Task 3: Automatic Creation of Resource Groups
 
+   ![ws name.](media/exd14.png)
 Horizon Cloud Service streamlines administration tasks, such as the automatic creation of resource groups, which contain all farm-related components. 
 
 1. From the navigation bar, select **Resource groups**.
@@ -183,11 +203,12 @@ Horizon Cloud Service streamlines administration tasks, such as the automatic cr
 
 ### Task 4: Automatic Definition of Network Security Group Rules
 
+   ![ws name.](media/exd15.png)
 Network security group rules are automatically defined.
 
-1. From the navigation bar, select More services.
+1. From the navigation bar, select **More services**.
 
-2. Select Network security groups.
+2. Select **Network security groups**.
 
 3. Select a group to view the security rules.
 
@@ -202,6 +223,8 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
 ### Task 1: Add New Applications
 
+   ![ws name.](media/exd16.png)
+
 1. In the Horizon Cloud Service Administration Console navigation bar, click **Inventory**.
 
 2. In the Inventory menu, select **Applications**.
@@ -211,10 +234,13 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
 ### Task 2: Select Auto-Scan from Farm
 
+   ![ws name.](media/exd17.png)
 In the New Application window, under Auto-Scan from Farm, click **Select**.
 
 
 ### Task 3: Provide Definition Information
+
+   ![ws name.](media/exd18.png)
 
 1. In the New Application window, provide the Definition information:
   - **Location:** Select a location from the pop-up menu.
@@ -226,6 +252,7 @@ In the New Application window, under Auto-Scan from Farm, click **Select**.
 
 ### Task 4: Select the Applications to Publish
 
+   ![ws name.](media/exd19.png)
 
 1. In the Applications tab, select the applications to be published.
 
@@ -234,6 +261,7 @@ In the New Application window, under Auto-Scan from Farm, click **Select**.
 
 ### Task 5: Provide Attributes
 
+   ![ws name.](media/exd20.png)
 
 1. In the Attributes tab, provide the appropriate attributes.
 
@@ -242,6 +270,7 @@ In the New Application window, under Auto-Scan from Farm, click **Select**.
 
 ### Task 6: Verify the Summary Information
 
+   ![ws name.](media/exd21.png)
 
 1. In the Summary tab, review to verify that the selections are correct and complete.
 2. In the lower right corner, click **Submit**.
@@ -249,6 +278,7 @@ In the New Application window, under Auto-Scan from Farm, click **Select**.
 
 ### Task 7: Verify Addition of New Applications
 
+   ![ws name.](media/exd22.png)
 
 In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
 
