@@ -213,7 +213,7 @@ In the New Assignment window, select **Desktops**.
 
 ### Task 7: Verify in the Assignments Window
 
-   ![ws name.](media/exe19.png)
+   ![ws name.](media/exe20.png)
    
 1. Verify that the success banner appears at the top.
 2. Wait while the system configures the farm's server instances to provide session desktops to the selected users. The green dot indicates that the assignment is active.
@@ -230,22 +230,23 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 1: Navigate to New Assignments
 
-   ![ws name.](media/exe20.png)
+   ![ws name.](media/exe21.png)
 
 1. In the Horizon Cloud Service Administration Console navigation bar, click **Assignments**.
+
 2. In the Assignments window, click **New**.
 
 
 ### Task 2: Select Desktops
 
-   ![ws name.](media/exe21.png)
+   ![ws name.](media/exe22.png)
 
   - In the New Assignments window, under Desktops, click **Select**.
 
 
 ### Task 3: Define Fixed Attributes
 
-   ![ws name.](media/exe22.png)
+   ![ws name.](media/exe23.png)
    
 1. For **Type**, select **Floating**.
 2. In the Fixed Attributes panel, provide the following information:
@@ -263,7 +264,7 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 4: Define Flexible Attributes
 
-   ![ws name.](media/exe23.png)
+   ![ws name.](media/exe24.png)
    
 1. In the Flexible Attributes panel, provide the following information:
   - **Images:** Accept the image.
@@ -280,7 +281,7 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 5: Configure Management
 
-   ![ws name.](media/exe23.png)
+   ![ws name.](media/exe25.png)
    
 1. In the Management tab under **Image Updates**, enter the number of concurrent quiescing desktops to allow.
 2. Under **Power Management**, select the mode from the pop-up list.
@@ -301,7 +302,7 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 6: Assign to Users or Groups
 
-   ![ws name.](media/exe24.png)
+   ![ws name.](media/exe26.png)
    
 1. In the Users tab, select the users and groups to assign desktops to.
 **Note:** In the Users tab, you can click the Active Directory search field. If no results are found, click **Search Active Directory**.
@@ -311,7 +312,7 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 7: Verify the Summary Information
 
-   ![ws name.](media/exe25.png)
+   ![ws name.](media/exe27.png)
    
 1. In the Summary tab, verify that all selections are correct and complete.
 
@@ -320,7 +321,7 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 8: Verify Completion
 
-   ![ws name.](media/exe26.png)
+   ![ws name.](media/exe28.png)
    
 1. Wait until the green banner appears at the top, indicating success.
 
@@ -329,14 +330,14 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 9: Launch Horizon Client
 
-   ![ws name.](media/exe27.png)
+   ![ws name.](media/exe29.png)
    
 - Launch Horizon Client.
 
 
 ### Task 10: Log in to Horizon Client
 
-   ![ws name.](media/exe28.png)
+   ![ws name.](media/exe30.png)
    
 1. Enter your login credentials for Horizon Client:
   - **Username:** Enter the username.
@@ -347,7 +348,7 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 11: Launch the Floating Desktop
 
-   ![ws name.](media/exe29.png)
+   ![ws name.](media/exe31.png)
    
 1. In Horizon Client, select a virtual desktop.
 
@@ -368,7 +369,7 @@ In this exercise, you assign a dedicated desktop. Your end-users are assigned a 
 
 ### Task 1: Navigate to New Assignments
 
-   ![ws name.](media/exe30.png)
+   ![ws name.](media/exe32.png)
    
 1. In the navigation bar on the left, select **Assignments**.
 
@@ -377,7 +378,7 @@ In this exercise, you assign a dedicated desktop. Your end-users are assigned a 
 
 ### Task 2: Select Desktops
 
-   ![ws name.](media/exe31.png)
+   ![ws name.](media/exe33.png)
    
 - In the New Assignment window under Desktops, click **Select**.
 
@@ -386,7 +387,7 @@ In this exercise, you assign a dedicated desktop. Your end-users are assigned a 
 
 ### Task 3: Select a Dedicated Desktop Type
 
-   ![ws name.](media/exe32.png)
+   ![ws name.](media/exe34.png)
    
 1. In the Definitions tab of the New Desktop Assignment window, for Type, select **Dedicated**.
 Under Fixed Attributes, provide the following information:
@@ -404,7 +405,7 @@ Under Fixed Attributes, provide the following information:
 
 ### Task 4: Set the Flexible Attributes
 
-   ![ws name.](media/exe33.png)
+   ![ws name.](media/exe35.png)
    
 1. Under Flexible Attributes, provide the following information:
   - **Image:** Select the image from the pop-up menu.
@@ -420,7 +421,7 @@ Under Fixed Attributes, provide the following information:
 
 ### Task 5: Schedule Power Management
 
-   ![ws name.](media/exe33.png)
+   ![ws name.](media/exe36.png)
    
 1. In the Management tab under Schedule Power Management, click **Add a row**.
 
@@ -437,7 +438,7 @@ Under Fixed Attributes, provide the following information:
 
 ### Task 6: Select a User or Group
 
-   ![ws name.](media/exe34.png)
+   ![ws name.](media/exe37.png)
    
 1. In the Users tab, select a user or group:
   - Click the Active Directory search field, and start entering the name of the user or group.
@@ -449,7 +450,7 @@ Under Fixed Attributes, provide the following information:
 
 ### Task 7: Submit
 
-   ![ws name.](media/exe35.png)
+   ![ws name.](media/exe38.png)
    
 1. In the Summary tab, review the summary.
 
@@ -458,7 +459,7 @@ Under Fixed Attributes, provide the following information:
 
 ### Task 8: Verify Completion
 
-   ![ws name.](media/exe36.png)
+   ![ws name.](media/exe39.png)
    
 1. Verify that the success banner appears at the top of the window.
 
@@ -467,12 +468,12 @@ Under Fixed Attributes, provide the following information:
 
 ### Task 9: Launch Horizon Client
 
-   ![ws name.](media/exe37.png)
+   ![ws name.](media/exe40.png)
 - Launch Horizon Client.
 
 ### Task 10: Log in to Horizon Client
 
-   ![ws name.](media/exe38.png)
+   ![ws name.](media/exe41.png)
    
 1. Enter your login credentials for Horizon Client:
   - **Username:** Enter the username.
@@ -483,14 +484,14 @@ Under Fixed Attributes, provide the following information:
 
 ### Task 11: Launch the Dedicated Desktop
 
-   ![ws name.](media/exe39.png)
+   ![ws name.](media/exe42.png)
    
   - In Horizon Client, launch the dedicated virtual desktop.
 
 
 ### Task 12: Verify Success
 
-   ![ws name.](media/exe40.png)
+   ![ws name.](media/exe43.png)
 
   - Verify that the virtual dedicated desktop launches properly.
 
