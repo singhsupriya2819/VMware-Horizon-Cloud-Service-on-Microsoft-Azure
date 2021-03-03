@@ -168,7 +168,7 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 After you finish creating farms from the image, proceed to the next exercise to review RDS host power management.
 
 
-## Exercise 2.2: Exploring RD Session Host Power Management
+## Exercise 3.2: Exploring RD Session Host Power Management
 
 Horizon Cloud Service provides power management capabilities for the Microsoft Azure servers, automatically powering hosts on and off and deallocating them as needed. You can see the results of setting up the farm that you just created by returning to Microsoft Azure.
 
@@ -217,7 +217,7 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 After you finish reviewing RDS host power management, proceed to the next exercise to add applications from the farm.
 
 
-## Exercise 1.3: Adding Applications from the Farm
+## Exercise 3.3: Adding Applications from the Farm
 
 Horizon Cloud Service can auto-discover applications installed on the farm, or you can manually specify an application. Select the applications to be published, and assign them to end users or groups.
 
