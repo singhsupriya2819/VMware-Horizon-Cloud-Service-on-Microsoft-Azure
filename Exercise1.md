@@ -165,7 +165,7 @@ Machine creation and domain join operations are automated by Horizon Cloud Servi
 
 ### **Task 1: Get Started**
 
-   ![ws name.](media/exb9.png)
+   ![ws name.](media/exb32.png)
 
 To complete the Active Directory configuration, provide information about the domain and accounts used for domain operations.
 
@@ -180,7 +180,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 2: Configure Active Directory**
 
-   ![ws name.](media/exb10.png)
+   ![ws name.](media/exb33.png)
 
 1. Under General Setup, locate the Active Directory panel.
 
