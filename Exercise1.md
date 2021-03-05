@@ -26,11 +26,17 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 ### **Task 1: Log in to VMware Horizon Cloud Service**
 
-   ![ws name.](media/exb21.png)
+   ![ws name.](media/exb.png)
 
   - Open ```https://cloud.horizon.vmware.com/login2/login``` in a browser.
   
-  - Log in to Horizon Cloud Service, using your My VMware account ID and password.
+   ![ws name.](media/exb30.png)
+   
+  - In the lab guide, navigate to **Environment Details tab > VMWare Horizon Account Details**. Under _Actions_ tab, click on copy button to copy the credentials.
+
+   ![ws name.](media/exb21.png)
+
+  -  Return to Login page and paste the VMware account ID and password under _My VMWare Credentials_ and click on **Login**.
 
 **Note:** Select **Accept** for _Terms of Service_ popup.
 
@@ -51,11 +57,14 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    ![ws name.](media/exb24.png)
 
-1. In the Microsoft Azure Subscription tab of the Add Cloud Capacity window, provide the data that you gathered earlier:
+1. In the Add Microsoft Azure Capacity tab, to fill the data navigate to **Environment Details tab >  Service Principal Details:
+
+   ![ws name.](media/exb31.png)
 
    - **Apply Subscription:** Select **Add New** and enter the new subscription information.
     
    - **Subscription Name:** Enter a recognizable name to distinguish this subscription from others. The name must start with a letter and contain only letters, numbers, and dashes.
+   
    - **Environment:** Select the environment associated with your Microsoft Azure subscription.
     
    - **Subscription ID:** Enter the subscription ID in UUID form, from the Subscription area of your Microsoft Azure portal.
@@ -93,7 +102,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
     
-   - **Virtual Network:** Select a virtual network from the list. Only virtual networks that exist in the region selected in the Microsoft Azure Region field are shown here. You must have already created the VNet you want to use in that region in your Microsoft Azure subscription.
+   - **Virtual Network:** Select a virtual network from the list. Only virtual networks that exist in the region selected in the Microsoft Azure Region field are shown here. 
     
    - **Use Existing Subnet:** Slide to enable, as in this example.
     
