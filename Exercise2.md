@@ -57,7 +57,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   - **Include GPU:** Select **Yes** to provide GPU-backed hardware. If disabled, your Microsoft Azure subscription in the selected pod region does not support GPU hardware.
   
-  - **Domain:** Select the Active Directory domain that you want configured in the base VM.
+  - **Domain:** Select the Active Directory domain <inject key="Domain Name" /> .
 
   - **Enable Public IP Address:** Select **Yes** to configure a public IP address so you can access the VM through an RDP connection.
 
