@@ -34,7 +34,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 **Note:** Select **Accept** for _Terms of Service_ popup.
 
-   ![ws name.](media/exb21.png)
+   ![ws name.](media/exb22.png)
 
 ### **Task 2: Add a New Horizon Cloud Service Pod**
 
