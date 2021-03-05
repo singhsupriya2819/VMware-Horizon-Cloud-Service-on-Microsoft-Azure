@@ -28,6 +28,8 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    ![ws name.](media/exb.png)
 
+  - Open ```https://cloud.horizon.vmware.com/login2/login``` in a browser.
+  
   - Log in to Horizon Cloud Service, using your My VMware account ID and password.
 
 
