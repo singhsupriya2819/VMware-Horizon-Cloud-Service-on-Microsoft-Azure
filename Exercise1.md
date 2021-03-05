@@ -26,31 +26,30 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 ### **Task 1: Log in to VMware Horizon Cloud Service**
 
-   ![ws name.](media/exb.png)
+   ![ws name.](media/exb21.png)
 
   - Open ```https://cloud.horizon.vmware.com/login2/login``` in a browser.
   
   - Log in to Horizon Cloud Service, using your My VMware account ID and password.
 
+**Note:** Select **Accept** for _Terms of Service_ popup.
+
+   ![ws name.](media/exb21.png)
 
 ### **Task 2: Add a New Horizon Cloud Service Pod**
 
-   ![ws name.](media/exb1.png)
+   ![ws name.](media/exb23.png)
 
-  - In an account with no pods previously deployed, the Getting Started wizard defaults to the Capacity section. In the upper right corner of the Add Cloud Capacity pane, click **Add**, which starts the Horizon Cloud Service Pod Deployment wizard.
+  - In an account with no pods previously deployed, the Getting Started wizard defaults to the Capacity section. 
 
-  - Note: To add a new Microsoft Azure pod to an account with pods previously deployed, you can alternatively click **Settings > Capacity > New > Pod > Microsoft Azure**.
+   - In the upper right corner of **Microsoft Azure** pane, click on **Manage** and the select **Add**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
+
+**Note:** To add a new Microsoft Azure pod to an account with pods previously deployed, you can alternatively click **Settings > Capacity > New > Pod > Microsoft Azure**.
 
 
-### **Task 3: Add Microsoft Azure Capacity**
+### **Task 3: Provide Subscription Details**
 
-   ![ws name.](media/exb2.png)
-
-  - In the Add Capacity window, select **Microsoft Azure**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
-
-### **Task 4: Provide Subscription Details**
-
-   ![ws name.](media/exb3.png)
+   ![ws name.](media/exb24.png)
 
 1. In the Microsoft Azure Subscription tab of the Add Cloud Capacity window, provide the data that you gathered earlier:
 
@@ -71,9 +70,9 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 2. In the lower right corner, click **Next**.
 
-### **Task 5: Provide Pod Setup Details**
+### **Task 4: Provide Pod Setup Details**
 
-   ![ws name.](media/exb4.png)
+   ![ws name.](media/exb25.png)
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
    
@@ -88,9 +87,9 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 2. Scroll down to the next panel.
 
 
-### **Task 6: Provide Networking Details**
+### **Task 5: Provide Networking Details**
 
-   ![ws name.](media/exb5.png)
+   ![ws name.](media/exb26.png)
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
     
@@ -108,9 +107,9 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 2. In the Identity Management panel, accept the default, and click **Next**.
 
-### **Task 7: Provide Unified Access Gateway Details**
+### **Task 6: Provide Unified Access Gateway Details**
 
-   ![ws name.](media/exb6.png)
+   ![ws name.](media/exb27.png)
 
 1. In the Unified Access Gateway panel of the Work Setup tab, provide the following information.
     
@@ -131,15 +130,15 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
    - **Use a Different Virtual Network:** Accept the default and leave this option disabled.
 
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
+**This will take upto 20mins**
 
+### **Task 7: Review Summary**
 
-### **Task 8: Review Summary**
-
-   ![ws name.](media/exb7.png)
+   ![ws name.](media/exb28.png)
 
   - Review the summary, verify that the information is correct and complete, and then click **Submit**.
 
-### **Task 9: Verify That the Pod Is Deployed**
+### **Task 8: Verify That the Pod Is Deployed**
 
    ![ws name.](media/exb8.png)
 
