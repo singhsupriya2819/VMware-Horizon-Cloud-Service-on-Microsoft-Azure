@@ -73,11 +73,11 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Admin Credentials for the Desktop, provide the required information:
 
-  - **Username:** Enter the administration username for the VM account. This username is used for the local administration account to access the OS of the golden image VM.
+  - **Username:** <inject key="AD VM Admin UserName" />
 
-  - **Password:** Enter the password for the administrator account, which must adhere to the Microsoft Azure rules.
+  - **Password:** <inject key="AD VM Admin Password" />
 
-  - **Verify Password:** Re-enter the password to verify.
+  - **Verify Password:** <inject key="AD VM Admin Password" />
 
   - **Do you have a Windows Server License:** Select **Yes**, and select the check box to confirm that you have the proper license.
 
