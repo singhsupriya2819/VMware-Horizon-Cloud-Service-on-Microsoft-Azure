@@ -130,7 +130,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
    - **Use a Different Virtual Network:** Accept the default and leave this option disabled.
 
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
-**This will take upto 20mins**
+
 
 ### **Task 7: Review Summary**
 
@@ -138,11 +138,13 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
   - Review the summary, verify that the information is correct and complete, and then click **Submit**.
 
+**Note: This process will take 60 minutes to complete.**
+
 ### **Task 8: Verify That the Pod Is Deployed**
 
-   ![ws name.](media/exb8.png)
+   ![ws name.](media/exb29.png)
 
-  - Wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed. This process can take a while to complete.
+  - Wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
 
 After you finish deploying the Horizon Cloud Service pod, proceed to the next exercise to perform the domain bind operation.
 
