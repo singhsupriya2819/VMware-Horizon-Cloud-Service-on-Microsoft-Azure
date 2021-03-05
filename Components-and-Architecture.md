@@ -2,8 +2,6 @@
 
 ## About System Architecture and Components
 
- please find your value 1 : **<inject key="AD VM FQDN" />**
-
 The Horizon Cloud Service on Microsoft Azure system architecture includes the standard Horizon Cloud Service components, as well as unique components and integrations that provide additional capabilities.
 
    ![ws name.](media/caa1.png)
