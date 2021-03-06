@@ -47,17 +47,17 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
  
 1. Under Desktop Details, provide the following information:
 
-  - **OS:** Select the operating system to use from the Microsoft Azure Marketplace.
+  - **OS:** Windows Server 2019 Datacenter
 
-  - **Include GPU:** Select **Yes** to provide GPU-backed hardware. If disabled, your Microsoft Azure subscription in the selected pod region does not support GPU hardware.
+  - **Include GPU:** Slide **disable**
+
+  - **Domain Join:** Slide **enable**
   
   - **Domain:** Select the Active Directory domain **<inject key="Domain Name" />** .
 
   - **Enable Public IP Address:** Select **Yes** to configure a public IP address so you can access the VM through an RDP connection.
 
   - **Optimize Windows Image:** Select **Yes** to optimize Windows on image import, which improves VM performance and capacity utilization.
-
-  - **Remove Windows Store Apps:** Select **Yes** to remove Windows Store apps, which improves performance.
 
 2. Scroll down to the next panel.
 
@@ -72,8 +72,6 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
   - **Password:** <inject key="AD VM Admin Password" />
 
   - **Verify Password:** <inject key="AD VM Admin Password" />
-
-  - **Do you have a Windows Server License:** Select **Yes**, and select the check box to confirm that you have the proper license.
 
 2. Scroll to the next panel.
 
@@ -151,7 +149,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Return to the Horizon Cloud Service Administration Console, where the imported VM is displayed.
 
-2. Horizon Cloud Service automates the customization of the golden image VM, the green dot appears under Status, and the status changes to Active when the process is complete.
+2. Horizon Cloud Service automates the customization of the golden image VM, the green dot appears under Status, and the status changes to **Import Successful** when the process is complete.
 
 
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Create a Master Virtual Machine Automatically from the Microsoft Azure Marketplace**.
