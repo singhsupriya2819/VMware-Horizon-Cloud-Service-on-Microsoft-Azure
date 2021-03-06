@@ -89,7 +89,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
     
    - **Location:** Click **Add** to specify a location, which you can use to group pods according to categories that you provide, such as Business Unit A, Business Unit B, and so on. As you enter a city name, it should auto-populate. If your city name is not recognized, it will not be placed correctly on the Dashboard map. In this case, select the closest city available.
     
-   - **Microsoft Azure Region:** Select the physical geographic Microsoft Azure region into which you want the pod to be deployed. For best performance, deploy the Horizon Cloud Service pod in a region that is geographically near the end users consuming the service to provide lower latency.
+   - **Microsoft Azure Region:** 
 
    - **Description:** Enter an optional description for this pod.
 
@@ -102,17 +102,17 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
     
-   - **Virtual Network:** Select a virtual network from the list. Only virtual networks that exist in the region selected in the Microsoft Azure Region field are shown here. 
+   - **Virtual Network:** HZN-Vnet[Horizon-Network-RG] 
     
-   - **Use Existing Subnet:** Slide to enable, as in this example.
+   - **Use Existing Subnet:** Slide to **enable**.
     
-   - **Management Subnet:** Enter a subnet (in CIDR notation) to which the pod and Unified Access Gateway instances get connected, such as 192.168.8.0/28. For the management subnet, a CIDR of at least /28 is required.
+   - **Management Subnet:** Mgmt-subnet
     
-   - **Desktop Subnet:** Enter the subnet (in CIDR notation) to which all of this pod's RDSH servers for end-user remote desktops and applications get connected, such as 192.168.12.0/22. Minimum: /28. Recommended: /22.
+   - **VM Subnet - Primary:** VM-subnet
     
-   - **NTP Servers:** Enter the list of NTP servers to use for time synchronization, separated by commas (for example 10.11.12.13, time.example.com).
+   - **NTP Servers:** time.windows.com
     
-   - **Use Proxy:** Slide to enable, or leave disabled as in this example.
+   - **Use Proxy:** Leave this **disabled**.
 
 2. In the Identity Management panel, accept the default, and click **Next**.
 
@@ -122,21 +122,19 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 1. In the Unified Access Gateway panel of the Work Setup tab, provide the following information.
     
-   - **Enable External UAG?** Slide to enable, as in this example.
+   - **Enable External UAG?** Slide to **disable**.
     
-   - **Internet Enabled Desktops:** Select Yes to enable users located outside your corporate network to access desktops and applications. The pod includes a load balancer and Unified Access Gateway instances to enable this access. Selecting Internet-enabled desktops triggers Horizon Cloud Service to automatically deploy two Unified Access Gateway appliances in an availability setting.
+   - **Enable Internal Gateway?** Slide to **enable**.
     
-   - **FQDN:** Enter the required fully qualified domain name (FQDN), such as ourOrg.example.com, for your end users to use to access the service. You must own that domain name and have a certificate in PEM format that can validate that FQDN.
+   - **FQDN:** vdi.mydomain.com
     
-   - **DMZ Subnet:** Enter the subnet in CIDR notation for the demilitarized zone (DMZ) network to be configured to connect the Unified Access Gateway instances to the load balancer.
-    
-   - **DMZ Addresses:** Accept default.
-    
+   - **DNS Addresses** 10.0.0.4
+        
    - **Route:** Leave blank.
+   
+   - **VM Model:** Standard_A4_v2
     
    - **Certificate:** Upload the certificate in PEM format for Unified Access Gateway to use to allow clients to trust connections to the Unified Access Gateway instances running in Microsoft Azure. The certificate must be based on the FQDN you entered and be signed by a trusted CA. A certificate is automatically applied to the two Unified Access Gateway appliances during deployment.
-    
-   - **Use a Different Virtual Network:** Accept the default and leave this option disabled.
 
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
 
@@ -153,7 +151,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    ![ws name.](media/exb29.png)
 
-  - Wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
+   - Wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
 
 After you finish deploying the Horizon Cloud Service pod, proceed to the next exercise to perform the domain bind operation.
 
@@ -173,7 +171,7 @@ To complete the Active Directory configuration, provide information about the do
 
 2. Click **Getting Started**.
 
-3. In the Getting Started wizard, locate the **Microsoft Azure 1 Pod** added.
+3. In the Getting Started wizard, locate the **Microsoft Azure, 1 Pod** added.
 
 4. Click **General Setup** to expand the fields.
 
@@ -182,7 +180,7 @@ To complete the Active Directory configuration, provide information about the do
 
    ![ws name.](media/exb33.png)
 
-1. Under General Setup, locate the Active Directory panel.
+1. Under General Setup, locate the **Active Directory** panel.
 
 2. On the far right, click **Add**.
 
@@ -193,13 +191,13 @@ To complete the Active Directory configuration, provide information about the do
 
 1. In the Register Active Directory window, provide information about the domain and accounts used for domain operations.
 
-   - **NETBIOS Name**: Enter the Active Directory domain name.
+   - **NETBIOS Name**: MYDOMAIN
    
-   - **DNS Domain Name:** Enter the fully qualified Active Directory domain name.
+   - **DNS Domain Name:** mydomain.com
    
    - **Protocol:** Accept the LDAP default.
 
-   - **Bind Username:** Enter the user account in the domain to use as the primary LDAP bind account.
+   - **Bind Username:** dbind
 
    - **Bind Password:** Enter the password associated with the Bind Username.
    
@@ -216,15 +214,16 @@ To complete the Active Directory configuration, provide information about the do
 
 1. After configuration is complete, in the Domain Join window, provide the required data.
 
-   - **Primary DNS Server IP:** Enter the IP address of the primary DNS Server.
+   - **Primary DNS Server IP:** Enter the IP address of the primary DNS Server i.e., 10.0.0.4
+
+   - **Secondary DNS Server IP (Optional):** Enter the IP of a secondary DNS Server.
 
    - **Note:** This DNS server must be able to resolve machine names inside of your Microsoft Azure cloud as well as resolve external names.
 
-   - **Join Username:** Enter the user account in the Active Directory that has permissions to join systems to that Active Directory domain.
+   - **Join Username:** djoin
 
    - **Join Password:** Enter the password associated with the Join Username.
 
-   - **Secondary DNS Server IP (Optional):** Enter the IP of a secondary DNS Server.
 
 2. In the lower right corner, click **Save**.
 
@@ -232,7 +231,7 @@ To complete the Active Directory configuration, provide information about the do
 
    ![ws name.](media/exb36.png)
    
-1. In the Add Administrator window, select an Active Directory User Group
+1. In the Add Administrator window, select **MYDOMAIN\Horizon Admins** User Group.
 
 2. In the lower right corner, click **Save**.
 
@@ -241,7 +240,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 6: Notice Change in Login Windows**
 
-   ![ws name.](media/exc32.png)
+   ![ws name.](media/exb37(1).png)
 
 1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window.
 
