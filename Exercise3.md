@@ -16,7 +16,7 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 1: Create a New Farm
 
-   ![ws name.](media/exd1.png)
+   ![ws name.](media/exc30.png)
 
 1. In the navigation bar of Horizon Cloud Service Administration Console, select Inventory.
 
@@ -30,14 +30,22 @@ When the new image has been published, you can use it to create farms.
    ![ws name.](media/exd2.png)
 
 1. In the New Farm window, **Definition** tab, provide the following information, and then scroll down.
-  - **Name:** Enter a name to help identify this farm in the system.
-  - **Description:** Enter an optional description to help identify the farm in the system.
-  - **VM Names:** Enter a name for all server VMs created for this farm to which a number is appended, such as win2016-1, win2016-2, and so on. The name must start with a letter and can contain only letters, dashes, and numbers.
-  - **Farm Type:** Specify the type of asset this farm provides to end users. Keep this assignment time in mind when you select the server size, since desktop assignments may require more capacity.
-      - **Desktops:** Provides session-based desktops
-      - **Applications:** Provides access to remote applications
-  - Location: Select the location from the list of pods in the pop-up menu.
-  - Pod: Select the pod for this farm.
+  
+   - **Name:** Enter a name to help identify this farm in the system.
+
+   - **Description:** Enter an optional description to help identify the farm in the system.
+
+   - **VM Names:** Enter a name for all server VMs created for this farm to which a number is appended, such as win2016-1, win2016-2, and so on. The name must start with a letter and can contain only letters, dashes, and numbers.
+
+   - **Farm Type:** Specify the type of asset this farm provides to end users. Keep this assignment time in mind when you select the server size, since desktop assignments may require more capacity.
+   
+   - **Desktops:** Provides session-based desktops
+
+   - **Applications:** Provides access to remote applications
+ 
+   - **Location:** Select the location from the list of pods in the pop-up menu.
+ 
+   - **Pod:** Select the pod for this farm.
  
 2. Scroll down to provide additional general settings.
 
@@ -47,14 +55,23 @@ When the new image has been published, you can use it to create farms.
    ![ws name.](media/exd3.png)
 
 1. Provide the following additional general settings information:
+
   - **Filter Models:** You can filter the available VM models by type and favorites, and add filters as well.
+  
   - **Model:** Select the Azure VM size for the Farm. Some VM sizes are not available in all regions.
+  
   - **Image:** Select an available RDSH image from the list. Images that do not match the desktop model disk size are not displayed.
+  
   - **Preferred Protocol:** Select either PCoIP or Blast as the default display protocol that you want the end-user sessions to use.
+  
   - **Preferred Client Type:** Select the source to use when end users launch assignments from this farm, either a Horizon Client or a browser for HTML Access.
+  
   - **Domain:** Select the Active Directory domain registered with your environment.
+  
   - **Join Domain:** Select **Yes** so that the server instances are automatically joined to the domain when created.
+  
   - **Encrypt Disks:** For the purposes of this exercise, accept the default No. If you select Yes, the disks for all servers in this farm are encrypted. After the farm is published, encryption cannot be changed.
+  
   - **NSX Cloud Managed:** For the purposes of this exercise, accept the default No. If you select Yes, NSX Cloud networking and security management is supported for this farm.
 
 2. Scroll to the **Farm Size** section.
