@@ -19,7 +19,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 ### **Task 1: Navigate to Imported VMs**
 
-   ![ws name.](media/exc.png)
+   ![ws name.](media/exc18.png)
 
 1. In the navigation panel of the Horizon Cloud Service Administration Console, click **Inventory**.
 
@@ -28,15 +28,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 3. In the Imported VMs window, click **Import**, which imports a Windows VM from the Microsoft Azure Marketplace.
 
 
-### **Task 2: Select the Marketplace**
+### **Task 2: Provide Destination Desktop Details**
 
-   ![ws name.](media/exc1.png)
-   
-  - In the Import Desktop window under From Marketplace, click **Select**.
-
-### **Task 3: Provide Destination Desktop Details**
-
-   ![ws name.](media/exc2.png)
+   ![ws name.](media/exc19.png)
  
 1. In the Import Desktop Marketplace window under Destination Desktop, provide the following information:
 
@@ -47,9 +41,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 2. Scroll down to the Desktop Details panel.
 
 
-### **Task 4: Provide Desktop Details**
+### **Task 3: Provide Desktop Details**
 
-   ![ws name.](media/exc3.png)
+   ![ws name.](media/exc20.png)
  
 1. Under Desktop Details, provide the following information:
 
@@ -67,9 +61,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Scroll down to the next panel.
 
-### **Task 5: Provide Admin Credentials for the Desktop**
+### **Task 4: Provide Admin Credentials for the Desktop**
 
-   ![ws name.](media/exc4.png)
+   ![ws name.](media/exc21.png)
 
 1. Under Admin Credentials for the Desktop, provide the required information:
 
@@ -84,9 +78,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 2. Scroll to the next panel.
 
 
-### **Task 6: Provide Properties**
+### **Task 5: Provide Properties**
 
-   ![ws name.](media/exc5.png)
+   ![ws name.](media/exc22.png)
 
 1. In the Admin Credentials for the Desktop panel and the Properties panel, provide the required information.
 
@@ -97,7 +91,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 2. Select **Advanced Options** to reveal the Horizon Agent Features panel.
 
 
-### **Task 7: Provide Horizon Agent Details**
+### **Task 6: Provide Horizon Agent Details**
 
    ![ws name.](media/exc6.png)
 
@@ -134,7 +128,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 2. In the lower right corner, click **Import**.
 
 
-### **Task 8: Verify the VM Imported Successfully in Microsoft Azure**
+### **Task 7: Verify the VM Imported Successfully in Microsoft Azure**
 
    ![ws name.](media/exc7.png)
 
@@ -142,7 +136,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Verify that the VM was successfully completed.
 
-### **Task 9: Explore the Details of the Imported VM**
+### **Task 8: Explore the Details of the Imported VM**
 
    ![ws name.](media/exc8.png)
 
@@ -151,9 +145,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 2. Explore the details.
 
 
-### **Task 10: Verify That the Imported VM Is Active**
+### **Task 9: Verify That the Imported VM Is Active**
 
-   ![ws name.](media/exc9.png)
+   ![ws name.](media/exc23.png)
 
 1. Return to the Horizon Cloud Service Administration Console, where the imported VM is displayed.
 
@@ -173,7 +167,7 @@ You can customize the Windows operating system of the new golden image VM, set w
 
 ### **Task 1: RDP to a Public IP**
 
-   ![ws name.](media/exc10.png)
+   ![ws name.](media/exc24.png)
 
 Depending on your configuration, you can use either a private or public IP address to RDP to the new golden image VM.
 
@@ -235,7 +229,7 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
 ### **Task 1: Start Creating a New Image**
 
-   ![ws name.](media/exc13.png)
+   ![ws name.](media/exc25.png)
 
 1. In the Horizon Cloud Service Administration Console navigation bar on the left, select **Inventory**.
 
@@ -245,7 +239,7 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
 ### **Task 2: Provide Desktop-to-Image Details**
 
-   ![ws name.](media/exc14.png)
+   ![ws name.](media/exc26.png)
 
 
 1. In the New Image window under **Convert Desktop to Image**, provide the following information:
@@ -258,7 +252,7 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
 ### **Task 3: Provide OS Properties Details**
 
-   ![ws name.](media/exc15.png)
+   ![ws name.](media/exc27.png)
 
 1. Under **OS Properties**, provide the following information:
 
@@ -271,7 +265,7 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
 ### **Task 4: Provide Admin Credentials**
 
-   ![ws name.](media/exc16.png)
+   ![ws name.](media/exc28.png)
 
 1. Under **Admin credentials for the desktop**, provide the account credentials for a valid administrator account in the selected image VM. Make sure to follow the complexity standards and other limitations.
 
@@ -286,7 +280,7 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
 ### **Task 5:Wait for the Published Status**
 
-   ![ws name.](media/exc17.png)
+   ![ws name.](media/exc29.png)
 
   - Wait until the status changes to **Published** to use the assignable image for creating a farm.
 
