@@ -250,6 +250,8 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 7: Join the VMware Customer Experience Improvement Program**
 
+   ![ws name.](media/exb38.png)
+
 1. With the Horizon Cloud Service pod deployed and the bind operation complete, you can move the Yes/No slider to choose whether or not to join the VMware Customer Experience Improvement Program.
 
 2. In the lower right corner, click **Save**.
