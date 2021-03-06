@@ -241,7 +241,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 6: Notice Change in Login Windows**
 
-   ![ws name.](media/exb37(1).png)
+   ![ws name.](media/exc32.png)
 
 1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window.
 
