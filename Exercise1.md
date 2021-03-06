@@ -189,7 +189,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 3: Register Active Directory**
 
-   ![ws name.](media/exb11.png)
+   ![ws name.](media/exb34.png)
 
 1. In the Register Active Directory window, provide information about the domain and accounts used for domain operations.
 
@@ -212,7 +212,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 4: Provide Domain Join Details**
 
-   ![ws name.](media/exb12.png)
+   ![ws name.](media/exb35.png)
 
 1. After configuration is complete, in the Domain Join window, provide the required data.
 
@@ -230,7 +230,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 5: Add the Administrator**
 
-   ![ws name.](media/exb13.png)
+   ![ws name.](media/exb36.png)
    
 1. In the Add Administrator window, select an Active Directory User Group
 
@@ -241,7 +241,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 6: Notice Change in Login Windows**
 
-   ![ws name.](media/exb14.png)
+   ![ws name.](media/exb37.png)
 
 1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window.
 
@@ -324,17 +324,3 @@ In this example, the Dv2 Series is selected, a general purpose type that is good
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
 
 After you finish creating and defining the subset of VM types and sizes that you want, you are ready to proceed to create a new image in the next exercise.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
