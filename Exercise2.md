@@ -19,13 +19,13 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 ### **Task 1: Navigate to Imported VMs**
 
-   ![ws name.](media/exc18.png)
+   ![ws name.](media/vmw10.png)
 
 1. In the navigation panel of the Horizon Cloud Service Administration Console, click **Inventory**.
 
-2. In the Inventory menu, click **Imported VMs**.
+2. In the Inventory menu, click **Getting Started**.
 
-3. In the Imported VMs window, click **Import**, which imports a Windows VM from the Microsoft Azure Marketplace.
+3. In front of **Import VM** pane, click on **Add** button.
 
 
 ### **Task 2: Provide Destination Desktop Details**
