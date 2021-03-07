@@ -267,7 +267,7 @@ Now click on **Auto-Scan from Farm**.
 
 ### Task 3: Provide Definition Information
 
-   ![ws name.](media/exdu18.png)
+   ![ws name.](media/vmw11.png)
 
 1. In the New Application window, click on the name of application fetched from scan.
 
