@@ -61,15 +61,15 @@ To assign applications to users and groups:
 
 ### Task 1: Assign New
 
-   ![ws name.](media/exe5.png)
+   ![ws name.](media/exeu5.png)
    
 1. In the navigation bar on the left, click **Settings**.
 2. Under Settings, click **Getting Started**.
 3. Under Desktop Assignment, to the right of Create New Desktop Assignment, click **New**.
 
-### Task 2: Select Applications
+### Task 2: Select Remote
 
-   ![ws name.](media/exe6.png)
+   ![ws name.](media/exeu6.png)
 
   - After verifying that the Desktop Capacity Allocation is sufficient, you can proceed to the next exercise to assign a desktop and see how the capacity allocation is affected.
 
