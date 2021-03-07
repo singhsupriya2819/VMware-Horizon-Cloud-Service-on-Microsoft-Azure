@@ -57,9 +57,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    ![ws name.](media/exb24.png)
 
-1. In the Add Microsoft Azure Capacity tab, to fill the data navigate to **Environment Details tab >  Service Principal Details:
-
-   ![ws name.](media/exb31.png)
+1. In the Add Microsoft Azure Capacity tab, add the following values:
 
    - Apply Subscription: Select **Add New** and enter the new subscription information.
     
@@ -68,6 +66,8 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
    - Environment: Select **Azure - Commercial** from the drop down.
    
 To fill the below given fields, navigate to **Environment Details tab >  Service Principal Details** then copy and paste the values:
+
+   ![ws name.](media/exb31.png)
 
    - Subscription ID
     
@@ -100,7 +100,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 ### **Task 5: Provide Networking Details**
 
-   ![ws name.](media/exb26.png)
+   ![ws name.](media/vmw9.png)
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
     
@@ -128,9 +128,9 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **Enable Internal Gateway?** Slide to **enable**.
     
-   - **FQDN:** vdi.mydomain.com
+   - **FQDN:** Enter **vdi.mydomain.com**
     
-   - **DNS Addresses** 10.0.0.4
+   - **DNS Addresses** **INJECT DNS server IP from output**
         
    - **Route:** Leave blank.
    
@@ -184,7 +184,7 @@ To complete the Active Directory configuration, provide information about the do
 
 1. Under General Setup, locate the **Active Directory** panel.
 
-2. On the far right, click **Add**.
+2. On the far right, click on **Configure**.
 
 
 ### **Task 3: Register Active Directory**
@@ -193,17 +193,17 @@ To complete the Active Directory configuration, provide information about the do
 
 1. In the Register Active Directory window, provide information about the domain and accounts used for domain operations.
 
-   - **NETBIOS Name**: MYDOMAIN
+   - **NETBIOS Name**: **INJECT**
    
-   - **DNS Domain Name:** mydomain.com
+   - **DNS Domain Name:** **INJECT**
    
    - **Protocol:** Accept the LDAP default.
 
-   - **Bind Username:** dbind
+   - **Bind Username:** **INJECT**
 
-   - **Bind Password:** Enter the password associated with the Bind Username.
+   - **Bind Password:** **INJECT**
    
-   - **Auxiliary Account #1:** In the Bind Username and Bind Password fields, enter a user account in the domain to use as the auxiliary LDAP bind account and its associated password.
+   - **Auxiliary Account #1:** **INJECT**
 
    - For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```http://www.vmware.com/info?id=1439```).
 
@@ -216,16 +216,17 @@ To complete the Active Directory configuration, provide information about the do
 
 1. After configuration is complete, in the Domain Join window, provide the required data.
 
-   - **Primary DNS Server IP:** Enter the IP address of the primary DNS Server i.e., 10.0.0.4
-
+   - **Primary DNS Server IP:** **INJECT**
+   
    - **Secondary DNS Server IP (Optional):** Enter the IP of a secondary DNS Server.
 
    - **Note:** This DNS server must be able to resolve machine names inside of your Microsoft Azure cloud as well as resolve external names.
 
-   - **Join Username:** djoin
+   - **Default OU**: **INJECT**
+   
+   - **Join Username:** **INJECT**
 
-   - **Join Password:** Enter the password associated with the Join Username.
-
+   - **Join Password:** **INJECT**
 
 2. In the lower right corner, click **Save**.
 
@@ -242,7 +243,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 6: Notice Change in Login Windows**
 
-   ![ws name.](media/exb37(1).png)
+   ![ws name.](media/exc32.png)
 
 1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window.
 
