@@ -5,6 +5,7 @@
 The Horizon Cloud Service on Microsoft Azure system architecture includes the standard Horizon Cloud Service components, as well as unique components and integrations that provide additional capabilities.
 
    ![ws name.](media/caa1.png)
+   
    **Figure 1:** Basic Horizon Cloud Service on Microsoft Azure System Architecture
    
 Figure 1 demonstrates the automated provisioning of a Horizon Cloud Service pod on your Microsoft Azure capacity. **Note:** Deployments into Microsoft Azure were previously referred to as nodes. (For a more detailed diagram, see [VMware Horizon Cloud Service on Microsoft Azure Requirements Checklist For New Pod Deployments - Updated for the March 2020 Service Release](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-5F69086E-E061-48F3-93D9-9705B8B5FD8A.html), under **Reference Architecture**.)
