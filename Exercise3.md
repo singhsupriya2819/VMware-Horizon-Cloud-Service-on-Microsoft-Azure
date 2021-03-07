@@ -16,7 +16,7 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 1: Create a New Farm
 
-   ![ws name.](media/exc30.png)
+   ![ws name.](media/vmw6.png)
 
 1. In the navigation bar of Horizon Cloud Service Administration Console, select Inventory.
 
