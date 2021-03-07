@@ -267,16 +267,16 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
 1. Under **Admin credentials for the desktop**, provide the account credentials for a valid administrator account in the selected image VM. Make sure to follow the complexity standards and other limitations.
 
-  - **Username:** Enter the credentials for the local administrator account that is enabled in the golden image VM.
+  - **Username:** **INJECT**
 
-  - **Password:** Enter the password and confirm.
+  - **Password:** **INJECT**
 
   - **Note:** These credentials are the user name and password that were entered in the wizard when the golden VM was created in the Imported VMs window.
 
 2. In the lower right corner, click **Publish**.
 
 
-### **Task 5:Wait for the Published Status**
+### **Task 5: Wait for the Published Status**
 
    ![ws name.](media/exc29.png)
 
