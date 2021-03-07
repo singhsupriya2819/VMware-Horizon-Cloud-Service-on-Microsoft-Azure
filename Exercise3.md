@@ -107,30 +107,41 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 ### Task 6: Provide Rolling Maintenance Information
 
-   ![ws name.](media/exd6.png)
+   ![ws name.](media/exd23.png)
 
 1. In the Management tab, provide the information for Rolling Maintenance.
-  - **Rolling Maintenance:** Select the maintenance type, either according to:
-      - **Scheduled:** Select a time cadence such as daily or weekly.
-      - **Session:** Specify the number of user sessions at which the farm should begin rolling maintenance.
-  - **Recurrence:** Indicate the type of recurrence.
-  - **Recurrence Day:** Indicate the day of the week.
-  - **Scheduled Hour:** Indicate the hour of the recurrence.
-  - **Concurrent Quiescing Servers:** Indicate the number of concurrent quiescing servers.
-  - **Server Action:** Select the action that the system should perform on servers that are undergoing maintenance:
-      - **Restart:** Restart the sever VMs.
-      - **Rebuild:** Delete server VMs and then re-provision them from their RDS desktop image.
+
+   - **Maintenance Type:** Select the maintenance type, either according to:
+   
+   - **Scheduled:** Select a time cadence such as daily or weekly.
+   - **Session:** Specify the number of user sessions at which the farm should begin rolling maintenance.
+   
+   - **Recurrence:** Indicate the type of recurrence.
+   
+   - **Recurrence Day:** Indicate the day of the week.
+   
+   - **Scheduled Hour:** Indicate the hour of the recurrence.
+   
+   - **Concurrent Quiescing Servers:** Indicate the number of concurrent quiescing servers.
+   
+   - **VM Action:** Select the action that the system should perform on servers that are undergoing maintenance:
+   
+   - **Restart:** Restart the sever VMs.
+   - **Rebuild:** Delete server VMs and then re-provision them from their RDS desktop image.
 
 2. Scroll to the Power Management panel.
 
 
 ### Task 7: Provide Power Management Information
 
-   ![ws name.](media/exd7.png)
+   ![ws name.](media/exc31.png)
 
 1. In the Power Management panel, provide the information used to optimize the farm for your unique business needs. This is where you determine the thresholds at which new capacity is powered up or down, for automatic shutdown or deallocation of unused servers. Set the thresholds at which the system automatically grows and shrinks the number of powered-on server instances as it responds to demand and use:
+
   - **Optimized Performance:** Keeps more hosts powered on than are needed to service the current end-user workload. As more users log in, Horizon Cloud Service continues to power on hosts in advance, up to the threshold of the maximum farm size. This option increases capacity costs by having the next server ready before requested, but decreases the chance of a delay when users make the request.
+  
   - **Optimized Power:** Waits as long as possible before powering on the next server instance, and more progressively deallocates unused hosts, leaving fewer available resources for end users. This option decreases capacity costs by using the servers longer before powering new ones, but increases the chance of a delay when users try to log in. You can even set the minimum number to 0, so all servers automatically power down when no users need them. However, the next users who log in experience a delay while the server powers back on, which might take several minutes.
+  
   - **Balanced:** Strikes a 50:50 balance between optimizing for performance (time-to-availability for users), and optimizing for power (minimizing between capacity costs).
 
 2. Scroll down to the Timeout Handling section.
@@ -138,7 +149,7 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 ### Task 8: Provide Timeout Handling Information
 
-   ![ws name.](media/exd8.png)
+   ![ws name.](media/exc31.png)
 
 1. In the Timeout Handling panel, provide the required settings. This is where you configure how you want the system to handle different user session types.
   - **Empty Session Timeout:** Specify how to handle idle user sessions: never timeout idle sessions, or timeout after a specified number of minutes. **Note:** When a session is disconnected, the session is preserved in memory. When a session is logged out, the session is not preserved in memory, and any unsaved documents are lost.
@@ -150,9 +161,9 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 2. Scroll down to Schedule Power Management.
 
 
-### Task 9: Schedule Power Management
+### Task 9: Load Balancing Settings
 
-   ![ws name.](media/exd9.png)
+   ![ws name.](media/exd24.png)
 
 1. Under Schedule Power Management, click **Add a row**, and set the power management schedule:
   - **Name:** Provide a recognizable name for this schedule.
@@ -167,7 +178,7 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
 ### Task 10: Verify the Summary Information
 
-   ![ws name.](media/exd10.png)
+   ![ws name.](media/exd25.png)
 
 1. In the Summary tab, review all settings to verify they are correct and complete.
 
