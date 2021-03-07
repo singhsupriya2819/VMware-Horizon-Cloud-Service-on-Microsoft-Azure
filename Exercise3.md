@@ -18,7 +18,7 @@ When the new image has been published, you can use it to create farms.
 
    ![ws name.](media/vmw6.png)
 
-1. In the navigation bar of Horizon Cloud Service Administration Console, select Inventory.
+1. In the navigation bar of Horizon Cloud Service Administration Console, select **Inventory**.
 
 2. Select **Farms**.
 
@@ -39,9 +39,9 @@ When the new image has been published, you can use it to create farms.
 
    - **Farm Type:** Specify the type of asset this farm provides to end users. Keep this assignment time in mind when you select the server size, since desktop assignments may require more capacity.
    
-   - **Desktops:** Provides session-based desktops
+      a. **Desktops:** Provides session-based desktops
 
-   - **Applications:** Provides access to remote applications
+      b. **Applications:** Provides access to remote applications
  
    - **Location:** Select the location from the list of pods in the pop-up menu.
  
@@ -60,19 +60,13 @@ When the new image has been published, you can use it to create farms.
   
   - **Model:** Select the Azure VM size for the Farm. Some VM sizes are not available in all regions.
   
+  - **Disk Type:** Standard HDD
+  
+  - **Disk Size:** 127 GiB
+  
   - **Image:** Select an available RDSH image from the list. Images that do not match the desktop model disk size are not displayed.
   
   - **Preferred Protocol:** Select either PCoIP or Blast as the default display protocol that you want the end-user sessions to use.
-  
-  - **Preferred Client Type:** Select the source to use when end users launch assignments from this farm, either a Horizon Client or a browser for HTML Access.
-  
-  - **Domain:** Select the Active Directory domain registered with your environment.
-  
-  - **Join Domain:** Select **Yes** so that the server instances are automatically joined to the domain when created.
-  
-  - **Encrypt Disks:** For the purposes of this exercise, accept the default No. If you select Yes, the disks for all servers in this farm are encrypted. After the farm is published, encryption cannot be changed.
-  
-  - **NSX Cloud Managed:** For the purposes of this exercise, accept the default No. If you select Yes, NSX Cloud networking and security management is supported for this farm.
 
 2. Scroll to the **Farm Size** section.
 
@@ -97,9 +91,13 @@ When the new image has been published, you can use it to create farms.
    ![ws name.](media/exd5.png)
 
 1. Under **Advanced Properties**, provide the following information:
+
   - **Computer OU**: Enter the Active Directory Organizational Unit where the server VMs are to be located. For example, OU=RootOrgName,DC=DomainComponent,DC=eng, and so on. The entries must be comma-separated with no spaces in between.
+  
   - **Run Once Script** (optional): You can enter the full executable path of a script that you want run after system preparation completes.
-  - **Do you have a Windows Server License:** Select **Yes** and check the check box below to verify that you have Windows licenses with active Software Assurance or have an active Windows Server subscription, in order to use Azure Hybrid Benefit to save compute costs.
+  
+  - **Do you have a Windows Server License:** Slide **Enable** and check the check box below to verify that you have Windows licenses with active Software Assurance or have an active Windows Server subscription, in order to use Azure Hybrid Benefit to save compute costs.
+ 
 For more information about these settings, see **Exercise 3.2: Explore RD Session Host Power Management**.
 
 2. In the lower right corner, click **Next**.
@@ -113,8 +111,8 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
 
    - **Maintenance Type:** Select the maintenance type, either according to:
    
-   - **Scheduled:** Select a time cadence such as daily or weekly.
-   - **Session:** Specify the number of user sessions at which the farm should begin rolling maintenance.
+      a. **Scheduled:** Select a time cadence such as daily or weekly.
+      b. **Session:** Specify the number of user sessions at which the farm should begin rolling maintenance.
    
    - **Recurrence:** Indicate the type of recurrence.
    
@@ -126,8 +124,8 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
    
    - **VM Action:** Select the action that the system should perform on servers that are undergoing maintenance:
    
-   - **Restart:** Restart the sever VMs.
-   - **Rebuild:** Delete server VMs and then re-provision them from their RDS desktop image.
+      a. **Restart:** Restart the sever VMs.
+      b. **Rebuild:** Delete server VMs and then re-provision them from their RDS desktop image.
 
 2. Scroll to the Power Management panel.
 
@@ -152,10 +150,15 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
    ![ws name.](media/exc31.png)
 
 1. In the Timeout Handling panel, provide the required settings. This is where you configure how you want the system to handle different user session types.
+
   - **Empty Session Timeout:** Specify how to handle idle user sessions: never timeout idle sessions, or timeout after a specified number of minutes. **Note:** When a session is disconnected, the session is preserved in memory. When a session is logged out, the session is not preserved in memory, and any unsaved documents are lost.
+  
   - **When Timeout Occurs:** Leave blank.
+  
   - **Log Off Disconnected Sessions:** Specify when the system logs the user out of a disconnected session.
+  
   - **Max Session Lifetime:** Specify the maximum number of minutes the system should allow for a single user session.
+  
   - **Session Timeout Retrieval:** Leave blank.
 
 2. Scroll down to Schedule Power Management.
