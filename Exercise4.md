@@ -32,11 +32,11 @@ Before you assign a desktop to a user or group, it is best practice to check the
 
 ### Task 3: Navigate to Capacity Window
 
-   ![ws name.](media/exe3.png)
+   ![ws name.](media/vmw12.png)
    
 1. In the navigation bar on the left, select **Settings**.
 2. In the Settings menu, click **Capacity**.
-3. In the Capacity window, you can adjust your view by location or type.
+3. In the Capacity window, click on the pod you created.
 4. Under Status, click the pod to see a detail summary.
 
 
