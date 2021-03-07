@@ -251,26 +251,28 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
 ### Task 1: Add New Applications
 
-   ![ws name.](media/exd16.png)
+   ![ws name.](media/exdu16.png)
 
-1. In the Horizon Cloud Service Administration Console navigation bar, click **Inventory**.
+1. In the Horizon Cloud Service Administration Console click on **Applications** in navigation bar.
 
-2. In the Inventory menu, select **Applications**.
-
-3. In the Applications window, click **New**.
+2. Then navigate to **Remote** tab and click on **New**.
 
 
 ### Task 2: Select Auto-Scan from Farm
 
-   ![ws name.](media/exd17.png)
-In the New Application window, under Auto-Scan from Farm, click **Select**.
+   ![ws name.](media/exdu17.png)
+   
+Now click on **Auto-Scan from Farm**.
 
 
 ### Task 3: Provide Definition Information
 
-   ![ws name.](media/exd18.png)
+   ![ws name.](media/exdu18.png)
 
-1. In the New Application window, provide the Definition information:
+1. In the New Application window, click on the name of application fetched from scan.
+
+2. Now fill the following details asked in the definetion page.
+
   - **Location:** Select a location from the pop-up menu.
   - **Pod:** Select the pod containing the farm you want to choose.
   - **Farm:** Select the farm.
