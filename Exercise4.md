@@ -61,7 +61,7 @@ To assign applications to users and groups:
 
 ### Task 1: Assign New
 
-   ![ws name.](media/exeu5.png)
+   ![ws name.](media/vmw13.png)
    
 1. In the navigation bar on the left, click **Settings**.
 2. Under Settings, click **Getting Started**.
@@ -69,14 +69,14 @@ To assign applications to users and groups:
 
 ### Task 2: Select Remote
 
-   ![ws name.](media/exeu6.png)
+   ![ws name.](media/vmw14.png)
 
   - After verifying that the Desktop Capacity Allocation is sufficient, you can proceed to the next exercise to assign a desktop and see how the capacity allocation is affected.
 
 
-### Task 3: Define Fixed Attributes
+### Task 3: Define Fixed and Felxible Attributes
 
-   ![ws name.](media/exe7.png)
+   ![ws name.](media/vmw15.png)
    
 1. In the Definitions tab of the New Application Assignment window, select the Type.
 
@@ -90,56 +90,34 @@ To assign applications to users and groups:
   - **Encrypt Disks:** Leave disabled.
   - **NSX Cloud Managed:** Leave disabled.
 
-3. Scroll down to the Flexible Attributes section.
+3. In the lower right, click **Next**.
 
-### Task 4: Define Flexible Attributes
 
-   ![ws name.](media/exe8.png)
-   
-1. In the Flexible Attributes panel, provide the following information:
-  - **Images:** Accept the image.
-  - **Assignment Name:** Enter a friendly name to identify this assignment. The name must start with a letter, and contains only letters, dashes, and numbers.
-  - **VM Names:** All VMs in this assignment inherit the assignment name, and include an appended number, such as Server DTAfloating 1, Server DTAfloating 2, and so on.
-  - **Default Protocol:** From the pop-up list, select [Blast Extreme](https://docs.vmware.com/en/VMware-Horizon-7/7.6/horizon-architecture-planning/GUID-F64BAD49-78A0-44FE-97EA-76A56FD022D6.html) as the default protocol for end user sessions.
-  - **Preferred Client Types:** From the pop-up list, select **Browser**.
-  - **Min Desktops:** Enter the minimum number of desktops to be allowed.
-  - **Max Desktops:** Enter the maximum number of desktops to be allowed.
-  - **Power Off Protect Time:** Enter the number of minutes.
+### Task 4: Add Users
 
-2. In the lower right, click **Next**.
-
-### Task 5: Add Users
-
-   ![ws name.](media/exe9.png)
+   ![ws name.](media/vmw16.png)
    
 1. In the Users tab, select the users and groups to assign. **Note:** You can click the **Active Directory** search field. If no results are found, click **Search Active Directory**.
 
 2. In the lower right corner, click **Next**.
 
-### Task 6: Configure Management
+### Task 5: Configure Management
 
-   ![ws name.](media/exe10.png)
-   
-1. In the Management tab, accept the defaults.
-2. In the lower right, click **Next**.
-
-### Task 7: Verify Summary Information
-
-   ![ws name.](media/exe11.png)
+   ![ws name.](media/vmw17.png)
    
 1. In the Summary tab, review and verify that your settings are correct and complete.
 2. In the lower right corner, click **Submit**.
 
-### Task 8: Verify Success
+### Task 6: Verify Success
 
    ![ws name.](media/exe12.png)
    
   - In the Getting Started window, verify that the success banner appears at the top.
 
 
-### Task 9: Verify the Assignment
+### Task 7: Verify the Assignment
 
-   ![ws name.](media/exe13.png)
+   ![ws name.](media/vmw18.png)
    
 1. In the left-hand navigation bar, select **Assignments**.
 
