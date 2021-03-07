@@ -27,7 +27,7 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 2: Provide General Settings
 
-   ![ws name.](media/exd2.png)
+   ![ws name.](media/exdu2.png)
 
 1. In the New Farm window, **Definition** tab, provide the following information, and then scroll down.
   
@@ -52,7 +52,7 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 3: Provide More General Settings
 
-   ![ws name.](media/exd3.png)
+   ![ws name.](media/exdu3.png)
 
 1. Provide the following additional general settings information:
 
