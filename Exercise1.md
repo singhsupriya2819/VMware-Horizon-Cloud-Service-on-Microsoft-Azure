@@ -63,7 +63,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    - **Apply Subscription:** Select **Add New** and enter the new subscription information.
     
-   - **Subscription Name:** Enter a recognizable name to distinguish this subscription from others. The name must start with a letter and contain only letters, numbers, and dashes.
+   - **Subscription Name:** <inject key="Subscription Name" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
    
    - **Environment:** Select the environment associated with your Microsoft Azure subscription.
     
