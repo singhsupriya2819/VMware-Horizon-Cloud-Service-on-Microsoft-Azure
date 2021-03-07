@@ -208,23 +208,17 @@ You can choose which type of desktop to assign to a user or group in the Assignm
 
 ### Task 1: Navigate to New Assignments
 
-   ![ws name.](media/exe21.png)
+   ![ws name.](media/vmw19.png)
 
-1. In the Horizon Cloud Service Administration Console navigation bar, click **Assignments**.
+1. Expand **Assignments**.
 
-2. In the Assignments window, click **New**.
+2. Under Assignments pane, click on **VDI Desktops & Apps**.
 
+3. Click on **New** and select **Microsoft Azure**.
 
-### Task 2: Select Desktops
+### Task 2: Define Fixed Attributes
 
-   ![ws name.](media/exe22.png)
-
-  - In the New Assignments window, under Desktops, click **Select**.
-
-
-### Task 3: Define Fixed Attributes
-
-   ![ws name.](media/exe23.png)
+   ![ws name.](media/vmw20.png)
    
 1. For **Type**, select **Floating**.
 2. In the Fixed Attributes panel, provide the following information:
