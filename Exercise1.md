@@ -270,7 +270,7 @@ For more information, see General Purpose virtual machine sizes.
 
 ### **Task 1: Navigate to VM Types & Sizes**
 
-   ![ws name.](media/exb15.png)
+   ![ws name.](media/vmw1.png)
 
 1. In Horizon Cloud, navigate to **Settings**.
 
@@ -279,27 +279,25 @@ For more information, see General Purpose virtual machine sizes.
 3. Scroll through the long list of available settings.
 
 
-### **Task 2: Expand a VM Type & Size**
+### **Task 2: Add a Tag**
 
-   ![ws name.](media/exb16.png)
+   ![ws name.](media/vmw3.png)
 
 1. From the list of available VM types, select a type.
 In this example, the Dv2 Series is selected, a general purpose type that is good for testing and development, small to medium databases, and low to medium traffic web servers with a balanced CPU-to-memory ratio.
 
 2. Expand and examine the details of this series.
 
-### **Task 3: Edit the VM Type**
-
    ![ws name.](media/exb17.png)
 
-1. In the upper right, click **Edit**.
+3. In the upper right, click **Edit**.
 
-2. From the list, select the VM Type & Size that you want to define.
+4. From the list, select the VM Type & Size that you want to define.
 
 
 ### **Task 4: Add a Tag**
 
-   ![ws name.](media/exb18.png)
+   ![ws name.](media/vmw4.png)
 
 1. In the edit window of the VM Type & Size you selected, click the arrow to expand.
 
@@ -309,7 +307,7 @@ In this example, the Dv2 Series is selected, a general purpose type that is good
 
 ### **Task 5: Save the New Tag**
 
-   ![ws name.](media/exb19.png)
+   ![ws name.](media/vmw2.png)
 
 1. Enter a well-formed tag.
 
@@ -318,7 +316,7 @@ In this example, the Dv2 Series is selected, a general purpose type that is good
 
 ### **Task 6: Verify Success**
 
-   ![ws name.](media/exb20.png)
+   ![ws name.](media/vmw2.png)
 
 1. At the top of the VM Types & Sizes window, look for the banner that verifies success.
 
