@@ -61,21 +61,23 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    ![ws name.](media/exb31.png)
 
-   - **Apply Subscription:** Select **Add New** and enter the new subscription information.
+   - Apply Subscription: Select **Add New** and enter the new subscription information.
     
-   - **Subscription Name:** <inject key="Subscription Name" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+   - Subscription Name: **<inject key="Subscription Name" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
    
-   - **Environment:** Select the environment associated with your Microsoft Azure subscription.
-    
-   - **Subscription ID:** Enter the subscription ID in UUID form, from the Subscription area of your Microsoft Azure portal.
-    
-   - **Directory ID:** Enter the Microsoft Azure AD Directory ID in UUID form, from the Microsoft Azure Active Directory properties in your Microsoft Azure portal.
-    
-   - **Application ID:** Enter the application ID in UUID form associated with the service principal you created in the Microsoft Azure portal. Creating an application registration and associated service principal in your Microsoft Azure Active Directory was a prerequisite. The application registration is used to authorize Horizon Cloud as an application to use your Microsoft Azure capacity.
-    
-   - **Application Key:** Enter the key value for the client secret of the service principal that you created in the Microsoft Azure portal. Creating this client secret was a prerequisite.
+   - Environment: Select **Azure - Commercial** from the drop down.
    
-   - **Use a Different Subscription for External Gateway:** Accept the default and leave this option disabled.
+To fill the below given fields, navigate to **Environment Details tab >  Service Principal Details** then copy and paste the values:
+
+   - Subscription ID
+    
+   - Directory ID(i.e., Tenant Id in Service Principal Details) 
+    
+   - Application ID
+    
+   - Application Key 
+   
+   - Use a Different Subscription for External Gateway: Accept the default and leave this option disabled.
 
 2. In the lower right corner, click **Next**.
 
@@ -85,13 +87,13 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
    
-   - **Pod Name:** Enter a recognizable name, to be used in the Administration Console to distinguish this pod from other pods.
+   - Pod Name: _Enter a recognizable name, to be used in the Administration Console to distinguish this pod from other pods_.
     
-   - **Location:** Click **Add** to specify a location, which you can use to group pods according to categories that you provide, such as Business Unit A, Business Unit B, and so on. As you enter a city name, it should auto-populate. If your city name is not recognized, it will not be placed correctly on the Dashboard map. In this case, select the closest city available.
+   - Location: _Click_ **Add** _to specify a location, which you can use to group pods according to categories that you provide, such as Business Unit A, Business Unit B, and so on. As you enter a city name, it should auto-populate. If your city name is not recognized, it will not be placed correctly on the Dashboard map. In this case, select the closest city available._
     
-   - **Microsoft Azure Region:** 
+   - Microsoft Azure Region:
 
-   - **Description:** Enter an optional description for this pod.
+   - Description: _Enter an optional description for this pod._
 
 2. Scroll down to the next panel.
 
@@ -102,17 +104,17 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
     
-   - **Virtual Network:** HZN-Vnet[Horizon-Network-RG] 
+   - Virtual Network: **HZN-Vnet[Horizon-Network-RG]** 
     
-   - **Use Existing Subnet:** Slide to **enable**.
+   - Use Existing Subnet: Slide to **enable**.
     
-   - **Management Subnet:** Mgmt-subnet
+   - Management Subnet: **Mgmt-subnet**
     
-   - **VM Subnet - Primary:** VM-subnet
+   - VM Subnet - Primary: **VM-subnet**
     
-   - **NTP Servers:** time.windows.com
+   - NTP Servers: **time.google.com**
     
-   - **Use Proxy:** Leave this **disabled**.
+   - Use Proxy: Leave this **disabled**.
 
 2. In the Identity Management panel, accept the default, and click **Next**.
 
@@ -284,37 +286,16 @@ For more information, see General Purpose virtual machine sizes.
    ![ws name.](media/vmw3.png)
 
 1. From the list of available VM types, select a type.
-In this example, the Dv2 Series is selected, a general purpose type that is good for testing and development, small to medium databases, and low to medium traffic web servers with a balanced CPU-to-memory ratio.
-
-2. Expand and examine the details of this series.
-
-   ![ws name.](media/exb17.png)
-
-3. In the upper right, click **Edit**.
-
-4. From the list, select the VM Type & Size that you want to define.
-
-
-### **Task 4: Add a Tag**
 
    ![ws name.](media/vmw4.png)
 
-1. In the edit window of the VM Type & Size you selected, click the arrow to expand.
+2. In the _Enter tags_ window type **Do Not Use**.
 
-2. Under Tags, add a tag.
+3. Click on **Add**.
 
-3. Make sure to use only letters, numbers, and spaces. As you can see, the use of an apostrophe is not allowed.
+4. Make sure to use only letters, numbers, and spaces. As you can see, the use of an apostrophe is not allowed.
 
-### **Task 5: Save the New Tag**
-
-   ![ws name.](media/vmw2.png)
-
-1. Enter a well-formed tag.
-
-2. In the lower right, click **Save**.
-
-
-### **Task 6: Verify Success**
+### **Task 5: Verify Success**
 
    ![ws name.](media/vmw2.png)
 
