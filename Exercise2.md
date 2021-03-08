@@ -51,7 +51,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   - **Domain Join:** Slide **enable**
   
-  - **Domain:** Select the Active Directory domain **<inject key="Domain Name" />** .
+  - **Domain:** Select the Active Directory domain **<inject key="Domain NETBIOS Name" />** .
 
   - **Enable Public IP Address:** Select **Yes** to configure a public IP address so you can access the VM through an RDP connection.
 
@@ -66,11 +66,11 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Admin Credentials for the Desktop, provide the required information:
 
-  - **Username:** <inject key="AD VM Admin UserName" />
+  - Username: **<inject key="AD VM Admin UserName" />**
 
-  - **Password:** <inject key="AD VM Admin Password" />
-
-  - **Verify Password:** <inject key="AD VM Admin Password" />
+  - Password: **<inject key="AD VM Admin Password" />**
+  
+  - Verify Password: **<inject key="AD VM Admin Password" />**
 
 2. Scroll to the next panel.
 
@@ -124,6 +124,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 2. In the lower right corner, click **Import**.
 
    ![ws name.](media/exc6.png)
+
+**Note: This process will take 30 minutes to complete.** 
+
 
 ### **Task 7: Verify the VM Imported Successfully in Microsoft Azure**
 
@@ -285,8 +288,8 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html```), and search the guide for **Convert a Configured Master Virtual Machine to an Assignable Image**.
 
 After you finish importing and customizing a golden image VM and converting it into an assignable image, proceed to the next section to use the assignable image.
-
-If the golden image you created has a Windows 10 OS, proceed to _Assigning Resources_(```https://techzone.vmware.com/quick-start-tutorial-vmware-horizon-cloud-service-microsoft-azure```) to create VDI desktop pool.
-
 If the golden image you created has a server OS, proceed to _Deploying a Farm_(```https://techzone.vmware.com/quick-start-tutorial-vmware-horizon-cloud-service-microsoft-azure```) to create an RDSH farm.
+
+
+Click on the **Next** button from lower right corner of the guide to move on the next page.
 
