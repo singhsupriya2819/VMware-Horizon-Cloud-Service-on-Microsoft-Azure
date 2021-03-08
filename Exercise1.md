@@ -60,7 +60,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
   
    ![ws name.](media/vmw37.png)
    
-3. Return to Login page and paste the VMware account ID and password under _My VMWare Credentials_ and click on **Login**.
+3. Return to Login page and paste the VMware account username and password under _My VMWare Credentials_ and click on **Login**.
 
    ![ws name.](media/exb21.png)
 
@@ -162,10 +162,9 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **Certificate:** Click on **Upload**. Navigate to **C:\LabFiles** and select **vdicert** file.
 
-   ![ws name.](media/vmw40.png)
-
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
 
+   ![ws name.](media/vmw40.png)
 
 ### **Task 8: Review Summary**
 
@@ -234,7 +233,7 @@ To complete the Active Directory configuration, provide information about the do
 
 2. In the lower right corner, click **Domain Bind**.
 
-   ![ws name.](media/exb34.png)
+   ![ws name.](media/vmw41.png)
 
 
 ### **Task 4: Provide Domain Join Details**
@@ -269,11 +268,21 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 6: Notice Change in Login Windows**
 
-1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window.
+1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window. Copy and paste the VMware account username and password from **Environment Details tab > VMWare Horizon Account Details**, and click on **Login**.
 
-2. In the login window, you must log back in, first with your My VMware account, and then with the Active Directory credentials in the group that you just assigned.
+   ![ws name.](media/exb21.png)
 
-   ![ws name.](media/exc32.png)
+2. Now login window will ask you to login using the Active Directory credentials. Enter the following values:
+
+   - Username: **<inject key="Ad VM Admin UserName**
+   
+   - Password:**<inject key="Ad VM Admin Password**
+
+   ![ws name.](media/vmw43.png)
+
+3. In the login window, you must log back in, first with your My VMware account, and then with the Active Directory credentials in the group that you just assigned.
+
+   ![ws name.](media/vmw42.png)
 
 
 ### **Task 7: Join the VMware Customer Experience Improvement Program**
@@ -308,11 +317,11 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
 
    ![ws name.](media/broker1.png)
 
-3. In Authentication section, leave settings on default and click on **Next**.
+3. In Authentication section, leave all configurations on default and click on **Next**.
 
    ![ws name.](media/broker2.png)
 
-4. In Settings section, leave settings on default and click on **Next**.
+4. In Settings section, leave all configurations on default and click on **Next**.
 
    ![ws name.](media/broker3.png)
 
@@ -340,23 +349,21 @@ For more information, see General Purpose virtual machine sizes.
 
 ### **Task 2: Add a Tag**
 
-1. From the list of available VM types, select a type.
+1. From the list of available VM types, select a any size for which you want to add a Tag.
 
    ![ws name.](media/vmw3.png)
 
-2. In the _Enter tags_ window type **Do Not Use**.
+2. In the _Enter tags_ window type **Do Not Use** and click on **Add**..
 
    ![ws name.](media/vmw4.png)
 
-3. Click on **Add**.
-
-4. Make sure to use only letters, numbers, and spaces. As you can see, the use of an apostrophe is not allowed.
+3. Make sure to use only letters, numbers, and spaces. As you can see, the use of an apostrophe is not allowed.
 
 ### **Task 5: Verify Success**
 
 1. At the top of the VM Types & Sizes window, look for the banner that verifies success.
 
-   ![ws name.](media/vmw2.png)
+   ![ws name.](media/vmw44.png)
 
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
 
