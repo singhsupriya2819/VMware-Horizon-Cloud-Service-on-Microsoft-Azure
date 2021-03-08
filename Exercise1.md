@@ -263,7 +263,39 @@ For more information, see _VMware Horizon Cloud Service on Microsoft Azure Admin
 
 After deploying the Horizon Cloud Service pod and completing the bind operation, proceed to the next section to create golden images.
 
-## **Exercise 1.3: Defining VM Types & Sizes**
+
+## **Exercise 1.3: Create Broker**
+
+   ![ws name.](media/broker.png)
+
+1. Expand **Settings** pane, click on **Broker** and then click on **Select**.
+
+   ![ws name.](media/broker1.png)
+
+2. In FQDN section, enter following values:
+
+   - Type: **VMware Provided**
+   
+   - Subdomain: Enter a name for subdomain.
+   
+   - Broken URL: This will get created when you will add Subdomain name.
+   
+   - Click on **Next**.
+
+   ![ws name.](media/broker2.png)
+
+3. In Authentication section, leave settings on default and click on **Next**.
+
+   ![ws name.](media/broker3.png)
+
+4. In Seetings section, leave settings on default and click on **Next**.
+
+   ![ws name.](media/broker4.png)
+
+5. Review the Summary section and click on **Finish**.
+
+
+## **Exercise 1.4: Defining VM Types & Sizes**
 
 You can optionally select which VM types and sizes to allow, add sizes to favorites, and customize how VM names are displayed.
 
