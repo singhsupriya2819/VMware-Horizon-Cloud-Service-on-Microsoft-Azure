@@ -149,21 +149,19 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 ### **Task 8: Explore the Details of the Imported VM**
 
-   ![ws name.](media/vmw48.png)
-
 1. Select the imported VM.
 
 2. Explore the details.
 
+   ![ws name.](media/vmw48.png)
 
 ### **Task 9: Verify That the Imported VM Is Active**
-
-   ![ws name.](media/exc23.png)
 
 1. Return to the Horizon Cloud Service Administration Console, where the imported VM is displayed.
 
 2. Horizon Cloud Service automates the customization of the golden image VM, the green dot appears under Status, and the status changes to **Import Successful** when the process is complete.
 
+   ![ws name.](media/exc23.png)
 
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Create a Master Virtual Machine Automatically from the Microsoft Azure Marketplace**.
 
@@ -180,8 +178,6 @@ You can customize the Windows operating system of the new golden image VM, set w
 
 Depending on your configuration, you can use either a private or public IP address to RDP to the new golden image VM.
 
-   ![ws name.](media/vmw49.png)
-
 1. Use the IP address of the golden image VM to connect to the RDS-enabled Windows Server operating system.
 
   - **Public IP address:** RDP into it using that IP address.
@@ -192,15 +188,17 @@ Depending on your configuration, you can use either a private or public IP addre
 
 2. Log in to the RDS-enabled Windows Server operating system using the credentials that you set up when creating the golden image VM, and enter the username as \username.
 
+   ![ws name.](media/vmw49.png)
+
 3. Copy the IP address.
 
    ![ws name.](media/vmw51.png)
 
 ### **Task 2: Log in with a Local Administrator Account**
 
-   ![ws name.](media/exc12.png)
-
 1. When the login window is displayed, you can log in to Horizon Client.
+
+   ![ws name.](media/exc12.png)
 
 2. Once you are connected, you can add end-user applications and video GPU drivers, and any other required configurations to the VM.
 
@@ -239,18 +237,15 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
 ### **Task 1: Start Creating a New Image**
 
-   ![ws name.](media/exc25.png)
-
 1. In the Horizon Cloud Service Administration Console navigation bar on the left, select **Inventory**.
 
 2. In the Inventory menu, select **Images**.
 
 3. In the Images window, click **New**.
 
+   ![ws name.](media/exc25.png)
+
 ### **Task 2: Provide Desktop-to-Image Details**
-
-   ![ws name.](media/exc26.png)
-
 
 1. In the New Image window under **Convert Desktop to Image**, provide the following information:
 
@@ -260,9 +255,9 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
   - **Desktop:** From the list of desktops that can be converted to an image, select the desktop you want.
 
-### **Task 3: Provide OS Properties Details**
+   ![ws name.](media/exc26.png)
 
-   ![ws name.](media/exc27.png)
+### **Task 3: Provide OS Properties Details**
 
 1. Under **OS Properties**, provide the following information:
 
@@ -273,27 +268,30 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
   - **Timezone:** Set the time zone, to be the default time zone for all desktops created with this image.
 
 
-### **Task 4: Provide Admin Credentials**
+   ![ws name.](media/exc27.png)
 
-   ![ws name.](media/exc28.png)
+### **Task 4: Provide Admin Credentials**
 
 1. Under **Admin credentials for the desktop**, provide the account credentials for a valid administrator account in the selected image VM. Make sure to follow the complexity standards and other limitations.
 
-  - **Username:** **INJECT**
+  - Username: **<inject key="AD VM Admin UserName" />**
 
-  - **Password:** **INJECT**
+  - Password: **<inject key="AD VM Admin Password" />**
+  
+  - Confirm Password: **<inject key="AD VM Admin Password" />**
 
   - **Note:** These credentials are the user name and password that were entered in the wizard when the golden VM was created in the Imported VMs window.
+
+   ![ws name.](media/exc28.png)
 
 2. In the lower right corner, click **Publish**.
 
 
 ### **Task 5: Wait for the Published Status**
 
+1. Wait until the status changes to **Published** to use the assignable image for creating a farm.
+
    ![ws name.](media/exc29.png)
-
-  - Wait until the status changes to **Published** to use the assignable image for creating a farm.
-
 
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html```), and search the guide for **Convert a Configured Master Virtual Machine to an Assignable Image**.
 
