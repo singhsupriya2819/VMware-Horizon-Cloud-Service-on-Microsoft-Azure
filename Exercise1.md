@@ -24,19 +24,45 @@ Armed with the prerequisite information from your Microsoft Azure tenant, you ar
 
 For more information, see _Getting Started with VMware Horizon Cloud Service on Microsoft Azure_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-6E460805-C323-4200-9A45-45E7BFB31730.html```).
 
-### **Task 1: Log in to VMware Horizon Cloud Service**
+
+### **Task 1: Connect to AdVM**
+
+1. Navigate to your environment, where a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in the browser.
+
+   ![ws name.](media/vmw29.png)
+
+2. Connect to **AdVM**, double click on **ADVM_RDP** file. On Remote desktop connection window, click on on **Connect**.
+
+   ![ws name.](media/vmw30.png)
+
+3. Enter the password **<inject key="AD VM Admin Password" />**
+
+   ![ws name.](media/vmw31.png)
+
+4. On Remote desktop connection window, check the _Don't ask again_ box and click on **Yes**.
+
+   ![ws name.](media/vmw32.png)
+ 
+5. ADVM will launch as shown below. Use this virtual machine throughout the workshop to perform the the lab.
+
+   ![ws name.](media/vmw33.png)
+
+
+### **Task 2: Log in to VMware Horizon Cloud Service**
+
+1. Open Microsoft Edge browser shortcut given on the desktop in ADVM, and browse the URL given below.
+
+```https://cloud.horizon.vmware.com/login2/login```
 
    ![ws name.](media/exb.png)
 
-  - Open ```https://cloud.horizon.vmware.com/login2/login``` in a browser.
+2. Next to the lab guide tab, navigate to **Environment Details tab > VMWare Horizon Account Details**. Under _Actions_ tab, copy the credentials.
   
    ![ws name.](media/exb30.png)
    
-  - In the lab guide, navigate to **Environment Details tab > VMWare Horizon Account Details**. Under _Actions_ tab, click on copy button to copy the credentials.
+3. Return to Login page and paste the VMware account ID and password under _My VMWare Credentials_ and click on **Login**.
 
    ![ws name.](media/exb21.png)
-
-  -  Return to Login page and paste the VMware account ID and password under _My VMWare Credentials_ and click on **Login**.
 
 **Note:** Select **Accept** for _Terms of Service_ popup.
 
@@ -46,9 +72,9 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    ![ws name.](media/exb23.png)
 
-  - In an account with no pods previously deployed, the Getting Started wizard defaults to the Capacity section. 
+1. In an account with no pods previously deployed, the Getting Started wizard defaults to the Capacity section. 
 
-   - In the upper right corner of **Microsoft Azure** pane, click on **Manage** and the select **Add**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
+2. In the upper right corner of **Microsoft Azure** pane, click on **Manage** and the select **Add**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
 
 **Note:** To add a new Microsoft Azure pod to an account with pods previously deployed, you can alternatively click **Settings > Capacity > New > Pod > Microsoft Azure**.
 
