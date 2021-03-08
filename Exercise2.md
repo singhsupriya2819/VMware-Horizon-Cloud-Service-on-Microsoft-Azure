@@ -19,18 +19,16 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 ### **Task 1: Navigate to Imported VMs**
 
-   ![ws name.](media/vmw10.png)
-
 1. In the navigation panel of the Horizon Cloud Service Administration Console, click **Inventory**.
 
 2. In the Inventory menu, click **Getting Started**.
 
 3. In front of **Import VM** pane, click on **Add** button.
 
+   ![ws name.](media/vmw10.png)
+
 
 ### **Task 2: Provide Destination Desktop Details**
-
-   ![ws name.](media/exc19.png)
  
 1. In the Import Desktop Marketplace window under Destination Desktop, provide the following information:
 
@@ -40,10 +38,10 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Scroll down to the Desktop Details panel.
 
+   ![ws name.](media/exc19.png)
+
 
 ### **Task 3: Provide Desktop Details**
-
-   ![ws name.](media/exc20.png)
  
 1. Under Desktop Details, provide the following information:
 
@@ -61,9 +59,10 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Scroll down to the next panel.
 
-### **Task 4: Provide Admin Credentials for the Desktop**
+   ![ws name.](media/exc20.png)
 
-   ![ws name.](media/exc21.png)
+
+### **Task 4: Provide Admin Credentials for the Desktop**
 
 1. Under Admin Credentials for the Desktop, provide the required information:
 
@@ -75,10 +74,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Scroll to the next panel.
 
+   ![ws name.](media/exc21.png)
 
 ### **Task 5: Provide Properties**
-
-   ![ws name.](media/exc22.png)
 
 1. In the Admin Credentials for the Desktop panel and the Properties panel, provide the required information.
 
@@ -88,10 +86,10 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Select **Advanced Options** to reveal the Horizon Agent Features panel.
 
+   ![ws name.](media/exc22.png)
+
 
 ### **Task 6: Provide Horizon Agent Details**
-
-   ![ws name.](media/exc6.png)
 
 1. Under Horizon Agent Features, accept the default to install all features in the golden VM:
 
@@ -125,14 +123,15 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. In the lower right corner, click **Import**.
 
+   ![ws name.](media/exc6.png)
 
 ### **Task 7: Verify the VM Imported Successfully in Microsoft Azure**
-
-   ![ws name.](media/exc7.png)
 
 1. When the success banner verifies that the import is complete, you can return to the Microsoft Azure portal.
 
 2. Verify that the VM was successfully completed.
+
+   ![ws name.](media/exc7.png)
 
 ### **Task 8: Explore the Details of the Imported VM**
 
