@@ -162,7 +162,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **Certificate:** Click on **Upload**. Navigate to **C:\LabFiles** and select **vdicert** file.
 
-   ![ws name.](media/vmw38.png)
+   ![ws name.](media/vmw40.png)
 
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
 
@@ -198,7 +198,7 @@ To complete the Active Directory configuration, provide information about the do
 
 2. Under _Capacity_ section, click on **General Setup** to expand the fields.
 
-   ![ws name.](media/vmw38.png)
+   ![ws name.](media/vmw39.png)
 
 
 ### **Task 2: Configure Active Directory**
