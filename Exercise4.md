@@ -239,6 +239,5 @@ When you finish assigning session-based desktops to users and groups, this exerc
 
 
 
-
-
+Click on the **Next** button from lower right corner of the guide to move on the next page.
 
