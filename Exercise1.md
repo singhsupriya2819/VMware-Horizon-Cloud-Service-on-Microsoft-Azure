@@ -81,8 +81,6 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 ### **Task 4: Provide Subscription Details**
 
-   ![ws name.](media/exb24.png)
-
 1. In the Add Microsoft Azure Capacity tab, add the following values:
 
    - Apply Subscription: Select **Add New** and enter the new subscription information.
@@ -90,10 +88,10 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
    - Subscription Name: **<inject key="Subscription Name" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
    
    - Environment: Select **Azure - Commercial** from the drop down.
-   
+ 
+   ![ws name.](media/exb24.png)
+ 
 To fill the below given fields, navigate to **Environment Details tab >  Service Principal Details** then copy and paste the values:
-
-   ![ws name.](media/exb31.png)
 
    - Subscription ID
     
@@ -105,11 +103,11 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
    
    - Use a Different Subscription for External Gateway: Accept the default and leave this option disabled.
 
+   ![ws name.](media/exb31.png)
+
 2. In the lower right corner, click **Next**.
 
 ### **Task 5: Provide Pod Setup Details**
-
-   ![ws name.](media/exb25.png)
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
    
@@ -117,16 +115,16 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - Location: _Click_ **Add** _to specify a location, which you can use to group pods according to categories that you provide, such as Business Unit A, Business Unit B, and so on. As you enter a city name, it should auto-populate. If your city name is not recognized, it will not be placed correctly on the Dashboard map. In this case, select the closest city available._
     
-   - Microsoft Azure Region: **<inject key="Azure Region" />**
+   - Microsoft Azure Region: **West US**
 
    - Description: _Enter an optional description for this pod._
+
+   ![ws name.](media/exb25.png)
 
 2. Scroll down to the next panel.
 
 
 ### **Task 6: Provide Networking Details**
-
-   ![ws name.](media/vmw9.png)
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
     
@@ -142,11 +140,11 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - Use Proxy: Leave this **disabled**.
 
+   ![ws name.](media/vmw36.png)
+
 2. In the Identity Management panel, accept the default, and click **Next**.
 
 ### **Task 7: Provide Unified Access Gateway Details**
-
-   ![ws name.](media/exb27.png)
 
 1. In the Unified Access Gateway panel of the Work Setup tab, provide the following information.
     
@@ -156,30 +154,33 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **FQDN:** Enter **vdi.mydomain.local**
     
-   - **DNS Addresses** **INJECT DNS server IP from output**
+   - **DNS Addresses** **<inject key="DNS Server IP" />**
         
    - **Route:** Leave blank.
    
    - **VM Model:** Standard_A4_v2
     
-   - **Certificate:** Upload the certificate in PEM format for Unified Access Gateway to use to allow clients to trust connections to the Unified Access Gateway instances running in Microsoft Azure. The certificate must be based on the FQDN you entered and be signed by a trusted CA. A certificate is automatically applied to the two Unified Access Gateway appliances during deployment.
+   - **Certificate:** Click on **Upload**. Navigate to **C:\LabFiles** and select **vdicert** file.
+
+   ![ws name.](media/exb27.png)
 
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
 
 
 ### **Task 8: Review Summary**
 
-   ![ws name.](media/exb28.png)
-
-  - Review the summary, verify that the information is correct and complete, and then click **Submit**.
+1. Review the summary, verify that the information is correct and complete, and then click **Submit**.
 
 **Note: This process will take 60 minutes to complete.**
 
+   ![ws name.](media/exb28.png)
+
+
 ### **Task 9: Verify That the Pod Is Deployed**
 
-   ![ws name.](media/exb29.png)
+1. We will wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
 
-   - Wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
+   ![ws name.](media/exb29.png)
 
 After you finish deploying the Horizon Cloud Service pod, proceed to the next exercise to perform the domain bind operation.
 
@@ -191,8 +192,6 @@ Machine creation and domain join operations are automated by Horizon Cloud Servi
 
 ### **Task 1: Get Started**
 
-   ![ws name.](media/exb32.png)
-
 To complete the Active Directory configuration, provide information about the domain and accounts used for domain operations.
 
 1. In the Horizon Cloud Service Administration Console, in the navigation pane on the left, click **Settings**.
@@ -202,6 +201,8 @@ To complete the Active Directory configuration, provide information about the do
 3. In the Getting Started wizard, locate the **Microsoft Azure, 1 Pod** added.
 
 4. Click **General Setup** to expand the fields.
+
+   ![ws name.](media/vmw37.png)
 
 
 ### **Task 2: Configure Active Directory**
@@ -219,18 +220,22 @@ To complete the Active Directory configuration, provide information about the do
 
 1. In the Register Active Directory window, provide information about the domain and accounts used for domain operations.
 
-   - **NETBIOS Name**: **INJECT**
+   - **NETBIOS Name**: **<inject key="Domain NETBIOS Name" />**
    
-   - **DNS Domain Name:** **INJECT**
+   - **DNS Domain Name:** **<inject key="Domain Name" />**
    
    - **Protocol:** Accept the LDAP default.
 
-   - **Bind Username:** **INJECT**
+   - **Bind Username:** **<inject key="Domain Bind Account" />**
 
-   - **Bind Password:** **INJECT**
+   - **Bind Password:** **<inject key="All Account Password" />**
    
-   - **Auxiliary Account #1:** **INJECT**
+   - **Auxiliary Account #1:** In the Bind Username and Bind Password fields, enter a user account in the domain to use as the auxiliary LDAP bind account and its associated password.
 
+   - **Bind Username:** **<inject key="Auxilllary Domain Bind Account" />**
+
+   - **Bind Password:** **<inject key="All Account Password" />**
+   
    - For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```http://www.vmware.com/info?id=1439```).
 
 2. In the lower right corner, click **Domain Bind**.
@@ -242,17 +247,17 @@ To complete the Active Directory configuration, provide information about the do
 
 1. After configuration is complete, in the Domain Join window, provide the required data.
 
-   - **Primary DNS Server IP:** **INJECT**
+   - **Primary DNS Server IP:** **<inject key="DNS Server IP" />**
    
    - **Secondary DNS Server IP (Optional):** Enter the IP of a secondary DNS Server.
 
    - **Note:** This DNS server must be able to resolve machine names inside of your Microsoft Azure cloud as well as resolve external names.
 
-   - **Default OU**: **INJECT**
+   - **Default OU**: **<inject key="Horizon OU path" />**
    
-   - **Join Username:** **INJECT**
+   - **Join Username:** **<inject key="Domain Join Account" />**
 
-   - **Join Password:** **INJECT**
+   - **Join Password:** **<inject key="All Account Password" />**
 
 2. In the lower right corner, click **Save**.
 
@@ -314,7 +319,7 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
 
    ![ws name.](media/broker3.png)
 
-4. In Seetings section, leave settings on default and click on **Next**.
+4. In Settings section, leave settings on default and click on **Next**.
 
    ![ws name.](media/broker4.png)
 
