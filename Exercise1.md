@@ -162,7 +162,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **Certificate:** Click on **Upload**. Navigate to **C:\LabFiles** and select **vdicert** file.
 
-   ![ws name.](media/exb27.png)
+   ![ws name.](media/vmw38.png)
 
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
 
@@ -194,15 +194,11 @@ Machine creation and domain join operations are automated by Horizon Cloud Servi
 
 To complete the Active Directory configuration, provide information about the domain and accounts used for domain operations.
 
-1. In the Horizon Cloud Service Administration Console, in the navigation pane on the left, click **Settings**.
+1. In the Getting Started wizard, locate the **Microsoft Azure, 1 Pod** added in _Capacity_ section.
 
-2. Click **Getting Started**.
+2. Under _Capacity_ section, click on **General Setup** to expand the fields.
 
-3. In the Getting Started wizard, locate the **Microsoft Azure, 1 Pod** added.
-
-4. Click **General Setup** to expand the fields.
-
-   ![ws name.](media/vmw37.png)
+   ![ws name.](media/vmw38.png)
 
 
 ### **Task 2: Configure Active Directory**
