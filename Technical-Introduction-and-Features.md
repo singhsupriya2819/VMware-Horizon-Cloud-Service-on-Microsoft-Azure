@@ -1,6 +1,6 @@
 # Technical Introduction and Features
 
-## About Horizon Cloud Service on Microsoft Azure
+## **About Horizon Cloud Service on Microsoft Azure**
 
 The VMware Horizon Cloud Service delivers virtual desktops and applications using a cloud platform that is scalable across multiple deployment options. The overall environment consists of the VMware-hosted cloud service, your designated capacity, and the VMware software deployed into that capacity.
 
@@ -16,7 +16,7 @@ Setting up the environment involves deploying the required VMware software into 
 For more information, see the [Horizon Cloud Service on Microsoft Azure datasheet](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/products/horizon-cloud-virtual-desktops/vmware-horizon-cloud-azure-datsheet.pdf).
 
 
-## Packaging, Licensing, and Service Models
+## **Packaging, Licensing, and Service Models**
 
 Horizon Cloud Service delivers virtual desktops and apps using a cloud platform that is scalable across multiple deployment options. Horizon Cloud Service is available in two subscription options:
 
@@ -26,7 +26,7 @@ Horizon Cloud Service delivers virtual desktops and apps using a cloud platform 
 You can bring your own hyper-converged infrastructure (HCI) or Microsoft Azure infrastructure, or purchase cloud-hosted infrastructure from VMware. For more information, see [How to Buy](https://www.vmware.com/products/horizon-cloud-virtual-desktops.html#how-to-buy) and [Horizon Universal License](https://www.vmware.com/products/horizon.html).
 
 
-## Features and Benefits
+## **Features and Benefits**
 
 With the Horizon Cloud Service on Microsoft Azure offering, [Microsoft and VMware](https://www.vmware.com/partners/strategic-technology-partners/microsoft.html) work together to extend the desktop-as-a-service (DaaS) offering with new cross-cloud capabilities. Key features of Horizon Cloud Service on Microsoft Azure include:
 
@@ -49,3 +49,6 @@ With the Horizon Cloud Service on Microsoft Azure offering, [Microsoft and VMwar
 
 
 For more information, see [VMware Horizon Cloud Service](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and under **Release Notes**, select **Horizon Cloud Service - v2.0 - July 2019**.
+
+
+Click on the **Next** button from lower right corner of the guide to move on the next page.
