@@ -56,11 +56,15 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    ![ws name.](media/vmw34.png)
 
-2. Next to the lab guide tab, navigate to **Environment Details tab > VMWare Horizon Account Details** and copy the credentials.
+2. Next to the lab guide tab, navigate to **Environment Details tab > VMWare Horizon Account Details** and copy the credentials by clicking on copy button.
   
-   ![ws name.](media/vmw37.png)
+   ![ws name.](media/vmw45.png)
    
-3. Return to Login page and paste the VMware account username and password under _My VMWare Credentials_ and click on **Login**.
+3. Now open notepad and paste the credentials there.
+
+   ![ws name.](media/vmw46.png)
+
+4. Go to Login page, copy the username and password from notepad and paste under _My VMWare Credentials_, then click on **Login**.
 
    ![ws name.](media/exb21.png)
 
