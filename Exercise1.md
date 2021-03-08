@@ -128,7 +128,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **Enable Internal Gateway?** Slide to **enable**.
     
-   - **FQDN:** Enter **vdi.mydomain.com**
+   - **FQDN:** Enter **vdi.mydomain.local**
     
    - **DNS Addresses** **INJECT DNS server IP from output**
         
