@@ -125,20 +125,31 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
    ![ws name.](media/exc6.png)
 
-**Note: This process will take 30 minutes to complete.** 
+**Note: This process will take 10 minutes to complete.** 
 
 
 ### **Task 7: Verify the VM Imported Successfully in Microsoft Azure**
 
-1. When the success banner verifies that the import is complete, you can return to the Microsoft Azure portal.
+1. When the success banner verifies that the import is complete, open **Microsoft Azure portal(```portal.azure.com```)** in a new tab in your browser.
 
-2. Verify that the VM was successfully completed.
+2. Enter following credentials when asked for credentials:
 
-   ![ws name.](media/exc7.png)
+   - Username: Enter **<inject key="AzureAdUserEmail" />** and click on **Next**.
+   
+   - Password: Enter **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+
+> **Note:** 
+>  1. If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+>  2. If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+>
+
+3. Open _Virtual Machines_ and verify that the VM was successfully completed.
+
+   ![ws name.](media/vmw47.png)
 
 ### **Task 8: Explore the Details of the Imported VM**
 
-   ![ws name.](media/exc8.png)
+   ![ws name.](media/vmw48.png)
 
 1. Select the imported VM.
 
@@ -167,11 +178,9 @@ You can customize the Windows operating system of the new golden image VM, set w
 
 ### **Task 1: RDP to a Public IP**
 
-   ![ws name.](media/exc24.png)
-
 Depending on your configuration, you can use either a private or public IP address to RDP to the new golden image VM.
 
-   ![ws name.](media/vmw5.png)
+   ![ws name.](media/vmw49.png)
 
 1. Use the IP address of the golden image VM to connect to the RDS-enabled Windows Server operating system.
 
