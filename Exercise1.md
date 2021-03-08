@@ -207,16 +207,14 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 2: Configure Active Directory**
 
-   ![ws name.](media/exb33.png)
-
 1. Under General Setup, locate the **Active Directory** panel.
 
 2. On the far right, click on **Configure**.
 
+   ![ws name.](media/exb33.png)
+
 
 ### **Task 3: Register Active Directory**
-
-   ![ws name.](media/exb34.png)
 
 1. In the Register Active Directory window, provide information about the domain and accounts used for domain operations.
 
@@ -240,10 +238,10 @@ To complete the Active Directory configuration, provide information about the do
 
 2. In the lower right corner, click **Domain Bind**.
 
+   ![ws name.](media/exb34.png)
+
 
 ### **Task 4: Provide Domain Join Details**
-
-   ![ws name.](media/exb35.png)
 
 1. After configuration is complete, in the Domain Join window, provide the required data.
 
@@ -261,9 +259,9 @@ To complete the Active Directory configuration, provide information about the do
 
 2. In the lower right corner, click **Save**.
 
-### **Task 5: Add the Administrator**
+   ![ws name.](media/exb35.png)
 
-   ![ws name.](media/exb36.png)
+### **Task 5: Add the Administrator**
    
 1. In the Add Administrator window, select **MYDOMAIN\Horizon Admins** User Group.
 
@@ -271,23 +269,24 @@ To complete the Active Directory configuration, provide information about the do
 
 **Note:** Add the Active Directory group that includes the domain-join account, as described in the prerequisites. This action grants this group permissions to perform management actions in the Administration Console.
 
+   ![ws name.](media/exb36.png)
 
 ### **Task 6: Notice Change in Login Windows**
-
-   ![ws name.](media/exc32.png)
 
 1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window.
 
 2. In the login window, you must log back in, first with your My VMware account, and then with the Active Directory credentials in the group that you just assigned.
 
+   ![ws name.](media/exc32.png)
+
 
 ### **Task 7: Join the VMware Customer Experience Improvement Program**
-
-   ![ws name.](media/exb38.png)
 
 1. With the Horizon Cloud Service pod deployed and the bind operation complete, you can move the Yes/No slider to choose whether or not to join the VMware Customer Experience Improvement Program.
 
 2. In the lower right corner, click **Save**.
+
+   ![ws name.](media/exb38.png)
 
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Register Your First Active Directory Domain**.
 
@@ -297,11 +296,9 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
 
 ## **Exercise 1.3: Create Broker**
 
-   ![ws name.](media/broker.png)
-
 1. Expand **Settings** pane, click on **Broker** and then click on **Select**.
 
-   ![ws name.](media/broker1.png)
+   ![ws name.](media/broker.png)
 
 2. In FQDN section, enter following values:
 
@@ -313,18 +310,19 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
    
    - Click on **Next**.
 
-   ![ws name.](media/broker2.png)
+   ![ws name.](media/broker1.png)
 
 3. In Authentication section, leave settings on default and click on **Next**.
 
-   ![ws name.](media/broker3.png)
+   ![ws name.](media/broker2.png)
 
 4. In Settings section, leave settings on default and click on **Next**.
 
-   ![ws name.](media/broker4.png)
+   ![ws name.](media/broker3.png)
 
 5. Review the Summary section and click on **Finish**.
 
+   ![ws name.](media/broker4.png)
 
 ## **Exercise 1.4: Defining VM Types & Sizes**
 
@@ -336,24 +334,23 @@ For more information, see General Purpose virtual machine sizes.
 
 ### **Task 1: Navigate to VM Types & Sizes**
 
-   ![ws name.](media/vmw1.png)
-
 1. In Horizon Cloud, navigate to **Settings**.
 
 2. Under Settings, select **VM Types & Sizes**.
 
 3. Scroll through the long list of available settings.
 
+   ![ws name.](media/vmw1.png)
 
 ### **Task 2: Add a Tag**
 
-   ![ws name.](media/vmw3.png)
-
 1. From the list of available VM types, select a type.
 
-   ![ws name.](media/vmw4.png)
+   ![ws name.](media/vmw3.png)
 
 2. In the _Enter tags_ window type **Do Not Use**.
+
+   ![ws name.](media/vmw4.png)
 
 3. Click on **Add**.
 
@@ -361,9 +358,9 @@ For more information, see General Purpose virtual machine sizes.
 
 ### **Task 5: Verify Success**
 
-   ![ws name.](media/vmw2.png)
-
 1. At the top of the VM Types & Sizes window, look for the banner that verifies success.
+
+   ![ws name.](media/vmw2.png)
 
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
 
