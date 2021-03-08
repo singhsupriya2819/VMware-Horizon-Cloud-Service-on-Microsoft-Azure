@@ -74,7 +74,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Scroll to the next panel.
 
-   ![ws name.](media/exc21.png)
+   ![ws name.](media/vmw50.png)
 
 ### **Task 5: Provide Properties**
 
@@ -194,6 +194,7 @@ Depending on your configuration, you can use either a private or public IP addre
 
 3. Copy the IP address.
 
+   ![ws name.](media/vmw51.png)
 
 ### **Task 2: Log in with a Local Administrator Account**
 
