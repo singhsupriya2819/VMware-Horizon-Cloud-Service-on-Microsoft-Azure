@@ -70,14 +70,14 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 ### **Task 3: Add a New Horizon Cloud Service Pod**
 
-   ![ws name.](media/exb23.png)
-
 1. In an account with no pods previously deployed, the Getting Started wizard defaults to the Capacity section. 
 
 2. In the upper right corner of **Microsoft Azure** pane, click on **Manage** and the select **Add**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
 
 **Note:** To add a new Microsoft Azure pod to an account with pods previously deployed, you can alternatively click **Settings > Capacity > New > Pod > Microsoft Azure**.
 
+   ![ws name.](media/exb23.png)
+   
 
 ### **Task 4: Provide Subscription Details**
 
@@ -101,7 +101,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - Application ID
     
-   - Application Key 
+   - Application Key(i.e., Secret key in Service Principal Details) 
    
    - Use a Different Subscription for External Gateway: Accept the default and leave this option disabled.
 
@@ -117,7 +117,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - Location: _Click_ **Add** _to specify a location, which you can use to group pods according to categories that you provide, such as Business Unit A, Business Unit B, and so on. As you enter a city name, it should auto-populate. If your city name is not recognized, it will not be placed correctly on the Dashboard map. In this case, select the closest city available._
     
-   - Microsoft Azure Region:
+   - Microsoft Azure Region: **<inject key="Azure Region" />**
 
    - Description: _Enter an optional description for this pod._
 
