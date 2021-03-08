@@ -169,13 +169,21 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
    ![ws name.](media/exd24.png)
 
 1. Under Schedule Power Management, click **Add a row**, and set the power management schedule:
-  - **Name:** Provide a recognizable name for this schedule.
-  - **Days:** Select the day or days of the week to run the schedule.
-  - **Start Time:** Select a time of the day to start the schedule. You might need to scroll to see all options.
-  - **End Time:** Select the time of the day to end the schedule.
-  - **Timezone:** Set the time zone if it differs from the default.
-  - **Min Servers:** Enter the minimum number of servers to include.
 
+  - **Login Threshold:** Provide a recognizable name for this schedule.
+  
+  - **CPU Usage Threshold:** Select the day or days of the week to run the schedule.
+  
+  - **Memory Usage Threshold:** Select a time of the day to start the schedule. You might need to scroll to see all options.
+  
+  - **Disk Queue Lenght Threshold:** Select the time of the day to end the schedule.
+  
+  - **Disk Read Latency Threshold:** Set the time zone if it differs from the default.
+  
+  - **Disk Write Latency Threshold:** Enter the minimum number of servers to include.
+  
+  - **Local Indes Threshold:**
+   
 2. In the lower right corner, click **Next**.
 
 
