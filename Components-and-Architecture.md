@@ -23,7 +23,7 @@ Figure 1 demonstrates the automated provisioning of a Horizon Cloud Service pod 
 6. With the VDI functionality, you can also create Windows 10 assignments of both dedicated and floating desktops.
 
 
-## VMware Horizon Cloud Service Components
+## **VMware Horizon Cloud Service Components**
 
 Horizon Cloud Service consists of the following major components:
 
@@ -42,10 +42,13 @@ Horizon Cloud Service Administration Console: The web-based portal, a component 
   - **NEW! VMware Types & Sizes:** A new feature to configure a subset of virtual machines (VMs) available for images. Microsoft Azure provides a variety of types of virtual machines (VM) and classifies them based on the memory, storage, and compute types. The length of the list of VMs makes it somewhat unwieldy, so this new feature enables you to select a subset to display to your end users as a pop-up list. During deployment, you can configure the list to include a sub-set of all available types and sizes, and you can change it any time after deployment. For more information, see [Sizes for Windows Virtual Machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes).
 
 
-## Horizon Cloud Service on Microsoft Azure Components
+## **Horizon Cloud Service on Microsoft Azure Components**
 
 Horizon Cloud Service on Microsoft Azure deploys three appliances from your Microsoft Azure configuration that provide the following capabilities:
 
   - **Horizon Cloud Service Pod:** Manages all infrastructure resources. While all policy definition and management happen in the cloud, all of the real work––creating resources on Microsoft Azure infrastructure and making it available to users––happens in the Horizon Cloud Service pod.
   - **Unified Access Gateway Appliances:** Provide secure Internet access to published applications and published desktops. Two appliances, either external or internal, need to be running to share the load and connections and maintain operational SLA of the pod.
   - **Jumpbox:** A temporary Linux-based VM used during environment buildout, as well as for subsequent environment updates and upgrades.
+
+
+Click on the **Next** button from lower right corner of the guide to move on the next page.
