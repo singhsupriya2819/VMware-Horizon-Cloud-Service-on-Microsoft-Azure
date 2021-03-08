@@ -52,13 +52,13 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
 1. Open Microsoft Edge browser shortcut given on the desktop in ADVM, and browse the URL given below.
 
-```https://cloud.horizon.vmware.com/login2/login```
+   ```https://cloud.horizon.vmware.com/login2/login```
 
-   ![ws name.](media/exb.png)
+   ![ws name.](media/vmw34.png)
 
-2. Next to the lab guide tab, navigate to **Environment Details tab > VMWare Horizon Account Details**. Under _Actions_ tab, copy the credentials.
+2. Next to the lab guide tab, navigate to **Environment Details tab > VMWare Horizon Account Details** and copy the credentials.
   
-   ![ws name.](media/exb30.png)
+   ![ws name.](media/vmw35.png)
    
 3. Return to Login page and paste the VMware account ID and password under _My VMWare Credentials_ and click on **Login**.
 
@@ -68,7 +68,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 
    ![ws name.](media/exb22.png)
 
-### **Task 2: Add a New Horizon Cloud Service Pod**
+### **Task 3: Add a New Horizon Cloud Service Pod**
 
    ![ws name.](media/exb23.png)
 
@@ -79,7 +79,7 @@ For more information, see _Getting Started with VMware Horizon Cloud Service on 
 **Note:** To add a new Microsoft Azure pod to an account with pods previously deployed, you can alternatively click **Settings > Capacity > New > Pod > Microsoft Azure**.
 
 
-### **Task 3: Provide Subscription Details**
+### **Task 4: Provide Subscription Details**
 
    ![ws name.](media/exb24.png)
 
@@ -107,7 +107,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 2. In the lower right corner, click **Next**.
 
-### **Task 4: Provide Pod Setup Details**
+### **Task 5: Provide Pod Setup Details**
 
    ![ws name.](media/exb25.png)
 
@@ -124,7 +124,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 2. Scroll down to the next panel.
 
 
-### **Task 5: Provide Networking Details**
+### **Task 6: Provide Networking Details**
 
    ![ws name.](media/vmw9.png)
 
@@ -144,7 +144,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 2. In the Identity Management panel, accept the default, and click **Next**.
 
-### **Task 6: Provide Unified Access Gateway Details**
+### **Task 7: Provide Unified Access Gateway Details**
 
    ![ws name.](media/exb27.png)
 
@@ -167,7 +167,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
 
 
-### **Task 7: Review Summary**
+### **Task 8: Review Summary**
 
    ![ws name.](media/exb28.png)
 
@@ -175,7 +175,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 **Note: This process will take 60 minutes to complete.**
 
-### **Task 8: Verify That the Pod Is Deployed**
+### **Task 9: Verify That the Pod Is Deployed**
 
    ![ws name.](media/exb29.png)
 
