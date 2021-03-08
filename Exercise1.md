@@ -365,3 +365,6 @@ For more information, see General Purpose virtual machine sizes.
 For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
 
 After you finish creating and defining the subset of VM types and sizes that you want, you are ready to proceed to create a new image in the next exercise.
+
+
+Click on the **Next** button from lower right corner of the guide to move on the next page.
