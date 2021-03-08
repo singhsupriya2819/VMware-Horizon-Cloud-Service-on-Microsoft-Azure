@@ -199,270 +199,46 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 When you finish assigning session-based desktops to users and groups, this exercise is complete. You can proceed to the next exercise to assign floating desktops.
 
 
-## Exercise 4.4: Assigning Floating Desktops
+### Task 8: Launch Horizon Client to access the application
 
-You can choose which type of desktop to assign to a user or group in the Assignments window. You can use the Assignments window to create, edit, and delete an assignment, and update the agent software for any existing assignments. In this exercise, you assign floating desktops. With floating desktops, the user is assigned a desktop upon first login, and the desktop is recreated after the user logs off. Desktops are powered on or off according to the power management policy. For more information, see [VMware Horizon Cloud May 2018 Release Technical What's New Overview](https://www.youtube.com/watch?v=mSTBrUFFLDc&feature=youtu.be&t=2m56s).
+   ![ws name.](media/vmw28.png)
 
+1. Connect to **AdVM** using credentials given in **Environment Details > Azure Credentials**: 
 
-### Task 1: Navigate to New Assignments
+   ![ws name.](media/vmw21.png)
 
-   ![ws name.](media/vmw19.png)
+2. In AdVM, open **VMHorizon Client** given on the desktop. Double click on **Add Server**, then enter **vdi.mydomain.local** and click on **Connect**.
 
-1. Expand **Assignments**.
+   ![ws name.](media/vmw22.png)
 
-2. Under Assignments pane, click on **VDI Desktops & Apps**.
+3. The login window will appear asking for username and password to connect to the server.
 
-3. Click on **New** and select **Microsoft Azure**.
+   ![ws name.](media/vmw23.png)
 
-### Task 2: Define Fixed Attributes
+4. Enter following credentials:
 
-   ![ws name.](media/vmw20.png)
+  - Username: **vdiuser**
+  
+  - Password: **P@s#w0rdyu2nnk**
+  
+  - Domain: Leave on **DefaultDomain**
    
-1. For **Type**, select **Floating**.
-2. In the Fixed Attributes panel, provide the following information:
-  - **Location:** From the pop-up list, select the location.
-  - **Pod:** From the pop-up list, select the pod containing the farm you want to choose.
-  - **Filter Models:** From the pop-up list, select the type and equals attributes.
-  - **Model:** From the pop-up list, select the model.
-  - **Domain:** From the pop-up list, select the domain name.
-  - **Join Domain:** Slide to enable.
-  - **Encrypt Disks:** Leave disabled.
-  - **NSX Cloud Managed:** Leave disabled.
- 
-3. Scroll down to the next panel.
+   ![ws name.](media/vmw24.png)
 
+5. 
 
-### Task 4: Define Flexible Attributes
+   ![ws name.](media/vmw25.png)
 
-   ![ws name.](media/exe24.png)
-   
-1. In the Flexible Attributes panel, provide the following information:
-  - **Images:** Accept the image.
-  - **Assignment Name:** Enter a friendly name to identify this assignment. The name must start with a letter, and contains only letters, dashes, and numbers.
-  - **VM Names:** All VMs in this assignment inherit the assignment name, and include an appended number, such as Server DTAfloating 1, Server DTAfloating 2, and so on.
-  - **Default Protocol:** From the pop-up list, select Blast Extreme as the default protocol for end user sessions.
-  - **Preferred Client Types:** From the pop-up list, select **Browser**.
-  - **Min Desktops:** Enter the minimum number of desktops to be allowed.
-  - **Max Desktops:** Enter the maximum number of desktops to be allowed.
-  - **Power Off Protect Time:** Enter the number of minutes.
+   ![ws name.](media/vmw26.png)
 
-2. In the lower right corner, click **Next**.
+   ![ws name.](media/vmw27.png)
 
 
-### Task 5: Configure Management
 
-   ![ws name.](media/exe25.png)
-   
-1. In the Management tab under **Image Updates**, enter the number of concurrent quiescing desktops to allow.
-2. Under **Power Management**, select the mode from the pop-up list.
-3. Under **Timeout Handling**, provide the following information:
-  - **Log Off Disconnected Sessions:** Select **Never**.
-  - **Max Session Lifetime:** Enter the number of minutes.
-4. Under **Schedule Power Management**, provide the following information:
-  - **Name:** Enter the name for this schedule.
-  - **Day(s):** Click the Days field and select one or more days of the week from the drop-down list.
-  - **Start Time:** Select the time of the day to start the schedule from the drop-down list.
-  - **End Time:** Select the time of day to end the schedule from the drop-down list.
-  - **All Day:** Leave unchecked.
-  - **Timezone:** Select your timezone if necessary.
-  - **Min Desktops:** Select the minimum number of desktops to include.
 
-5. In the lower right corner, click **Next**.
 
 
-### Task 6: Assign to Users or Groups
 
-   ![ws name.](media/exe26.png)
-   
-1. In the Users tab, select the users and groups to assign desktops to.
-**Note:** In the Users tab, you can click the Active Directory search field. If no results are found, click **Search Active Directory**.
 
-2. In the lower right, click **Next**.
 
 
-### Task 7: Verify the Summary Information
-
-   ![ws name.](media/exe27.png)
-   
-1. In the Summary tab, verify that all selections are correct and complete.
-
-2. In the lower right corner, click **Submit**.
-
-
-### Task 8: Verify Completion
-
-   ![ws name.](media/exe28.png)
-   
-1. Wait until the green banner appears at the top, indicating success.
-
-2. Wait until the green dot appears in the Status column, indicating that the floating desktop assignment is now active.
-
-
-### Task 9: Launch Horizon Client
-
-   ![ws name.](media/exe29.png)
-   
-- Launch Horizon Client.
-
-
-### Task 10: Log in to Horizon Client
-
-   ![ws name.](media/exe30.png)
-   
-1. Enter your login credentials for Horizon Client:
-  - **Username:** Enter the username.
-  - **Password:** Enter the password.
- 
-2. Click **Login**.
-
-
-### Task 11: Launch the Floating Desktop
-
-   ![ws name.](media/exe31.png)
-   
-1. In Horizon Client, select a virtual desktop.
-
-2. Verify that the virtual floating desktop launches properly.
-
-For more information, see [VMware Horizon Cloud Service with Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for [Create a Floating VDI Desktop Assignment](https://techzone.vmware.com/&lpos=en%20:%20search%20results%20click%20:%20record-index%2014%20:%20page-index%201%20:%20d-type%20html?hWord=N4IghgNiBcIGIQPZgC4EsB2BzABAEwFMBnAaxUQAcQBfIA%20:%20GUID-DDBF3B88-5D03-4EB8-A3D6-628232873A4B%20:%2059&le=event3).
-
-Now that you have successfully assigned a floating desktop, you can proceed to the next exercise to assign a VDI-based dedicated desktop. The process is very similar.
-
-
-
-## Exercise 4.5: Assigning Dedicated Desktops
-
-You use the Assignments window to create, edit, and delete assignments, choose which type of desktops to assign, and update the agent software for any existing assignments.
-
-In this exercise, you assign a dedicated desktop. Your end-users are assigned a virtual desktop upon first login. They continue to get the same desktop whenever they log in subsequently, until or unless you rebuild the desktops. For more information, see [VMware Horizon Cloud May 2018 Release Technical What's New Overview](https://www.youtube.com/watch?t=2m56s&v=mSTBrUFFLDc&feature=youtu.be).
-
-
-### Task 1: Navigate to New Assignments
-
-   ![ws name.](media/exe32.png)
-   
-1. In the navigation bar on the left, select **Assignments**.
-
-2. In the Assignments window, click **New**.
-
-
-### Task 2: Select Desktops
-
-   ![ws name.](media/exe33.png)
-   
-- In the New Assignment window under Desktops, click **Select**.
-
-**Note:** To assign AppStacks or RDSH applications instead of desktops, you would select **Applications**.
-
-
-### Task 3: Select a Dedicated Desktop Type
-
-   ![ws name.](media/exe34.png)
-   
-1. In the Definitions tab of the New Desktop Assignment window, for Type, select **Dedicated**.
-Under Fixed Attributes, provide the following information:
-  - **Location:** From the pop-up menu, select the location.
-  - **Pod:** From the pop-up menu, select the pod.
-  - **Filter Models:** In the first pop-up menu, select **Type**, and in the second, **VMware Recommended**.
-  - **Model:** Select a **Desktop Model** from the pop-up menu.
-  - **Domain:** From the pop-up menu, select the domain.
-  - **Join Domain:** Slide right to enable.
-  - **Encrypt Disks:** Leave disabled.
-  - **NSX Cloud Managed:** Leave disabled.
-
-3. Scroll down to the Flexible Attributes section.
-
-
-### Task 4: Set the Flexible Attributes
-
-   ![ws name.](media/exe35.png)
-   
-1. Under Flexible Attributes, provide the following information:
-  - **Image:** Select the image from the pop-up menu.
-  - **Assignment Name:** Enter a unique name to identify this assignment. The name must start with a letter, and contains only letters, dashes, and numbers.
-  - **VM Names:** VMs in this assignment inherit the assignment name, and include an appended number, such as Server DTA1 1, Server DTA1 2, and so on.
-  - **Default Protocol:** Choose **Blast Extreme** as the default protocol for end user sessions.
-  - **Preferred Client Type:** Accept the browser default with which to launch assignments associated with this pool.
-  - **Min Desktops:** Enter the minimum number of desktops to be allowed. In this example, it is 1.
-  - **Max Desktops:** Enter the maximum number of desktops to be allowed. In this example, it is 5.
-
-2. In the lower right corner, click **Next**.
-
-
-### Task 5: Schedule Power Management
-
-   ![ws name.](media/exe36.png)
-   
-1. In the Management tab under Schedule Power Management, click **Add a row**.
-
-2. Under Schedule Power Management, provide the following information:
-  - **Name:** Provide a name for this schedule.
-  -** Days:** Select one or more days of the week to schedule.
-  - **Start Time:** Select a time of the day to start the schedule.
-  - **End Time:** Select the time of the day to end the schedule.
-  - **Timezone:** Select the appropriate time zone.
-  - **Min Desktops:** Enter the minimum number of desktops to include.
-
-3. In the lower right, click **Next**.
-
-
-### Task 6: Select a User or Group
-
-   ![ws name.](media/exe37.png)
-   
-1. In the Users tab, select a user or group:
-  - Click the Active Directory search field, and start entering the name of the user or group.
-  - If you do not know the name, click **Search Active Directory** for a list of all names.
-  - In the Active Directory hit list, select the name.
-
-2. In the lower right corner, click **Next**.
-
-
-### Task 7: Submit
-
-   ![ws name.](media/exe38.png)
-   
-1. In the Summary tab, review the summary.
-
-2. In the lower right corner, click Submit.   
-
-
-### Task 8: Verify Completion
-
-   ![ws name.](media/exe39.png)
-   
-1. Verify that the success banner appears at the top of the window.
-
-2. Wait until the green dot appears in the Status column, indicating that the new assignment is now active. This might take a few minutes.
-
-
-### Task 9: Launch Horizon Client
-
-   ![ws name.](media/exe40.png)
-- Launch Horizon Client.
-
-### Task 10: Log in to Horizon Client
-
-   ![ws name.](media/exe41.png)
-   
-1. Enter your login credentials for Horizon Client:
-  - **Username:** Enter the username.
-  - Password: Enter the password.
-
-2. **Click Login**.
-
-
-### Task 11: Launch the Dedicated Desktop
-
-   ![ws name.](media/exe42.png)
-   
-  - In Horizon Client, launch the dedicated virtual desktop.
-
-
-### Task 12: Verify Success
-
-   ![ws name.](media/exe43.png)
-
-  - Verify that the virtual dedicated desktop launches properly.
-
-  - When you finish assigning a dedicated desktop to a user or and group, you have completed the entire workflow. In the next two chapters, you can proceed to explore the Horizon Cloud Service monitoring and analytics features and the VMware Dynamic Environment Management capabilities in greater depth.
