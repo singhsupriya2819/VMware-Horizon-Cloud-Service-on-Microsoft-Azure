@@ -71,7 +71,7 @@ To assign applications to users and groups:
 
    ![ws name.](media/vmw14.png)
 
-  - After verifying that the Desktop Capacity Allocation is sufficient, you can proceed to the next exercise to assign a desktop and see how the capacity allocation is affected.
+  - In Create New Desktop Assignment, select **Session**.
 
 
 ### Task 3: Define Fixed and Felxible Attributes
@@ -83,13 +83,9 @@ To assign applications to users and groups:
 2. Under Fixed Attributes, provide the following information:
   - **Location:** From the pop-up list, select the location.
   - **Pod:** From the pop-up list, select the pod containing the farm you want to choose.
-  - **Filter Models:** From the pop-up list, select **Type** equals **VMware Recommended**.
-  - **Model:** From the pop-up list, select the model.
-  - **Domain:** From the pop-up list, select the domain name.
-  - **Join Domain:** Slide right to enable.
-  - **Encrypt Disks:** Leave disabled.
-  - **NSX Cloud Managed:** Leave disabled.
-
+  - **Farm:** Select **DesktopFarm** from the drop down.
+  - **Assignment Name:** Under Flexible Attributes, give a name for assignment.
+  
 3. In the lower right, click **Next**.
 
 
@@ -97,7 +93,9 @@ To assign applications to users and groups:
 
    ![ws name.](media/vmw16.png)
    
-1. In the Users tab, select the users and groups to assign. **Note:** You can click the **Active Directory** search field. If no results are found, click **Search Active Directory**.
+1. In the Users tab, search for **MYDOMAIN\Horizon** Admins groups and select it.
+ 
+**Note:** You can click the **Active Directory** search field. If no results are found, click **Search Active Directory**.
 
 2. In the lower right corner, click **Next**.
 
