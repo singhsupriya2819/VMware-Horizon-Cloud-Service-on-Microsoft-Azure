@@ -73,7 +73,7 @@ When the new image has been published, you can use it to create farms.
 
 ### Task 4: Set Farm Size
 
-   ![ws name.](media/exd4.png)
+   ![ws name.](media/exdu4.png)
 
 1. In the **Farm Size** pane, provide the information to enable the farm to automatically scale up or down on demand:
   - **Min Servers:** Specify the minimum number of usable servers in this farm so not all servers are running at the same time.
@@ -83,22 +83,18 @@ When the new image has been published, you can use it to create farms.
   - **Sessions per Server:** Specify the total number of sessions you want to allow per server.
   **Note:** This number cannot be updated after the farm is created.
   
-2. In the lower left, click **Advanced Properties**.
+2. **Do you have a valid license for this Windows OS:** Enable it and click on the check box saying **I confirm that I have an eligible license for this Windows OS.**
 
 
 ### Task 5: Provide Advanced Properties
 
-   ![ws name.](media/exd5.png)
+   ![ws name.](media/exdu5.png)
 
 1. Under **Advanced Properties**, provide the following information:
 
   - **Computer OU**: Enter the Active Directory Organizational Unit where the server VMs are to be located. For example, OU=RootOrgName,DC=DomainComponent,DC=eng, and so on. The entries must be comma-separated with no spaces in between.
   
   - **Run Once Script** (optional): You can enter the full executable path of a script that you want run after system preparation completes.
-  
-  - **Do you have a Windows Server License:** Slide **Enable** and check the check box below to verify that you have Windows licenses with active Software Assurance or have an active Windows Server subscription, in order to use Azure Hybrid Benefit to save compute costs.
- 
-For more information about these settings, see **Exercise 3.2: Explore RD Session Host Power Management**.
 
 2. In the lower right corner, click **Next**.
 
@@ -311,10 +307,10 @@ Now click on **Auto-Scan from Farm**.
 
 ### Task 6: Verify the Summary Information
 
-   ![ws name.](media/exd21.png)
+   ![ws name.](media/exdu21.png)
 
 1. In the Summary tab, review to verify that the selections are correct and complete.
-2. In the lower right corner, click **Submit**.
+2. In the lower right corner, click **Finish**.
 
 
 ### Task 7: Verify Addition of New Applications
