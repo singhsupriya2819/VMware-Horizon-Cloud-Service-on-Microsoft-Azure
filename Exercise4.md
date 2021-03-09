@@ -55,77 +55,8 @@ For information about the capacity model, see [Service Description: VMware Horiz
 After verifying that the Desktop Capacity Allocation is sufficient, you can proceed to the next exercise to assign a desktop and see how the capacity allocation is affected.
 
 
-## Exercise 4.2: Assigning Applications from the Farm
+## Exercise 4.2: Creating RDSH Session Assignments
 
-To assign applications to users and groups:
-
-### Task 1: Assign New
-
-   ![ws name.](media/vmw13.png)
-   
-1. In the navigation bar on the left, click **Settings**.
-2. Under Settings, click **Getting Started**.
-3. Under Desktop Assignment, to the right of Create New Desktop Assignment, click **New**.
-
-### Task 2: Select Remote
-
-   ![ws name.](media/vmw14.png)
-
-  - In Create New Desktop Assignment, select **Session**.
-
-
-### Task 3: Define Fixed and Felxible Attributes
-
-   ![ws name.](media/vmw15.png)
-   
-1. In the Definitions tab of the New Application Assignment window, select the Type.
-
-2. Under Fixed Attributes, provide the following information:
-  - **Location:** From the pop-up list, select the location.
-  - **Pod:** From the pop-up list, select the pod containing the farm you want to choose.
-  - **Farm:** Select **DesktopFarm** from the drop down.
-  - **Assignment Name:** Under Flexible Attributes, give a name for assignment.
-  
-3. In the lower right, click **Next**.
-
-
-### Task 4: Add Users
-
-   ![ws name.](media/vmw16.png)
-   
-1. In the Users tab, search for **MYDOMAIN\Horizon** Admins groups and select it.
- 
-**Note:** You can click the **Active Directory** search field. If no results are found, click **Search Active Directory**.
-
-2. In the lower right corner, click **Next**.
-
-### Task 5: Configure Management
-
-   ![ws name.](media/vmw17.png)
-   
-1. In the Summary tab, review and verify that your settings are correct and complete.
-2. In the lower right corner, click **Submit**.
-
-### Task 6: Verify Success
-
-   ![ws name.](media/exe12.png)
-   
-  - In the Getting Started window, verify that the success banner appears at the top.
-
-
-### Task 7: Verify the Assignment
-
-   ![ws name.](media/vmw18.png)
-   
-1. In the left-hand navigation bar, select **Assignments**.
-
-2. Under Status, verify that the assignment displays a green dot, indicating that the assignment is now active.
-For more information, see [Create a Remote Application Assignment](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html).
-
-When you finish assigning applications to user and groups, your end users can launch their assigned desktops and remote applications using your FQDN in either the Horizon Client or with HTML Access. You can proceed to the next exercise to create an RDSH session assignment.
-
-
-## Exercise 4.3: Creating RDSH Session Assignments
 
 To create a session desktop assignment, use the Assignments window after first verifying that your deployment meets the following prerequisites:
 
