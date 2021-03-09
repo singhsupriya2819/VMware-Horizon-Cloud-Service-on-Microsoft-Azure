@@ -66,7 +66,7 @@ To create a session desktop assignment, use the Assignments window after first v
 
 ### Task 1: Assign New
 
-   ![ws name.](media/exe14.png)
+   ![ws name.](media/exeu14.png)
    
 1. In the navigation pane on the left, click **Assignments**.
 2. In the Assignments window, click **New**.
@@ -74,9 +74,9 @@ To create a session desktop assignment, use the Assignments window after first v
 
 ### Task 2: Select Applications
 
-   ![ws name.](media/exe15.png)
+   ![ws name.](media/exeu15.png)
    
-In the New Assignment window, select **Desktops**.
+In the New Assignment window, select **Applications**.
 
 
 ### Task 3: Provide Fixed Attributes
@@ -120,7 +120,7 @@ In the New Assignment window, select **Desktops**.
 
 ### Task 7: Verify in the Assignments Window
 
-   ![ws name.](media/exe20.png)
+   ![ws name.](media/exeu20.png)
    
 1. Verify that the success banner appears at the top.
 2. Wait while the system configures the farm's server instances to provide session desktops to the selected users. The green dot indicates that the assignment is active.
@@ -136,13 +136,16 @@ When you finish assigning session-based desktops to users and groups, this exerc
 
 1. Connect to **AdVM** using credentials given in **Environment Details > Azure Credentials**: 
 
+
    ![ws name.](media/vmw21.png)
 
 2. In AdVM, open **VMHorizon Client** given on the desktop. Double click on **Add Server**, then enter **vdi.mydomain.local** and click on **Connect**.
 
+
    ![ws name.](media/vmw22.png)
 
 3. The login window will appear asking for username and password to connect to the server.
+
 
    ![ws name.](media/vmw23.png)
 
@@ -153,22 +156,30 @@ When you finish assigning session-based desktops to users and groups, this exerc
   - Password: **P@s#w0rdyu2nnk**
   
   - Domain: Leave on **DefaultDomain**
-   
+
+
    ![ws name.](media/vmw24.png)
 
-5. 
+5. Double click on the Application we want to launch.
+
 
    ![ws name.](media/vmw25.png)
 
+6. The Application will start loading.
+
+
    ![ws name.](media/vmw26.png)
+
+7. If the prompt appears, click on **Allow**.
+
 
    ![ws name.](media/vmw27.png)
 
+8. The Application will launch and will be ready to use.
 
 
 
 
 
 
-Click on the **Next** button from lower right corner of the guide to move on the next page.
 
