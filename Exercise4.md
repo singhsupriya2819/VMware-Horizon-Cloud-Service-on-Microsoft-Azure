@@ -42,7 +42,7 @@ Before you assign a desktop to a user or group, it is best practice to check the
 
 ### Task 4: View Capacity Allocation Details
 
-   ![ws name.](media/exe4.png)
+   ![ws name.](media/exeu4.png)
    
 1. Scroll down the Summary window to examine the capacity and utilization data:
   - **Capacity Utilization:** The number of desktops currently in use, divided by the number of desktops possible to use, tells you the capacity percentage by pod.
