@@ -151,9 +151,9 @@ When you finish assigning session-based desktops to users and groups, this exerc
   
 4. Enter following credentials:
 
-  - Username: **vdiuser1**
+  - Username: <inject key="vdi Username 1" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
   
-  - Password: **P@s#w0rdyu2nnk**
+  - Password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
   
   - Domain: Leave on **DefaultDomain**
 
