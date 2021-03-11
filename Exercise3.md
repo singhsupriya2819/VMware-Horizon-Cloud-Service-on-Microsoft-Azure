@@ -92,7 +92,7 @@ When the new image has been published, you can use it to create farms.
 
 1. Under **Advanced Properties**, provide the following information:
 
-  - **Computer OU**: Enter the Active Directory Organizational Unit where the server VMs are to be located. For example, OU=RootOrgName,DC=DomainComponent,DC=eng, and so on. The entries must be comma-separated with no spaces in between.
+  - **Computer OU**: <inject key="horizon OU path" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
   
   - **Run Once Script** (optional): You can enter the full executable path of a script that you want run after system preparation completes.
 
