@@ -151,7 +151,7 @@ When you finish assigning session-based desktops to users and groups, this exerc
   
 4. Enter following credentials:
 
-  - Username: **vdiuser**
+  - Username: **vdiuser1**
   
   - Password: **P@s#w0rdyu2nnk**
   
