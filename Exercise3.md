@@ -212,12 +212,10 @@ Horizon Cloud Service provides power management capabilities for the Microsoft A
 
 1. Return to the Microsoft Azure portal.
 
-   ![ws name.](media/exd12.png)
-
 2. Review the hosts that the farm automatically creates there.
 
 
-### Task 2: Automatic Shutdown or Deallocation
+### Task 2: Verify Automatic Shutdown or Deallocation
 
    ![ws name.](media/exd13.png)
 You can set up automatic shutdown or deallocation of unused servers. 
@@ -226,7 +224,7 @@ You can set up automatic shutdown or deallocation of unused servers.
 2. View the status showing each subscription as running or automatically deallocated.
 
 
-### Task 3: Automatic Creation of Resource Groups
+### Task 3: Verify Automatic Creation of Resource Groups
 
    ![ws name.](media/exd14.png)
 Horizon Cloud Service streamlines administration tasks, such as the automatic creation of resource groups, which contain all farm-related components. 
