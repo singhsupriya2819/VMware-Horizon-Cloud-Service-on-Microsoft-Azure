@@ -107,7 +107,7 @@ In the New Assignment window, select **Applications**.
 
    ![ws name.](media/exe18.png)
    
-1. In the Users tab, search users and groups in your registered Active Directory domains and select the ones for this assignment.
+1. In the Users tab, search **Horizon users** and select it for this assignment.
 
 2. In the lower right corner, click **Next**.
 
