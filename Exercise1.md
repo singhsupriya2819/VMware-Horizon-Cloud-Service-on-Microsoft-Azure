@@ -146,7 +146,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - Use Proxy: Leave this **disabled**.
 
-   ![ws name.](media/vmw36.png)
+   ![ws name.](media/us2.png)
 
 2. In the Identity Management panel, accept the default, and click **Next**.
 
