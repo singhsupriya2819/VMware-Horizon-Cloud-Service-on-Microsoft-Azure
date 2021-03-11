@@ -109,13 +109,13 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    ![ws name.](media/exb31.png)
 
-2. In the lower right corner, click **Next**.
+2. In the lower right corner, click **ADD**.
 
 ### **Task 5: Provide Pod Setup Details**
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
    
-   - Pod Name: _Enter a recognizable name, to be used in the Administration Console to distinguish this pod from other pods_.
+   - Pod Name: **pod-test**.
     
    - Location: _Click_ **Add** _to specify a location, which you can use to group pods according to categories that you provide, such as Business Unit A, Business Unit B, and so on. As you enter a city name, it should auto-populate. If your city name is not recognized, it will not be placed correctly on the Dashboard map. In this case, select the closest city available._
     
@@ -131,6 +131,8 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 ### **Task 6: Provide Networking Details**
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
+
+   - Disable High Availiblity by toggling off the **Enable** switch
     
    - Virtual Network: **HZN-Vnet[Horizon-Network-RG]** 
     
@@ -140,7 +142,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - VM Subnet - Primary: **VM-subnet**
     
-   - NTP Servers: **time.google.com**
+   - NTP Servers: **time.windows.com**
     
    - Use Proxy: Leave this **disabled**.
 
@@ -152,7 +154,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. In the Unified Access Gateway panel of the Work Setup tab, provide the following information.
     
-   - **Enable External UAG?** Slide to **disable**.
+   - **Enable External Gateway?** Slide to **disable**.
     
    - **Enable Internal Gateway?** Slide to **enable**.
     
@@ -174,7 +176,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. Review the summary, verify that the information is correct and complete, and then click **Submit**.
 
-**Note: This process will take 60 minutes to complete.**
+**Note: This process will take approximately 60 minutes to complete.**
 
    ![ws name.](media/exb28.png)
 
@@ -247,8 +249,7 @@ To complete the Active Directory configuration, provide information about the do
    - **Primary DNS Server IP:** **<inject key="DNS Server IP" />**
    
    - **Secondary DNS Server IP (Optional):** Enter the IP of a secondary DNS Server.
-
-   - **Note:** This DNS server must be able to resolve machine names inside of your Microsoft Azure cloud as well as resolve external names.
+   **Note:** This DNS server must be able to resolve machine names inside of your Microsoft Azure cloud as well as resolve external names.
 
    - **Default OU**: **<inject key="Horizon OU path" />**
    
@@ -337,7 +338,7 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
 
 You can optionally select which VM types and sizes to allow, add sizes to favorites, and customize how VM names are displayed.
 
-Microsoft supports a wide variety of VM types and sizes, which you can learn about at _Sizes for Windows virtual machines in Azure_(```https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes```). Instead of reviewing the entire list of available VM types, you can save time by creating your own sub-set of your favorite types and sizes. You can create this sub-set during deployment, and you can update it at any time afterward. If you set the option to choose your VM type, your end users can review the sub-set and quickly make their selection.
+Microsoft supports a wide variety of VM types and sizes, which you can learn about at [_Sizes for Windows virtual machines in Azure_](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes). Instead of reviewing the entire list of available VM types, you can save time by creating your own sub-set of your favorite types and sizes. You can create this sub-set during deployment, and you can update it at any time afterward. If you set the option to choose your VM type, your end users can review the sub-set and quickly make their selection.
 
 For more information, see General Purpose virtual machine sizes.
 
@@ -353,13 +354,13 @@ For more information, see General Purpose virtual machine sizes.
 
 ### **Task 2: Add a Tag**
 
-1. From the list of available VM types, select a any size for which you want to add a Tag.
+1. From the list of available VM types, select a any size for which you want and click on **ADD TAG**.
 
-   ![ws name.](media/vmw3.png)
+   ![ws name.](media/us3.png)
 
 2. In the _Enter tags_ window type **Do Not Use** and click on **Add**..
 
-   ![ws name.](media/vmw4.png)
+   ![ws name.](media/us4.png)
 
 3. Make sure to use only letters, numbers, and spaces. As you can see, the use of an apostrophe is not allowed.
 
@@ -369,7 +370,7 @@ For more information, see General Purpose virtual machine sizes.
 
    ![ws name.](media/vmw44.png)
 
-For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
+For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
 
 After you finish creating and defining the subset of VM types and sizes that you want, you are ready to proceed to create a new image in the next exercise.
 
