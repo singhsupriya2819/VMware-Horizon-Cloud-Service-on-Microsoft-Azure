@@ -178,7 +178,7 @@ You can customize the Windows operating system of the new golden image VM, set w
 
 Depending on your configuration, you can use either a private or public IP address to RDP to the new golden image VM.
 
-1. Use the IP address of the golden image VM to connect to the RDS-enabled Windows Server operating system.
+1. Use the Public IP address of the golden image VM to connect to the RDS-enabled Windows Server operating system.
 
   - **Public IP address:** RDP into it using that IP address.
 
