@@ -129,7 +129,7 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 When you finish assigning session-based desktops to users and groups, this exercise is complete. You can proceed to the next exercise to assign floating desktops.
 
 
-### Task 8: Launch Horizon Client to access the application
+### **Task 8: Launch Horizon Client to access the application**
 
 1. In AdVM, open **VMHorizon Client** given on the desktop. Double click on **Add Server**, then enter **vdi.mydomain.local** and click on **Connect**.
   
