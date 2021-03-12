@@ -1,4 +1,4 @@
-# Exercise 1: Deploying a Horizon Cloud Service Pod
+# **Exercise 1: Deploying a Horizon Cloud Service Pod**
 
 **About Pod Deployment**
 Now that you have set up the Horizon Cloud Service on Microsoft Azure pod, you are ready to begin the initial configuration process of your deployment. In this series of exercises, you deploy a Horizon Cloud Service pod and bind it to an existing Active Directory domain. This grants the Horizon Cloud Service control plane access to create and manage resources in Microsoft Azure. These exercises are sequential and build upon one another, so make sure to complete each exercise in this section before going to the next.
