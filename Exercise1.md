@@ -267,7 +267,7 @@ To complete the Active Directory configuration, provide information about the do
 
 2. In the lower right corner, click **Save**.
 
-**Note:** Add the Active Directory group that includes the domain-join account, as described in the prerequisites. This action grants this group permissions to perform management actions in the Administration Console.
+**Note:** The Active Directory group that includes the domain-join account, as described in the prerequisites. This action grants this group permissions to perform management actions in the Administration Console.
 
    ![ws name.](media/exb36.png)
 
