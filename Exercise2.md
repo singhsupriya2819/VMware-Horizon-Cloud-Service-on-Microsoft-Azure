@@ -6,7 +6,7 @@ Microsoft provides a variety of VM templates in the Microsoft Azure Marketplace.
 
 After the imported VM is configured with the necessary applications, Horizon Cloud Service converts the VM to an image by automatically running SYSPREP and sealing the OS. You can then use the image to create RDS session host farms and assign dedicated and floating VDI desktops.
 
-**Note:** With the March 2020 release of Horizon Cloud on Microsoft Azure, you have access to new operating system types in your drop-down menu. For more information, see _Horizon Cloud on Microsoft Azure Support for Windows Virtual Desktop is Here_(```https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html```) and _VMware Horizon Cloud Service Release Notes - v3 - March 2020_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html```).
+**Note:** With the March 2020 release of Horizon Cloud on Microsoft Azure, you have access to new operating system types in your drop-down menu. For more information, see [_Horizon Cloud on Microsoft Azure Support for Windows Virtual Desktop is Here](https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html) and [_VMware Horizon Cloud Service Release Notes - v3 - March 2020_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html).
 
 
 ## **Exercise 2.1: Importing VMs from Microsoft Azure Marketplace**
@@ -72,10 +72,11 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
   
   - Verify Password: **<inject key="AD VM Admin Password" />**
 
+    ![ws name.](media/us6.png)
+
 2. Scroll to the next panel.
 
-   ![ws name.](media/vmw50.png)
-
+   
 ### **Task 5: Provide Properties**
 
 1. In the Admin Credentials for the Desktop panel and the Properties panel, provide the required information.
@@ -107,7 +108,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   **Smart Card:** Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
 
-  - **Thin Print:** Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
+  - **VMware Print:** Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
 
   - **Scanner Redirection:** Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
 
@@ -123,7 +124,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. In the lower right corner, click **Import**.
 
-   ![ws name.](media/exc6.png)
+   ![ws name.](media/us5.png)
 
 **Note: This process will take 10 minutes to complete.** 
 
@@ -207,18 +208,18 @@ Depending on your configuration, you can use either a private or public IP addre
   - In the Windows Server operating system, right-click the Start button and click Command Prompt (Admin) to open a command prompt as an administrator.
 
   - In the command prompt, use the following command to determine the install mode of the server:
-change user /query
+   ``` change user /query ```
 
   - The server is in RD-Execute mode if you receive the following response:
-Application EXECUTE mode is enabled
+**Application EXECUTE mode is enabled**
 
   - In the command prompt, use the following command to switch the server into RD-Install mode, a special mode to install applications so they can run in a multi-user environment:
-change user /install
+   ``` change user /install ```
 
   - Install the third-party user applications you want to provide to your end users in their RDS desktops or as remote applications.
   
   - Return to the command prompt, and issue the following command to switch the server back into RD-Execute mode:
-change user /execute
+    ``` change user /execute ```
 
 4. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
 
@@ -226,7 +227,7 @@ change user /execute
 
 6 When you finish, sign out of the operating system. Note: Do not shut down the Windows operating system, but instead, use Sign Out.
 
-For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html```), and search the guide for **Customize the Guest Windows Operating System of the Master Image Virtual Machine**.
+For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html), and search the guide for **Customize the Guest Windows Operating System of the Master Image Virtual Machine**.
 
 After you finish customizing the golden image VM, proceed to the next exercise to convert the golden image VM to an assignable image.
 
@@ -293,10 +294,10 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
    ![ws name.](media/exc29.png)
 
-For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html```), and search the guide for **Convert a Configured Master Virtual Machine to an Assignable Image**.
+For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html), and search the guide for **Convert a Configured Master Virtual Machine to an Assignable Image**.
 
 After you finish importing and customizing a golden image VM and converting it into an assignable image, proceed to the next section to use the assignable image.
-If the golden image you created has a server OS, proceed to _Deploying a Farm_(```https://techzone.vmware.com/quick-start-tutorial-vmware-horizon-cloud-service-microsoft-azure```) to create an RDSH farm.
+If the golden image you created has a server OS, proceed to [_Deploying a Farm_](https://techzone.vmware.com/quick-start-tutorial-vmware-horizon-cloud-service-microsoft-azure) to create an RDSH farm.
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.
