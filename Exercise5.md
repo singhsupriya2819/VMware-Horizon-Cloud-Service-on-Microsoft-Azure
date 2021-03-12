@@ -1,7 +1,7 @@
 # **Exercise 5: Cleanup of VMware Horizon Account**
 
 
-1. On the page above. Click on **Manage**.
+1. On the Getting Started page, Click on **Manage**.
 
 2. From the drop down select **Delete Pod**.
 
