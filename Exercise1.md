@@ -22,7 +22,7 @@ Armed with the prerequisite information from your Microsoft Azure tenant, you ar
 
    - **Application Key:** A one-time-use password that is used to encrypt the service principal. 
 
-For more information, see _Getting Started with VMware Horizon Cloud Service on Microsoft Azure_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-6E460805-C323-4200-9A45-45E7BFB31730.html```).
+For more information, see [_Getting Started with VMware Horizon Cloud Service on Microsoft Azure_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-6E460805-C323-4200-9A45-45E7BFB31730.html).
 
 
 ### **Task 1: Connect to AdVM**
