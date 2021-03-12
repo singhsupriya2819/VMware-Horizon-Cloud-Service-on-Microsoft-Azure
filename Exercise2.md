@@ -142,7 +142,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 > **Note:** 
 >  1. If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
 >  2. If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
->
+
 
 3. Open _Virtual Machines_ and verify that the VM was successfully completed.
 
@@ -217,12 +217,18 @@ Depending on your configuration, you can use either a private or public IP addre
 **Application EXECUTE mode is enabled**
 
   - In the command prompt, use the following command to switch the server into RD-Install mode, a special mode to install applications so they can run in a multi-user environment:
-   ``` change user /install ```
+  
+   ``` 
+   change user /install 
+   ```
 
   - Install the third-party user applications you want to provide to your end users in their RDS desktops or as remote applications.
   
   - Return to the command prompt, and issue the following command to switch the server back into RD-Execute mode:
-    ``` change user /execute ```
+    
+    ``` 
+    change user /execute 
+    ```
 
 4. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
 
