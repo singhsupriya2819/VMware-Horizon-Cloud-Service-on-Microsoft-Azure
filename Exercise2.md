@@ -164,9 +164,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
    ![ws name.](media/exc23.png)
 
-For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html```), and search the guide for **Create a Master Virtual Machine Automatically from the Microsoft Azure Marketplace**.
+For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Create a Master Virtual Machine Automatically from the Microsoft Azure Marketplace**.
 
-**Note:** It is also recommended that you optimize the image using the _VMware Windows Operating System Optimization Tool_(```https://labs.vmware.com/flings/vmware-os-optimization-tool```). This tool includes templates that you can customize to enable and disable Windows system services and features across multiple systems. Many Windows system services are enabled by default. You can disable services or features using the optimization tool, and improve performance by eliminating unnecessary services or features. For instructions, see the _VMware Windows Operating System Optimization Tool Guide_(```https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/vmware-view-virtual-desktops-windows-optimization.pdf```).
+**Note:** It is also recommended that you optimize the image using the [_VMware Windows Operating System Optimization Tool_](https://labs.vmware.com/flings/vmware-os-optimization-tool). This tool includes templates that you can customize to enable and disable Windows system services and features across multiple systems. Many Windows system services are enabled by default. You can disable services or features using the optimization tool, and improve performance by eliminating unnecessary services or features. For instructions, see the [_VMware Windows Operating System Optimization Tool Guide_](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/vmware-view-virtual-desktops-windows-optimization.pdf).
 
 When you finish importing the Windows 10 desktop OS VM, proceed to the next exercise to customize it.
 
@@ -193,7 +193,7 @@ Depending on your configuration, you can use either a private or public IP addre
 
 3. Copy the IP address.
 
-   ![ws name.](media/vmw51.png)
+
 
 ### **Task 2: Log in with a Local Administrator Account**
 
@@ -261,7 +261,7 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
   - **Location:** Select the location to get a list of pods available to store the desktop.
 
-  - **Pod:** Select the pod to serve the desktop from.
+  - **Pod:** Select the pod **pod-test**.
 
   - **Desktop:** From the list of desktops that can be converted to an image, select the desktop you want.
 
