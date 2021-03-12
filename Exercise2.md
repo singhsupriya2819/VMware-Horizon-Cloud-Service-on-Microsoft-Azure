@@ -208,7 +208,10 @@ Depending on your configuration, you can use either a private or public IP addre
   - In the Windows Server operating system, right-click the Start button and click Command Prompt (Admin) to open a command prompt as an administrator.
 
   - In the command prompt, use the following command to determine the install mode of the server:
-   ``` change user /query ```
+  
+   ```
+   change user /query
+   ```
 
   - The server is in RD-Execute mode if you receive the following response:
 **Application EXECUTE mode is enabled**
