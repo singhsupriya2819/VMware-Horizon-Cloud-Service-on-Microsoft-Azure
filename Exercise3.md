@@ -10,11 +10,11 @@ You set up these options in the Horizon Cloud Service farm profile when you firs
 
 **Note:** For this set of exercises, you need a server image deployed.
 
-## Exercise 3.1: Creating a Farm
+## **Exercise 3.1: Creating a Farm**
 
 When the new image has been published, you can use it to create farms.
 
-### Task 1: Create a New Farm
+### **Task 1: Create a New Farm**
 
    ![ws name.](media/vmw6.png)
 
@@ -25,19 +25,19 @@ When the new image has been published, you can use it to create farms.
 3. In the Farms window, click **New**.
 
 
-### Task 2: Provide General Settings
+### **Task 2: Provide General Settings**
 
-   ![ws name.](media/exdu2.png)
+   ![ws name.](media/us7.png)
 
 1. In the New Farm window, **Definition** tab, provide the following information, and then scroll down.
   
-   - **Name:** Enter a name to help identify this farm in the system.
+   - **Name:** **FirstFarm**
 
    - **Description:** Enter an optional description to help identify the farm in the system.
 
-   - **VM Names:** Enter a name for all server VMs created for this farm to which a number is appended, such as win2016-1, win2016-2, and so on. The name must start with a letter and can contain only letters, dashes, and numbers.
+   - **VM Names:** **Farm1**
 
-   - **Farm Type:** Specify the type of asset this farm provides to end users. Keep this assignment time in mind when you select the server size, since desktop assignments may require more capacity.
+   - **Farm Type:** Select **Applications**
    
       a. **Desktops:** Provides session-based desktops
 
@@ -45,18 +45,18 @@ When the new image has been published, you can use it to create farms.
  
    - **Location:** Select the location from the list of pods in the pop-up menu.
  
-   - **Pod:** Select the pod for this farm.
+   - **Pod:** Select **pod-test**.
  
 2. Scroll down to provide additional general settings.
 
 
-### Task 3: Provide More General Settings
+### **Task 3: Provide More General Settings**
 
-   ![ws name.](media/exdu3.png)
+   ![ws name.](media/us8.png)
 
 1. Provide the following additional general settings information:
 
-  - **Filter Models:** You can filter the available VM models by type and favorites, and add filters as well.
+  - **Filter Models:** From first drop-down select **Tag** then from the equals drop-down select **VMware Recomended**
   
   - **Model:** Select the Azure VM size for the Farm. Some VM sizes are not available in all regions.
   
@@ -66,14 +66,14 @@ When the new image has been published, you can use it to create farms.
   
   - **Image:** Select an available RDSH image from the list. Images that do not match the desktop model disk size are not displayed.
   
-  - **Preferred Protocol:** Select either PCoIP or Blast as the default display protocol that you want the end-user sessions to use.
+  - **Preferred Protocol:** **Blast Extreme**
 
 2. Scroll to the **Farm Size** section.
 
 
-### Task 4: Set Farm Size
+### **Task 4: Set Farm Size**
 
-   ![ws name.](media/exdu4.png)
+   ![ws name.](media/us9.png)
 
 1. In the **Farm Size** pane, provide the information to enable the farm to automatically scale up or down on demand:
   - **Min Servers:** Specify the minimum number of usable servers in this farm so not all servers are running at the same time.
@@ -86,9 +86,9 @@ When the new image has been published, you can use it to create farms.
 2. **Do you have a valid license for this Windows OS:** Enable it and click on the check box saying **I confirm that I have an eligible license for this Windows OS.**
 
 
-### Task 5: Provide Advanced Properties
+### **Task 5: Provide Advanced Properties**
 
-   ![ws name.](media/exdu5.png)
+   ![ws name.](media/us10.png)
 
 1. Under **Advanced Properties**, provide the following information:
 
@@ -99,7 +99,7 @@ When the new image has been published, you can use it to create farms.
 2. In the lower right corner, click **Next**.
 
 
-### Task 6: Provide Rolling Maintenance Information
+### **Task 6: Provide Rolling Maintenance Information**
 
    ![ws name.](media/exd23.png)
 
@@ -108,6 +108,7 @@ When the new image has been published, you can use it to create farms.
    - **Maintenance Type:** Select the maintenance type, either according to:
    
       a. **Scheduled:** Select a time cadence such as daily or weekly.
+      
       b. **Session:** Specify the number of user sessions at which the farm should begin rolling maintenance.
    
    - **Recurrence:** Indicate the type of recurrence.
@@ -121,12 +122,14 @@ When the new image has been published, you can use it to create farms.
    - **VM Action:** Select the action that the system should perform on servers that are undergoing maintenance:
    
       a. **Restart:** Restart the sever VMs.
+      
       b. **Rebuild:** Delete server VMs and then re-provision them from their RDS desktop image.
 
 2. Scroll to the Power Management panel.
 
 
-### Task 7: Provide Power Management Information
+### **Task 7: Provide Power Management and Timeout Handling Information**
+
 
    ![ws name.](media/exc31.png)
 
@@ -140,12 +143,7 @@ When the new image has been published, you can use it to create farms.
 
 2. Scroll down to the Timeout Handling section.
 
-
-### Task 8: Provide Timeout Handling Information
-
-   ![ws name.](media/exc31.png)
-
-1. In the Timeout Handling panel, provide the required settings. This is where you configure how you want the system to handle different user session types.
+3. In the Timeout Handling panel, provide the required settings. This is where you configure how you want the system to handle different user session types.
 
   - **Empty Session Timeout:** Specify how to handle idle user sessions: never timeout idle sessions, or timeout after a specified number of minutes. **Note:** When a session is disconnected, the session is preserved in memory. When a session is logged out, the session is not preserved in memory, and any unsaved documents are lost.
   
@@ -157,12 +155,13 @@ When the new image has been published, you can use it to create farms.
   
   - **Session Timeout Retrieval:** Leave blank.
 
-2. Scroll down to Schedule Power Management.
+  - **Schedule Power Management:** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
 
 
-### Task 9: Load Balancing Settings
+### **Task 8: Load Balancing Settings**
 
-   ![ws name.](media/exd24.png)
+
+   ![ws name.](media/us11.png)
 
 1. Under Schedule Power Management, click **Add a row**, and set the power management schedule:
 
@@ -180,10 +179,11 @@ When the new image has been published, you can use it to create farms.
   
   - **Local Indes Threshold:**
    
+   
 2. In the lower right corner, click **Next**.
 
 
-### Task 10: Verify the Summary Information
+### **Task 10: Verify the Summary Information**
 
    ![ws name.](media/exd25.png)
 
