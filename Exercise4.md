@@ -1,4 +1,4 @@
-# **ercise 4: Assigning Resources**
+# **Exercise 4: Assigning Resources**
 
 ## About Assignments
 
