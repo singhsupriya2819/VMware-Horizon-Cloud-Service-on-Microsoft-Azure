@@ -306,12 +306,12 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
 ### Task 6: Verify the Summary Information
 
-   ![ws name.](media/exdu21.png)
-
 1. In the Summary tab, review to verify that the selections are correct and complete.
 2. In the lower right corner, click **Finish**.
 
-
+    ![ws name.](media/exdu21.png)
+    
+    
 ### Task 7: Verify Addition of New Applications
 
    ![ws name.](media/us24.png)
