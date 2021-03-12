@@ -115,7 +115,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
    
-   - Pod Name: **pod-test**.
+   - Pod Name: **pod-test**
     
    - Location: _Click_ **Add** _to specify a location, which you can use to group pods according to categories that you provide, such as Business Unit A, Business Unit B, and so on. As you enter a city name, it should auto-populate. If your city name is not recognized, it will not be placed correctly on the Dashboard map. In this case, select the closest city available._
     
@@ -123,7 +123,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    - Description: _Enter an optional description for this pod._
 
-   ![ws name.](media/exb25.png)
+   ![ws name.](media/us32.png)
 
 2. Scroll down to the next panel.
 
@@ -132,7 +132,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
 
-   - Disable High Availiblity by toggling off the **Enable** switch
+   - Disable High Availiblity by **toggling off** the Enable switch
     
    - Virtual Network: **HZN-Vnet[Horizon-Network-RG]** 
     
@@ -154,9 +154,9 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. In the Unified Access Gateway panel of the Work Setup tab, provide the following information.
     
-   - **Enable External Gateway?** Slide to **disable**.
+   - **Enable External Gateway?:** Slide to **disable**.
     
-   - **Enable Internal Gateway?** Slide to **enable**.
+   - **Enable Internal Gateway?:** Slide to **enable**.
     
    - **FQDN:** Enter **vdi.mydomain.local**
     
@@ -168,7 +168,11 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **Certificate:** Click on **Upload**. Navigate to **C:\LabFiles** and select **vdicert** file.
 
-2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, click **Validate & Proceed**.
+2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, and enable **Inherit Pod tags**.
+
+    ![ws name.](media/us33.png)
+
+3. click **Validate & Proceed**.
 
    ![ws name.](media/vmw40.png)
 
