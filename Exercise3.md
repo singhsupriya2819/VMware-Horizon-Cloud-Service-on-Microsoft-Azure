@@ -183,7 +183,7 @@ When the new image has been published, you can use it to create farms.
 2. In the lower right corner, click **Next**.
 
 
-### **Task 10: Verify the Summary Information**
+### **Task 9: Verify the Summary Information**
 
    ![ws name.](media/exd25.png)
 
@@ -192,9 +192,9 @@ When the new image has been published, you can use it to create farms.
 2. In the lower right corner, click **Submit**.
 
 
-### Task 11: Verify in VMware Horizon Cloud Service
+### **Task 10: Verify in VMware Horizon Cloud Service**
 
-   ![ws name.](media/exd11.png)
+   ![ws name.](media/us12.png)
 
 Under Status, verify that the green dot is displayed to indicate that the farm has been created properly.
 
@@ -203,91 +203,92 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 After you finish creating farms from the image, proceed to the next exercise to review RDS host power management.
 
 
-## Exercise 3.2: Exploring RD Session Host Power Management
+## **Exercise 3.2: Exploring RD Session Host Power Management**
 
 Horizon Cloud Service provides power management capabilities for the Microsoft Azure servers, automatically powering hosts on and off and deallocating them as needed. You can see the results of setting up the farm that you just created by returning to Microsoft Azure.
 
-### Task 1: Verify in Microsoft Azure
 
+### **Task 1: Verify Automatic Shutdown or Deallocation**
+   
+You can set up automatic shutdown or deallocation of unused servers. 
 
 1. Return to the Microsoft Azure portal.
 
-2. Review the hosts that the farm automatically creates there.
+2. From the navigation bar, select **Virtual machines**.
 
+    ![ws name.](media/us13.png)
+    
+3. View the status showing each VM as running or automatically deallocated.
 
-### Task 2: Verify Automatic Shutdown or Deallocation
-
-   ![ws name.](media/exd13.png)
-You can set up automatic shutdown or deallocation of unused servers. 
-
-1. From the navigation bar, select **Virtual machines**.
-2. View the status showing each subscription as running or automatically deallocated.
-
-
-### Task 3: Verify Automatic Creation of Resource Groups
-
-   ![ws name.](media/exd14.png)
-Horizon Cloud Service streamlines administration tasks, such as the automatic creation of resource groups, which contain all farm-related components. 
+    ![ws name.](media/us14.png)
+      
+      
+### **Task 3: Verify Automatic Creation of Resource Groups**
 
 1. From the navigation bar, select **Resource groups**.
 
-2. Click **Overview** to view resource group details.
+     ![ws name.](media/us15.png)
+
+2. All automatically created Resource Groups can be seen here.
+
+     ![ws name.](media/us16.png)
+
+Horizon Cloud Service streamlines administration tasks, such as the automatic creation of resource groups, which contain all farm-related components. 
 
 
-### Task 4: Automatic Definition of Network Security Group Rules
+### **Task 4: Automatic Definition of Network Security Group Rules**
 
-   ![ws name.](media/exd15.png)
-Network security group rules are automatically defined.
 
-1. From the navigation bar, select **More services**.
+1. In Azure portal search for **Network security groups** and click on it.
 
-2. Select **Network security groups**.
+   ![ws name.](media/us17.png)
 
-3. Select a group to view the security rules.
+2. Click on any of the security groups to view the rules.
+
+   ![ws name.](media/us18.png)
+
+3. Here we can see that Network security group rules are automatically defined.
+
+   ![ws name.](media/us19.png)
 
 For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Applications in Your Horizon Cloud Inventory**.
 
 After you finish reviewing RDS host power management, proceed to the next exercise to add applications from the farm.
 
 
-## Exercise 3.3: Adding Applications from the Farm
+## **Exercise 3.3: Adding Applications from the Farm**
 
 Horizon Cloud Service can auto-discover applications installed on the farm, or you can manually specify an application. Select the applications to be published, and assign them to end users or groups.
 
-### Task 1: Add New Applications
-
-   ![ws name.](media/exdu16.png)
+### **Task 1: Add New Applications**
 
 1. In the Horizon Cloud Service Administration Console click on **Applications** in navigation bar.
 
 2. Then navigate to **Remote** tab and click on **New**.
 
+   ![ws name.](media/us20.png)
+    
+3. Now click on **Auto-Scan from Farm**.
+    
+   ![ws name.](media/us21.png)
 
-### Task 2: Select Auto-Scan from Farm
 
-   ![ws name.](media/exdu17.png)
-   
-Now click on **Auto-Scan from Farm**.
-
-
-### Task 3: Provide Definition Information
+### **Task 3: Provide Definition Information**
 
    ![ws name.](media/vmw11.png)
 
-1. In the New Application window, click on the name of application fetched from scan.
-
-2. Now fill the following details asked in the definetion page.
+1. In the New Application window fill the following details asked in the definetion page.
 
   - **Location:** Select a location from the pop-up menu.
-  - **Pod:** Select the pod containing the farm you want to choose.
-  - **Farm:** Select the farm.
+  - **Pod:** **pod-test**.
+  - **Farm:** **FirstFarm**.
 
 2. In the lower right corner, click **Next**.
 
 
-### Task 4: Select the Applications to Publish
+### **Task 4: Select the Applications to Publish**
 
-   ![ws name.](media/exd19.png)
+   ![ws name.](media/us22.png)
 
 1. In the Applications tab, select the applications to be published.
 
@@ -296,11 +297,11 @@ Now click on **Auto-Scan from Farm**.
 
 ### Task 5: Provide Attributes
 
-   ![ws name.](media/exd20.png)
-
 1. In the Attributes tab, provide the appropriate attributes.
 
 2. In the lower right corner, click **Next**.
+
+    ![ws name.](media/us23.png)
 
 
 ### Task 6: Verify the Summary Information
@@ -313,7 +314,7 @@ Now click on **Auto-Scan from Farm**.
 
 ### Task 7: Verify Addition of New Applications
 
-   ![ws name.](media/exd22.png)
+   ![ws name.](media/us24.png)
 
 In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
 
