@@ -8,7 +8,7 @@ After you finish creating images and farms, you are ready to assign desktops and
   - **Application Assignments** - You can assign Windows applications to users or groups using remote applications, which can be hosted on the RDS farms you created earlier. This enables you to provide the resources your users need when they need them, and avoids the cost of maintaining idle resources just waiting to be used.
   - **Customization** - You can customize your end user environments by making URL redirection assignments. You do this by configuring the client-to-agent URL redirection rules that tell the Horizon Client to redirect URLs from the end user's client machine to a desktop or application within your Horizon Cloud environment. For more information about customization, see *Assigning Customizations* in [Quick-Start Tutorial for VMware Horizon Cloud with Hosted Infrastructure](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html).
 
-## **ercise 4.1: Checking Desktop Capacity Allocation**
+## **Exercise 4.1: Checking Desktop Capacity Allocation**
 
 Before you assign a desktop to a user or group, it is best practice to check the desktop capacity allocation.
 
