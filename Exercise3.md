@@ -39,9 +39,7 @@ When the new image has been published, you can use it to create farms.
 
    - **Farm Type:** Select **Applications**
    
-      a. **Desktops:** Provides session-based desktops
-
-      b. **Applications:** Provides access to remote applications
+      a. **Desktops:** Provides session-based desktops, b. **Applications:** Provides access to remote applications
  
    - **Location:** Select the location from the list of pods in the pop-up menu.
  
@@ -55,6 +53,8 @@ When the new image has been published, you can use it to create farms.
    ![ws name.](media/us8.png)
 
 1. Provide the following additional general settings information:
+
+  - **Specify VM Subnet(s):** Toggle off the switch.
 
   - **Filter Models:** From first drop-down select **Tag** then from the equals drop-down select **VMware Recomended**
   
@@ -76,11 +76,11 @@ When the new image has been published, you can use it to create farms.
    ![ws name.](media/us9.png)
 
 1. In the **Farm Size** pane, provide the information to enable the farm to automatically scale up or down on demand:
-  - **Min Servers:** Specify the minimum number of usable servers in this farm so not all servers are running at the same time.
-  - **Max Servers:** Specify the maximum number of servers that can exist at any one time so not all servers will be running at the same time.
+  - **Min Servers:** 1
+  - **Max Servers:** 3
   **Note:** The minimum number of server instances is initially powered on. As demand increases, additional servers are powered on until reaching the maximum. As end-user demand shrinks, servers are powered off until reaching the minimum. Each server is completely empty of user sessions before the system powers it off.
   - **Power Off Protect Time**: Accept the default of 30 minutes that a VM is protected from powering off after powering on due to a headroom error.
-  - **Sessions per Server:** Specify the total number of sessions you want to allow per server.
+  - **Sessions per Server:** Accept the default values.
   **Note:** This number cannot be updated after the farm is created.
   
 2. **Do you have a valid license for this Windows OS:** Enable it and click on the check box saying **I confirm that I have an eligible license for this Windows OS.**
