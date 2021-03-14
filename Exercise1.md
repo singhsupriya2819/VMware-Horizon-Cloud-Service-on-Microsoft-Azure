@@ -374,7 +374,7 @@ For more information, see General Purpose virtual machine sizes.
 
 3. Make sure to use only letters, numbers, and spaces. As you can see, the use of an apostrophe is not allowed.
 
-### **Task 5: Verify Success**
+### **Task 3: Verify Success**
 
 1. At the top of the VM Types & Sizes window, look for the banner that verifies success.
 
