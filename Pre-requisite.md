@@ -1,6 +1,7 @@
 # Prerequisites
 
-The following lab requires few precreated resources which we have automated.
+
+This lab requires few prerequisites to be met to sucessfully complete the lab. We have preconfigured all the prerequisites for you, there is no action needed from your end.
 
 Following are the resources that are precreated.
 
@@ -20,7 +21,7 @@ There are two precreated virtual network i.e:
   - **HZN-Vnet**: Virtual network for horizon resources.
 
 
-### **Configuring VNet Peering**
+### **VNet Peering**
 
 We use Microsoft Azure to configure bi-directional peering. One should configure VNet-to-VNet peering only if the following is true:
 
@@ -29,22 +30,21 @@ We use Microsoft Azure to configure bi-directional peering. One should configure
   - Not using VPN for express route peering
 
 
-### **Configuring the DNS Server**
+### **DNS Server**
 
-Now that the VNet is configured, next step is to configure the DNS, which is required during the Horizon Cloud Service pod deployment. Horizon Cloud Service uses the default Microsoft Azure-provided DNS for the deployment for outbound DNS resolution, but requires Active Directory to resolve the Active Directory domain controllers. The virtual network must support both internal and external name resolution.
+We have preconfigured the DNS Server, which is required during the Horizon Cloud Service pod deployment. Horizon Cloud Service uses the default Microsoft Azure-provided DNS for the deployment for outbound DNS resolution, but requires Active Directory to resolve the Active Directory domain controllers. The virtual network will support both internal and external name resolution.
 
 
 ### **Service Principal with Contributor Role**
 
-Horizon Cloud Service needs a service principal to access and use your Microsoft Azure subscription capacity. A service principal defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant. When you register a Microsoft Azure AD application, the service principal is also created. For more information, see [Create the Required Service Principal by Creating an Application Registration](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-DC011997-CE9E-4B38-9C4F-57104226218C.html).
-
+Horizon Cloud Service needs a service principal to access and use your Microsoft Azure subscription capacity. A service principal defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant. We have precreated a Service Principal in the lab tenent with Contributor role.
 
 ### **Resource Providers**
 
-We have automated the registration of resource providers that the pod requires i.e.:
+VMware Horizon Cloud Service require below Resource Providers to be registered in the Azure subscription which is preregistered while provisioning the environment.
 
   - Microsoft.Compute
-  - microsoft.insights
+  - Microsoft.Insights
   - Microsoft.Network
   - Microsoft.Storage
   - Microsoft.KeyVault
