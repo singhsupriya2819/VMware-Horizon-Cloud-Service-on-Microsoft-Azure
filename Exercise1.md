@@ -324,7 +324,7 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
 
    - Type: **VMware Provided**
    
-   - Subdomain: Enter a name for subdomain.
+   - Subdomain: Enter a unique name for subdomain.
    
    - Broken URL: This will get created when you will add Subdomain name.
    
