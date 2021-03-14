@@ -19,7 +19,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 ### **Task 1: Navigate to Imported VMs**
 
-1. In the navigation panel of the Horizon Cloud Service Administration Console, click **Inventory**.
+1. In the navigation panel of the Horizon Cloud Service Administration Console, click **Settings**.
 
 2. In the Inventory menu, click **Getting Started**.
 
@@ -32,11 +32,11 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
  
 1. In the Import Desktop Marketplace window under Destination Desktop, provide the following information:
 
-  - **Location:** Select a location from the pop-up menu to get a list of pods available to store the desktop.
+  - **Location:** Select the location we used while creating Pod in Exercise 1.
 
-  - **Pod:** Select a pod to serve the desktop from.
+  - **Pod:** Select pod-test
 
-2. Scroll down to the Desktop Details panel.
+2. Scroll down to the Virtual Machine Details panel.
 
    ![ws name.](media/exc19.png)
 
@@ -55,7 +55,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   - **Enable Public IP Address:** Select **Yes** to configure a public IP address so you can access the VM through an RDP connection.
 
-  - **Optimize Windows Image:** Select **Yes** to optimize Windows on image import, which improves VM performance and capacity utilization.
+  - **Optimize Windows Image:** **Enable** it to optimize Windows on image import, which improves VM performance and capacity utilization.
 
 2. Scroll down to the next panel.
 
@@ -81,11 +81,11 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. In the Admin Credentials for the Desktop panel and the Properties panel, provide the required information.
 
-  - **Name:** Enter a unique name for the golden image VM.
+  - **Name:** Enter **RDSHGoldenImage**
 
   - **Description:** You can enter an optional description.
 
-2. Select **Advanced Options** to reveal the Horizon Agent Features panel.
+2. Select **ADVANCED OPTIONS** to reveal the Horizon Agent Features panel.
 
    ![ws name.](media/exc22.png)
 
@@ -94,40 +94,61 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Horizon Agent Features, accept the default to install all features in the golden VM:
 
-  - **Enable Flash MMR:** Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
+  - **Enable Flash MMR:** Slide to **Enable** it.
+ 
+  **Note:** Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
 
-  - **3D support in RDSH:** Provides support for vGPU-powered 3D RDS hosts.
+ 
+ - **3D support in RDSH:** Slide to **Disable** it.
+  
+  **Note:** Provides support for vGPU-powered 3D RDS hosts.
 
-  - **MMR for Terminal Services:** Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
+ 
+ - **MMR for Terminal Services:** Slide to **Enable** it. 
+  
+  **Note:** Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
 
-  - **Client Drive Redirection:** Allows you to share folders and drives on your local system with remote desktops and applications.
+ 
+ - **Client Drive Redirection:** Slide to **Enable** it.
+  
+  **Note:** Allows you to share folders and drives on your local system with remote desktops and applications.
 
   - **Skype for Business:** Provides the ability to use the RDS desktops to make optimized audio and video calls with Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network.
   
   - **Webcam Support (Real Time Audio Video RTAV):** Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
 
-  **Smart Card:** Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
+  
+  - **Smart Card:** Slide to **Disable** it
+  
+  **Note:** Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
 
+  
   - **VMware Print:** Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
 
   - **Scanner Redirection:** Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
 
-  - **USB Redirection:** Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
+ 
+ - **USB Redirection:** Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
 
-  - **URL Redirection:** Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
+ 
+ - **URL Redirection:** Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
 
   - **Serial Port Redirection:** Enables devices connected to serial ports on your local client system so those devices can be used with the remote desktop or application.
 
   - **Geolocation Redirection:** Allows the geolocation information of the client system to be used by Internet Explorer in remote desktops.
 
-  - **Help Desk:** Select Yes to install the Help Desk.
+  - **Help Desk:** Slide and **Enable** it to install the Help Desk.
 
-2. In the lower right corner, click **Import**.
+2. In the lower right corner, click **IMPORT**.
 
    ![ws name.](media/us5.png)
 
-**Note: This process will take 10 minutes to complete.** 
+**Note: This process will take 10 minutes to complete.**
 
+3. Wait for the status to turn complete under Import VM section before proceeding with the lab.
+
+   ![ws name.](media/us34.png)
+   
 
 ### **Task 7: Verify the VM Imported Successfully in Microsoft Azure**
 
@@ -140,8 +161,8 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    - Password: Enter **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
 > **Note:** 
->  1. If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
->  2. If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+>  - If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+>  - If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
 
 
 3. Open _Virtual Machines_ and verify that the VM was successfully completed.
@@ -154,11 +175,13 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Explore the details.
 
-   ![ws name.](media/vmw48.png)
+   ![ws name.](media/us35.png)
 
 ### **Task 9: Verify That the Imported VM Is Active**
 
-1. Return to the Horizon Cloud Service Administration Console, where the imported VM is displayed.
+1. Return to the Horizon Cloud Service Administration Console and click on **GO** button in front of Import VM section.
+
+   ![ws name.](media/vmw48.png)
 
 2. Horizon Cloud Service automates the customization of the golden image VM, the green dot appears under Status, and the status changes to **Import Successful** when the process is complete.
 
@@ -181,17 +204,14 @@ Depending on your configuration, you can use either a private or public IP addre
 
 1. Use the Public IP address of the golden image VM to connect to the RDS-enabled Windows Server operating system.
 
-  - **Public IP address:** RDP into it using that IP address.
-
-  - **Private IP address:** RDP into it by one of these two methods:
-    - Use another VM in your Microsoft Azure subscription that does have a public IP address, and do an outbound RDP into the golden image VM.
-    - Use your VPN and RDP into the golden image VM over your corporate network.
-
-2. Log in to the RDS-enabled Windows Server operating system using the credentials that you set up when creating the golden image VM, and enter the username as \username.
+2. Copy the IP address.
 
    ![ws name.](media/vmw49.png)
 
-3. Copy the IP address.
+3. Log in to the RDS-enabled Windows Server operating system using the credentials that you set up when creating the golden image VM, and enter the username as \username.
+   
+
+
 
 
 
