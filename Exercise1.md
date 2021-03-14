@@ -100,7 +100,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    - Subscription ID: Use the **Subscription ID** from Service Principal details page
     
-   - Directory ID: Use the **Tenant ID ** from Service Principal details page
+   - Directory ID: Use the **Tenant ID** from Service Principal details page
     
    - Application ID: Use the **Application ID** from Service Principal details page
     
