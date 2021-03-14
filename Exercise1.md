@@ -69,7 +69,7 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
 
    ![ws name.](media/exb21.png)
 
-**Note:** Select **Accept** for _Terms of Service_ popup.
+**Note:** You may be prompted with a _Terms of Service_ popup, click on  **ACCEPT** to continue.
 
    ![ws name.](media/exb22.png)
 
@@ -77,7 +77,7 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
 
 1. In an account with no pods previously deployed, the Getting Started wizard defaults to the Capacity section. 
 
-2. In the upper right corner of **Microsoft Azure** pane, click on **Manage** and the select **Add**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
+2. In the upper right corner of **Microsoft Azure** pane, click on **MANAGE** and the select **Add Pod**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
 
 **Note:** To add a new Microsoft Azure pod to an account with pods previously deployed, you can alternatively click **Settings > Capacity > New > Pod > Microsoft Azure**.
 
@@ -106,7 +106,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - Application Key(i.e., Secret key in Service Principal Details) 
    
-   - Use a Different Subscription for External Gateway: Accept the default and leave this option disabled.
+   - **Use a Different Subscription for External Gateway:** Accept the default and leave this option disabled.
 
    ![ws name.](media/exb31.png)
 
@@ -115,6 +115,8 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 ### **Task 5: Provide Pod Setup Details**
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
+
+   - Site: Select **Existing**
    
    - Pod Name: **pod-test**
     
@@ -135,13 +137,13 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    - Disable High Availiblity by **toggling off** the Enable switch
     
-   - Virtual Network: **HZN-Vnet[Horizon-Network-RG]** 
+   - Virtual Network: Select **HZN-Vnet[Horizon-Network-RG]** from dropdown.
     
    - Use Existing Subnet: Slide to **enable**.
     
-   - Management Subnet: **Mgmt-subnet**
+   - Management Subnet: Select **Mgmt-subnet** from dropdown.
     
-   - VM Subnet - Primary: **VM-subnet**
+   - VM Subnet - Primary: Select **VM-subnet** from dropdown
     
    - NTP Servers: **time.windows.com**
     
@@ -169,19 +171,21 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **Certificate:** Click on **Upload**. Navigate to **C:\LabFiles** and select **vdicert** file.
 
-2. For this exercise, leave the two-factor identification settings disabled, and in the lower right corner, and enable **Inherit Pod tags**.
+   - For this exercise, leave the two-factor identification settings disabled.
+
+   - enable **Inherit Pod tags**
 
     ![ws name.](media/us33.png)
 
-3. click **Validate & Proceed**.
+2. click on **VALIDATE & PROCEED**.
 
    ![ws name.](media/vmw40.png)
 
 ### **Task 8: Review Summary**
 
-1. Review the summary, verify that the information is correct and complete, and then click **Submit**.
+1. Review the summary, verify that the information is correct and complete, and then click **SUBMIT**.
 
-**Note: This process will take approximately 60 minutes to complete.**
+**Note: This process will take approximately 60 to 80 minutes to complete.**
 
    ![ws name.](media/exb28.png)
 
@@ -242,9 +246,11 @@ To complete the Active Directory configuration, provide information about the do
    
    - For more information, see _VMware Horizon Cloud Service on Microsoft Azure Administration Guide_(```http://www.vmware.com/info?id=1439```).
 
-2. In the lower right corner, click **Domain Bind**.
+2. In the lower right corner, click **DOMAIN BIND**.
 
    ![ws name.](media/vmw41.png)
+
+**Note:** There might be a delay of 10 seconds after clicking on Domain bind, incase _Domain Join Details_ page doesn't appear in 10 seconds then try clicking on **DOMAIN BIND** button again.
 
 
 ### **Task 4: Provide Domain Join Details**
@@ -253,8 +259,7 @@ To complete the Active Directory configuration, provide information about the do
 
    - **Primary DNS Server IP:** **<inject key="DNS Server IP" />**
    
-   - **Secondary DNS Server IP (Optional):** Enter the IP of a secondary DNS Server.
-   **Note:** This DNS server must be able to resolve machine names inside of your Microsoft Azure cloud as well as resolve external names.
+   - **Secondary DNS Server IP (Optional):** Leave blank
 
    - **Default OU**: **<inject key="Horizon OU path" />**
    
@@ -262,13 +267,13 @@ To complete the Active Directory configuration, provide information about the do
 
    - **Join Password:** **<inject key="All Account Password" />**
 
-2. In the lower right corner, click **Save**.
+2. In the lower right corner, click on **SAVE**.
 
    ![ws name.](media/exb35.png)
 
 ### **Task 5: Add the Administrator**
    
-1. In the Add Administrator window, select **MYDOMAIN\Horizon Admins** User Group.
+1. In the Add Administrator window, search for **Horizon Admins** and select that User Group.
 
 2. In the lower right corner, click **Save**.
 
@@ -297,7 +302,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 7: Join the VMware Customer Experience Improvement Program**
 
-1. With the Horizon Cloud Service pod deployed and the bind operation complete, you can move the Yes/No slider to choose whether or not to join the VMware Customer Experience Improvement Program.
+1. With the Horizon Cloud Service pod deployed and the bind operation complete, we may be prompted with a popup to choose whether or not to join the VMware Customer Experience Improvement Program, we can move the slider to Yes/No.
 
 2. In the lower right corner, click **Save**.
 
@@ -323,7 +328,7 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
    
    - Broken URL: This will get created when you will add Subdomain name.
    
-   - Click on **Next**.
+   - Click on **NEXT**.
 
    ![ws name.](media/broker1.png)
 
@@ -363,7 +368,7 @@ For more information, see General Purpose virtual machine sizes.
 
    ![ws name.](media/us3.png)
 
-2. In the _Enter tags_ window type **Do Not Use** and click on **Add**..
+2. In the _Enter tags_ window type **Do Not Use** and click on **ADD**..
 
    ![ws name.](media/us4.png)
 
