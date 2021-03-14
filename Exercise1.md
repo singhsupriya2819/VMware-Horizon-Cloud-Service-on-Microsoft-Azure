@@ -316,6 +316,8 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
 
 ## **Exercise 1.3: Create Broker**
 
+**Note:** A precreated broker might already exist, in that case skip to Exercise 1.4 else continue from steps below. 
+
 1. Expand **Settings** pane, click on **Broker** and then click on **Select**.
 
    ![ws name.](media/broker.png)
