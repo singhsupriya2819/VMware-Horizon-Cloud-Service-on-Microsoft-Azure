@@ -73,9 +73,25 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
 
    ![ws name.](media/exb22.png)
 
-### **Task 3: Add a New Horizon Cloud Service Pod**
+### **Task 3: Extend Session Timeout for Horizon Portal**
 
-1. In an account with no pods previously deployed, the Getting Started wizard defaults to the Capacity section. 
+1. In VMware Horizon dashboard expand **Settings** and select **General Settings**.
+
+2. Now click on the edit icon next to **Session Timeout**.
+
+   ![ws name.](media/us36.png)
+
+3. Change the value to 180 and click on **SAVE**.
+
+   ![ws name.](media/us37.png)
+
+
+
+### **Task 4: Add a New Horizon Cloud Service Pod**
+
+1. Now return to **Getting Started** page by expanding **Settings** and selecting **Getting Started**.
+
+   ![ws name.](media/us45.png)
 
 2. In the upper right corner of **Microsoft Azure** pane, click on **MANAGE** and the select **Add Pod**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
 
@@ -84,7 +100,7 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
    ![ws name.](media/exb23.png)
    
 
-### **Task 4: Provide Subscription Details**
+### **Task 5: Provide Subscription Details**
 
 1. In the Add Microsoft Azure Capacity tab, add the following values:
 
@@ -112,7 +128,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 2. In the lower right corner, click **ADD**.
 
-### **Task 5: Provide Pod Setup Details**
+### **Task 6: Provide Pod Setup Details**
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
 
@@ -131,7 +147,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 2. Scroll down to the next panel.
 
 
-### **Task 6: Provide Networking Details**
+### **Task 7: Provide Networking Details**
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
 
@@ -153,7 +169,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 2. In the Identity Management panel, accept the default, and click **Next**.
 
-### **Task 7: Provide Unified Access Gateway Details**
+### **Task 8: Provide Unified Access Gateway Details**
 
 1. In the Unified Access Gateway panel of the Work Setup tab, provide the following information.
     
@@ -181,7 +197,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    ![ws name.](media/vmw40.png)
 
-### **Task 8: Review Summary**
+### **Task 9: Review Summary**
 
 1. Review the summary, verify that the information is correct and complete, and then click **SUBMIT**.
 
@@ -190,7 +206,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
    ![ws name.](media/exb28.png)
 
 
-### **Task 9: Verify That the Pod Is Deployed**
+### **Task 10: Verify That the Pod Is Deployed**
 
 1. We will wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
 
