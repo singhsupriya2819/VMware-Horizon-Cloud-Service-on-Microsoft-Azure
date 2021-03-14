@@ -96,15 +96,15 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
  
    ![ws name.](media/exb24.png)
  
-To fill the below given fields, navigate to **Environment Details tab >  Service Principal Details** then copy and paste the values:
+To fill the below given fields, navigate to **Environment Details tab >  Service Principal Details** then copy and paste the corresponding values:
 
-   - Subscription ID
+   - Subscription ID: Use the **Subscription ID** from Service Principal details page
     
-   - Directory ID(i.e., Tenant Id in Service Principal Details) 
+   - Directory ID: Use the **Tenant ID ** from Service Principal details page
     
-   - Application ID
+   - Application ID: Use the **Application ID** from Service Principal details page
     
-   - Application Key(i.e., Secret key in Service Principal Details) 
+   - Application Key: Use the **Secret Key** from Service Principal details page
    
    - **Use a Different Subscription for External Gateway:** Accept the default and leave this option disabled.
 
