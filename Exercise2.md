@@ -175,13 +175,13 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Explore the details.
 
-   ![ws name.](media/us35.png)
+   ![ws name.](media/vmw48.png)
 
 ### **Task 9: Verify That the Imported VM Is Active**
 
 1. Return to the Horizon Cloud Service Administration Console and click on **GO** button in front of Import VM section.
-
-   ![ws name.](media/vmw48.png)
+   
+   ![ws name.](media/us35.png)
 
 2. Horizon Cloud Service automates the customization of the golden image VM, the green dot appears under Status, and the status changes to **Import Successful** when the process is complete.
 
