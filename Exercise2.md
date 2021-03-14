@@ -208,22 +208,31 @@ Depending on your configuration, you can use either a private or public IP addre
 
    ![ws name.](media/vmw49.png)
 
-3. Log in to the RDS-enabled Windows Server operating system using the credentials that you set up when creating the golden image VM, and enter the username as \username.
+3. In your AD Virtual Machine click on search on task bar, search for _Remote Desktop Connection_ and click on it.
+
+   ![ws name.](media/us38.png)
    
+4. Paste the IP Address you copied in step 2 and click on **Connect**.
 
+   ![ws name.](media/us39.png)
 
+5. On Enter your Credentials popup, paste the password below and click on **OK**.
 
+   Password: **<inject key="AD VM Admin Password" />**
+   
+   ![ws name.](media/us40.png)
 
+6. On the popup click on **Yes**.
 
-### **Task 2: Log in with a Local Administrator Account**
+   ![ws name.](media/us41.png)
 
-1. When the login window is displayed, you can log in to Horizon Client.
+7. Once you are connected, make sure the Virtual Machine resembles the image below. 
 
-   ![ws name.](media/exc12.png)
+   ![ws name.](media/us44.png)
+    
+8. You can add end-user applications and video GPU drivers, and any other required configurations to the VM.
 
-2. Once you are connected, you can add end-user applications and video GPU drivers, and any other required configurations to the VM.
-
-3. Install the third-party applications and drivers that you want available to run in the multi-user RDS desktop environment.
+9. Install the third-party applications and drivers that you want available to run in the multi-user RDS desktop environment.
 
   - In the Windows Server operating system, right-click the Start button and click Command Prompt (Admin) to open a command prompt as an administrator.
 
@@ -250,11 +259,13 @@ Depending on your configuration, you can use either a private or public IP addre
     change user /execute 
     ```
 
-4. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
+10. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
 
-5. Make any customizations or configurations you want to the RDS desktops, such as adding custom wallpaper, setting default fonts or colors or themes, adjusting the taskbar default settings, and so on.
+11. Make any customizations or configurations you want to the RDS desktops, such as adding custom wallpaper, setting default fonts or colors or themes, adjusting the taskbar default settings, and so on.
 
-6 When you finish, sign out of the operating system. Note: Do not shut down the Windows operating system, but instead, use Sign Out.
+12. When you finish do not shut down the Windows operating system, instead **Disconnect**.
+
+    ![ws name.](media/us43.png)    
 
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html), and search the guide for **Customize the Guest Windows Operating System of the Master Image Virtual Machine**.
 
