@@ -10,7 +10,6 @@
 
 3. Now enter the name of the pod and click on **Delete**.
 
-
    ![ws name.](media/dp2.png)
 
 4. You will get the screen above, with the status “Deleting POD”.
