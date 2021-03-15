@@ -19,13 +19,13 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 ### **Task 1: Navigate to Imported VMs**
 
-1. In the navigation panel of the Horizon Cloud Service Administration Console, click **Settings**.
+1. In the navigation panel of the Horizon Cloud Service Administration Console, click **Inventory**.
 
-2. In the Inventory menu, click **Getting Started**.
+2. In the Inventory menu, click **Imported VMs**.
 
-3. In front of **Import VM** pane, click on **Add** button.
+3. In Imported VMs page, click on **IMPORT** button.
 
-   ![ws name.](media/vmw10.png)
+   ![ws name.](media/us47.png)
 
 
 ### **Task 2: Provide Destination Desktop Details**
