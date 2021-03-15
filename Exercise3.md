@@ -41,7 +41,7 @@ When the new image has been published, you can use it to create farms.
    
       a. **Desktops:** Provides session-based desktops, b. **Applications:** Provides access to remote applications
  
-   - **Location:** Select the location from the list of pods in the pop-up menu.
+   - **Location:** Select the location in which you created pod in Exercise 1.
  
    - **Pod:** Select **pod-test**.
  
@@ -67,6 +67,16 @@ When the new image has been published, you can use it to create farms.
   - **Image:** Select an available RDSH image from the list. Images that do not match the desktop model disk size are not displayed.
   
   - **Preferred Protocol:** **Blast Extreme**
+
+   ![ws name.](media/us46.png)
+
+  - **Prefered Client Type:** Horizon Client
+
+  - **Join Domain:** Enabled
+
+  - **Encrypt Disks:** Leave it **Disabled**
+
+  - NSX Cloud Management: Leave it **Disabled**
 
 2. Scroll to the **Farm Size** section.
 
@@ -94,7 +104,7 @@ When the new image has been published, you can use it to create farms.
 
   - **Computer OU**: <inject key="horizon OU path" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
   
-  - **Run Once Script** (optional): You can enter the full executable path of a script that you want run after system preparation completes.
+  - **Run Once Script**: Leave blank
 
 2. In the lower right corner, click **Next**.
 
