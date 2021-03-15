@@ -5,12 +5,12 @@
 
 2. From the drop down select **Delete Pod**.
 
-   ![ws name.](media/dp1.png)
+   ![ws name.](media/us48.png)
    
 
 3. Now enter the name of the pod and click on **Delete**.
 
-   ![ws name.](media/dp2.png)
+   ![ws name.](media/us49.png)
 
 4. You will get the screen above, with the status “Deleting POD”.
 
@@ -23,7 +23,7 @@
 
 6. Click on **Manage** and **Manage Subscriptions**.
 
-   ![ws name.](media/dp5.png)
+   ![ws name.](media/us50.png)
    
 
 7. Click on the Action drop down and choose **Delete**.
