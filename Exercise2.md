@@ -145,9 +145,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 **Note: This process will take 10 minutes to complete.**
 
-3. Wait for the status to turn complete under Import VM section before proceeding with the lab.
+3. Wait for the status to turn complete under Import VM section before proceeding with the lab. The green dot appears under Status, and the status changes to Import Successful when the process is complete.
 
-   ![ws name.](media/us34.png)
+   ![ws name.](media/exc23.png)
    
 
 ### **Task 7: Verify the VM Imported Successfully in Microsoft Azure**
@@ -177,15 +177,6 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
    ![ws name.](media/vmw48.png)
 
-### **Task 9: Verify That the Imported VM Is Active**
-
-1. Return to the Horizon Cloud Service Administration Console and click on **GO** button in front of Import VM section.
-   
-   ![ws name.](media/us35.png)
-
-2. Horizon Cloud Service automates the customization of the golden image VM, the green dot appears under Status, and the status changes to **Import Successful** when the process is complete.
-
-   ![ws name.](media/exc23.png)
 
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Create a Master Virtual Machine Automatically from the Microsoft Azure Marketplace**.
 
