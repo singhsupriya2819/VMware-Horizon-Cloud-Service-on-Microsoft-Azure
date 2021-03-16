@@ -37,7 +37,7 @@ We have preconfigured the DNS Server, which is required during the Horizon Cloud
 
 ### **Service Principal with Contributor Role**
 
-Horizon Cloud Service needs a service principal to access and use your Microsoft Azure subscription capacity. A service principal defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant. We have precreated a Service Principal in the lab tenent with Contributor role.
+Horizon Cloud Service needs a service principal to access and use your Microsoft Azure subscription capacity. A service principal defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant. We have precreated a Service Principal in the lab tenant with Contributor role.
 
 ### **Resource Providers**
 
