@@ -34,7 +34,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   - **Location:** Select the location we used while creating Pod in Exercise 1.
 
-  - **Pod:** Select pod-test
+  - **Pod:** Select **pod-test**
 
 2. Scroll down to the Virtual Machine Details panel.
 
@@ -42,6 +42,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 
 ### **Task 3: Provide Desktop Details**
+
+**Note:** Please wait until the drop down against the **OS** field is loaded with a value
+
  
 1. Under Desktop Details, provide the following information:
 
