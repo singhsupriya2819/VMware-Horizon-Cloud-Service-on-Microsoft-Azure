@@ -35,6 +35,17 @@ We have preconfigured the DNS Server, which is required during the Horizon Cloud
 
 Horizon Cloud Service needs a service principal to access and use your Microsoft Azure subscription capacity. A service principal defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant. We have precreated a Service Principal in the lab tenant with Contributor role.
 
+   - **Service Principal:** Like a certificate, the service principal object defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant
+
+   - **Subscription ID:** Primary Microsoft Azure billing identifier based on your agreement with Microsoft
+
+   - **Directory ID:** Your Primary Identifier or Identifiers in Microsoft Azure Active Directory
+   
+   - **Application ID:** An attribute of the Service Principal that securely ties the Horizon Cloud Service control plane to your Microsoft Azure subscription and is used to authorize Horizon Cloud as an application to use your Microsoft Azure capacity
+
+   - **Application Key:** A one-time-use password that is used to encrypt the service principal. 
+
+
 ### **Resource Providers**
 
 VMware Horizon Cloud Service require below Resource Providers to be registered in the Azure subscription. We have preregistered these Resource Providers while provisioning the environment; there is no action needed from your end.
