@@ -201,7 +201,7 @@ You can customize the Windows operating system of the new golden image VM, set w
 
 2. Copy the IP address.
 
-   ![ws name.](media/vmw49.png)
+   ![ws name.](media/us52.png)
 
 3. In your AD Virtual Machine click on **Search** on task bar, search for _Remote Desktop Connection_ and click on it.
 
