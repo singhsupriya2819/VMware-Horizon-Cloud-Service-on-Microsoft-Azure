@@ -311,18 +311,18 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    ![ws name.](media/us37.png)
 
-After deploying the Horizon Cloud Service pod and completing the bind operation, proceed to the next section to create golden images.
-
 
 ## **Exercise 1.3: Create Broker**
 
+1. Expand **Settings** pane, click on **Broker**.
+
 **Note:** A precreated broker might already exist. In that case skip to Exercise 1.4, else continue with the steps below. 
 
-1. Expand **Settings** pane, click on **Broker** and then click on **Select**.
+2. Click on **Select**.
 
    ![ws name.](media/broker.png)
 
-2. In FQDN section, enter following values:
+3. In FQDN section, enter following values:
 
    - Type: **VMware Provided**
    
@@ -334,15 +334,15 @@ After deploying the Horizon Cloud Service pod and completing the bind operation,
 
    ![ws name.](media/broker1.png)
 
-3. In Authentication section, leave all configurations on default and click on **Next**.
+4. In Authentication section, leave all configurations on default and click on **Next**.
 
    ![ws name.](media/broker2.png)
 
-4. In Settings section, leave all configurations on default and click on **Next**.
+5. In Settings section, leave all configurations on default and click on **Next**.
 
    ![ws name.](media/broker3.png)
 
-5. Review the Summary section and click on **Finish**.
+6. Review the Summary section and click on **Finish**.
 
    ![ws name.](media/broker4.png)
 
