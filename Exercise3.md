@@ -165,7 +165,7 @@ When the new image has been published, you can use it to create farms.
   
   - **Session Timeout Retrieval:** Leave blank.
 
-  - **Schedule Power Management:** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
+  - **Schedule Power Management (Optional):** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
 
 
 ### **Task 8: Load Balancing Settings**
@@ -173,7 +173,7 @@ When the new image has been published, you can use it to create farms.
 
    ![ws name.](media/us11.png)
 
-1. Under Schedule Power Management, click **Add a row**, and set the power management schedule:
+1. Under Load Balancing Settings provide the following details:
 
   - **Login Threshold:** Provide a recognizable name for this schedule.
   
