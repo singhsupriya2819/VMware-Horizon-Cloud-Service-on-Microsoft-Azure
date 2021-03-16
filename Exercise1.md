@@ -9,19 +9,6 @@ In this series of exercises, you deploy a Horizon Cloud Service pod and bind it 
 
 Armed with the prerequisite information from your Microsoft Azure tenant, you are now ready to begin deploying the Horizon Cloud Service pod and binding it to an existing Active Directory domain.
 
-1. Use your My VMware credentials, which give you access to the Horizon Cloud Service control plane.
-
-2. Before you deploy the Horizon Cloud Service pod, verify that you have the prerequisite information from your Microsoft Azure tenant, which the Horizon Cloud Service deployment wizard uses during the deployment process:
-
-   - **Service Principal:** Like a certificate, the service principal object defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant
-
-   - **Subscription ID:** Primary Microsoft Azure billing identifier based on your agreement with Microsoft
-
-   - **Directory ID:** Your Primary Identifier or Identifiers in Microsoft Azure Active Directory
-   
-   - **Application ID:** An attribute of the Service Principal that securely ties the Horizon Cloud Service control plane to your Microsoft Azure subscription and is used to authorize Horizon Cloud as an application to use your Microsoft Azure capacity
-
-   - **Application Key:** A one-time-use password that is used to encrypt the service principal. 
 
 For more information, see [_Getting Started with VMware Horizon Cloud Service on Microsoft Azure_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-6E460805-C323-4200-9A45-45E7BFB31730.html).
 
