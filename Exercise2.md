@@ -146,9 +146,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
    ![ws name.](media/us5.png)
 
-**Note: This process will take 10 minutes to complete.**
+**Note: This process will take approximately 10 minutes to complete.**
 
-3. Wait for the status to turn complete under Import VM section before proceeding with the lab. The green dot appears under Status, and the status changes to Import Successful when the process is complete.
+3. Wait for the agent status to turn **Import successful** under Imported VM section before proceeding with the lab. Once the import is successful, a **Green dot** appears under Status.
 
    ![ws name.](media/exc23.png)
    
@@ -163,10 +163,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    
    - Password: Enter **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
-> **Note:** 
->  - If there is a popup entitled **Help us protect your account**, click on **Skip for now (14 days until this is required)**.
+> **Note:**  If there is a popup entitled **Help us protect your account**, click on **Skip for now (14 days until this is required)**.
 
-   ![ws name.](media/us51.png)
+> ![ws name.](media/us51.png)
    
 >  - If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
 >  - If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
@@ -198,15 +197,13 @@ You can customize the Windows operating system of the new golden image VM, set w
 
 ### **Task 1: RDP to a Public IP**
 
-Depending on your configuration, you can use either a private or public IP address to RDP to the new golden image VM.
-
 1. Use the Public IP address of the golden image VM to connect to the RDS-enabled Windows Server operating system.
 
 2. Copy the IP address.
 
    ![ws name.](media/vmw49.png)
 
-3. In your AD Virtual Machine click on search on task bar, search for _Remote Desktop Connection_ and click on it.
+3. In your AD Virtual Machine click on **Search** on task bar, search for _Remote Desktop Connection_ and click on it.
 
    ![ws name.](media/us38.png)
    
