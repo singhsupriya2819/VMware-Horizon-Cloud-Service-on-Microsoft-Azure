@@ -161,6 +161,10 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    - Password: Enter **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
 > **Note:** 
+>  - If there is a popup entitled **Help us protect your account**, click on **Skip for now (14 days until this is required)**.
+
+   ![ws name.](media/us51.png)
+   
 >  - If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
 >  - If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
 
