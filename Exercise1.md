@@ -87,7 +87,7 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
    ![ws name.](media/exb23.png)
    
 
-### **Task 5: Provide Subscription Details**
+### **Task 4: Provide Subscription Details**
 
 1. In the Add Microsoft Azure Capacity tab, add the following values:
 
@@ -115,7 +115,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 2. In the lower right corner, click **ADD**.
 
-### **Task 6: Provide Pod Setup Details**
+### **Task 5: Provide Pod Setup Details**
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
 
@@ -134,7 +134,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 2. Scroll down to the next panel.
 
 
-### **Task 7: Provide Networking Details**
+### **Task 6: Provide Networking Details**
 
 1. In the Networking panel of the Work Setup tab, provide the following information:
 
@@ -156,7 +156,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 2. In the Identity Management panel, accept the default, and click **Next**.
 
-### **Task 8: Provide Unified Access Gateway Details**
+### **Task 7: Provide Unified Access Gateway Details**
 
 1. In the Unified Access Gateway panel of the Work Setup tab, provide the following information.
     
@@ -184,7 +184,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    ![ws name.](media/vmw40.png)
 
-### **Task 9: Review Summary**
+### **Task 8: Review Summary**
 
 1. Review the summary, verify that the information is correct and complete, and then click **SUBMIT**.
 
@@ -193,7 +193,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
    ![ws name.](media/exb28.png)
 
 
-### **Task 10: Verify That the Pod Is Deployed**
+### **Task 9: Verify That the Pod Is Deployed**
 
 1. We will wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
 
