@@ -187,21 +187,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
    ![ws name.](media/exb29.png)
    
 
-### **Task 11: Extend Session Timeout for Horizon Portal**
-
-1. In VMware Horizon dashboard expand **Settings** and select **General Settings**.
-
-2. Now click on the edit icon next to **Session Timeout**.
-
-   ![ws name.](media/us36.png)
-
-3. Change the value to 180 and click on **SAVE**.
-
-   ![ws name.](media/us37.png)
-
-
-
-After you finish deploying the Horizon Cloud Service pod and have extended the Session Timeout for Horizon portal, proceed to the next exercise to perform the domain bind operation.
+After you finish deploying the Horizon Cloud Service pod, proceed to the next exercise to perform the domain bind operation.
 
 
 ## **Exercise 1.2: Binding to the Active Directory Domain**
@@ -315,6 +301,17 @@ To complete the Active Directory configuration, provide information about the do
 
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Register Your First Active Directory Domain**.
 
+### **Task 8: Extend Session Timeout for Horizon Portal**
+
+1. In VMware Horizon dashboard expand **Settings** and select **General Settings**.
+
+2. Now click on the edit icon next to **Session Timeout**.
+
+   ![ws name.](media/us36.png)
+
+3. Change the value to 180 and click on **SAVE**.
+
+   ![ws name.](media/us37.png)
 
 After deploying the Horizon Cloud Service pod and completing the bind operation, proceed to the next section to create golden images.
 
