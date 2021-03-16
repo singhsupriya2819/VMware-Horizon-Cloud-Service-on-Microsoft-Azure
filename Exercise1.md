@@ -167,7 +167,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
     ![ws name.](media/us33.png)
 
-2. click on **VALIDATE & PROCEED**.
+2. Click on **VALIDATE & PROCEED**.
 
    ![ws name.](media/vmw40.png)
 
@@ -175,7 +175,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. Review the summary, verify that the information is correct and complete, and then click **SUBMIT**.
 
-**Note: This process will take approximately 60 to 80 minutes to complete.**
+**Note: This process will take approximately 60 to 120 minutes to complete.**
 
    ![ws name.](media/exb28.png)
 
