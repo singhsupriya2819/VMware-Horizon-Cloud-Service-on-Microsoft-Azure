@@ -56,7 +56,7 @@ When the new image has been published, you can use it to create farms.
 
   - **Specify VM Subnet(s):** Toggle off the switch.
 
-  - **Filter Models:** From first drop-down select **Tag** then from the equals drop-down select **VMware Recomended**
+  - **Filter Models:** From first drop-down select **Tag** then from the equals drop-down select **VMware recommended**
   
   - **Model:** Select the Azure VM size for the Farm. Some VM sizes are not available in all regions.
   
@@ -70,7 +70,7 @@ When the new image has been published, you can use it to create farms.
 
    ![ws name.](media/us46.png)
 
-  - **Prefered Client Type:** Horizon Client
+  - **Preferred  Client Type:** Horizon Client
 
   - **Join Domain:** Enabled
 
@@ -181,13 +181,13 @@ When the new image has been published, you can use it to create farms.
   
   - **Memory Usage Threshold:** Select a time of the day to start the schedule. You might need to scroll to see all options.
   
-  - **Disk Queue Lenght Threshold:** Select the time of the day to end the schedule.
+  - **Disk Queue Length Threshold:** Select the time of the day to end the schedule.
   
   - **Disk Read Latency Threshold:** Set the time zone if it differs from the default.
   
   - **Disk Write Latency Threshold:** Enter the minimum number of servers to include.
   
-  - **Local Indes Threshold:**
+  - **Local Index Threshold:** Set the threshold for local index.
    
    
 2. In the lower right corner, click **Next**.
@@ -287,7 +287,7 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
    ![ws name.](media/vmw11.png)
 
-1. In the New Application window fill the following details asked in the definetion page.
+1. In the New Application window fill the following details asked in the definition page.
 
   - **Location:** Select a location from the pop-up menu.
   - **Pod:** **pod-test**.
