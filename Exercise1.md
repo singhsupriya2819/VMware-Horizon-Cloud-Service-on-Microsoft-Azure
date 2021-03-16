@@ -73,21 +73,8 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
 
    ![ws name.](media/exb22.png)
 
-### **Task 3: Extend Session Timeout for Horizon Portal**
 
-1. In VMware Horizon dashboard expand **Settings** and select **General Settings**.
-
-2. Now click on the edit icon next to **Session Timeout**.
-
-   ![ws name.](media/us36.png)
-
-3. Change the value to 180 and click on **SAVE**.
-
-   ![ws name.](media/us37.png)
-
-
-
-### **Task 4: Add a New Horizon Cloud Service Pod**
+### **Task 3: Add a New Horizon Cloud Service Pod**
 
 1. Now return to **Getting Started** page by expanding **Settings** and selecting **Getting Started**.
 
@@ -211,8 +198,23 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 1. We will wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
 
    ![ws name.](media/exb29.png)
+   
 
-After you finish deploying the Horizon Cloud Service pod, proceed to the next exercise to perform the domain bind operation.
+### **Task 11: Extend Session Timeout for Horizon Portal**
+
+1. In VMware Horizon dashboard expand **Settings** and select **General Settings**.
+
+2. Now click on the edit icon next to **Session Timeout**.
+
+   ![ws name.](media/us36.png)
+
+3. Change the value to 180 and click on **SAVE**.
+
+   ![ws name.](media/us37.png)
+
+
+
+After you finish deploying the Horizon Cloud Service pod and have extended the Session Timeout for Horizon portal, proceed to the next exercise to perform the domain bind operation.
 
 
 ## **Exercise 1.2: Binding to the Active Directory Domain**
