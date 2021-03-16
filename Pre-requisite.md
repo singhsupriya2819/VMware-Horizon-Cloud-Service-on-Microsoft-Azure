@@ -41,7 +41,7 @@ Horizon Cloud Service needs a service principal to access and use your Microsoft
 
 ### **Resource Providers**
 
-VMware Horizon Cloud Service require below Resource Providers to be registered in the Azure subscription which is preregistered while provisioning the environment.
+VMware Horizon Cloud Service require below Resource Providers to be registered in the Azure subscription. We have preregistered these Resource Providers while provisioning the environment; there is no action needed from your end.
 
   - Microsoft.Compute
   - Microsoft.Insights
