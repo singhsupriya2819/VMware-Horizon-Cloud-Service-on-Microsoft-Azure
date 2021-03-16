@@ -293,9 +293,7 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 7: Join the VMware Customer Experience Improvement Program**
 
-1. With the Horizon Cloud Service pod deployed and the bind operation complete, we may be prompted with a popup to choose whether or not to join the VMware Customer Experience Improvement Program, we can move the slider to Yes/No.
-
-2. In the lower right corner, click **Save**.
+**Note**: Once you login back to Horizon Cloud service portal after deploying the pod and completing the bind operation, we may be prompted with a popup to choose whether or not to join the VMware Customer Experience Improvement Program(CEIP). Move the slider to **Yes**, and click on **Save**.
 
    ![ws name.](media/exb38.png)
 
@@ -309,7 +307,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    ![ws name.](media/us36.png)
 
-3. Change the value to 180 and click on **SAVE**.
+3. Change the value to **180** and click on **SAVE**.
 
    ![ws name.](media/us37.png)
 
