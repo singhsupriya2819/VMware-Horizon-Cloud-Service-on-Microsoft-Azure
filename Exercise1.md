@@ -241,7 +241,7 @@ To complete the Active Directory configuration, provide information about the do
 
    ![ws name.](media/vmw41.png)
 
-**Note:** There might be a delay of 10 seconds after clicking on Domain bind, incase _Domain Join Details_ page doesn't appear in 10 seconds then try clicking on **DOMAIN BIND** button again.
+**Note: **After clicking on **DOMAIN BIND** button, there might be a delay of few seconds for the Domain Join Details page to appear. Please do not click on **DOMAIN BIND** button again in the mean time.
 
 
 ### **Task 4: Provide Domain Join Details**
