@@ -23,11 +23,7 @@ There are two precreated virtual network i.e:
 
 ### **VNet Peering**
 
-We use Microsoft Azure to configure bi-directional peering. One should configure VNet-to-VNet peering only if the following is true:
-
-  - A new VNet that does not have an AD VM inside it
-  - Not using Express Route for VNet peering
-  - Not using VPN for express route peering
+We have preconfigured the bi-directional peering between virtual networks adVNET and HZN-Vnet. By doing this, the Horizon resources deployed in HZN-Vnet will be able to communicate to adVNET, where Active Directory is deployed.
 
 
 ### **DNS Server**
