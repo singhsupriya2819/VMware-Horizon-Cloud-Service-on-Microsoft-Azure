@@ -307,7 +307,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    ![ws name.](media/us36.png)
 
-3. If the value is 180, no action is needed. Else, change the value to **180** and click on **SAVE**.
+3. If the value of Admin portal Timeout is **180**, no action is needed. Else, change the value to **180** and click on **SAVE**.
 
    ![ws name.](media/us37.png)
 
