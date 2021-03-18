@@ -328,7 +328,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
    
    - Subdomain: Enter a unique name for subdomain.
    
-   - Broken URL: This will get created when you will add Subdomain name.
+   - Broker URL: This will get created when you will add Subdomain name.
    
    - Click on **NEXT**.
 
