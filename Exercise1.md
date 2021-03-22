@@ -106,7 +106,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
 
-   - Site: Select **Existing**
+   **Note:** If there is an option to select **Site** then select **Existing**
    
    - Pod Name: **pod-test**
     
