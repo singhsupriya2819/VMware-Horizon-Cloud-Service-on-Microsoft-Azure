@@ -100,7 +100,8 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
 
-   **Note:** If there is an option to select **Site** then select **Existing**
+   - Site: Choose **Existing** and select the **Default-Site** from the dropdown. 
+   **Note**: In case **Default-Site** is not available, choose **New** and provide the name **Site-1**
    
    - Pod Name: **pod-test**
     
