@@ -156,9 +156,9 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
     
    - **Certificate:** Click on **Upload**. Navigate to **C:\LabFiles** and select **vdicert** file.
 
-   - For this exercise, leave the two-factor identification settings disabled.
+   - Enable 2 Factor Authentication?: **Disable**
 
-   - enable **Inherit Pod tags**
+   - Inherit Pod tags: **Enable**
 
     ![ws name.](media/us33.png)
 
