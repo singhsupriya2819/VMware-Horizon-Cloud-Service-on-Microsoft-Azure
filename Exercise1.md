@@ -63,13 +63,7 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
 
 ### **Task 3: Add a New Horizon Cloud Service Pod**
 
-1. Now return to **Getting Started** page by expanding **Settings** and selecting **Getting Started**.
-
-   ![ws name.](media/us45.png)
-
-2. In the upper right corner of **Microsoft Azure** pane, click on **MANAGE** and the select **Add Pod**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
-
-**Note:** To add a new Microsoft Azure pod to an account with pods previously deployed, you can alternatively click **Settings > Capacity > New > Pod > Microsoft Azure**.
+1. By default, you will be directed to the **Getting Started** page. In the upper right corner of **Microsoft Azure** pane, click on **MANAGE** and the select **Add Pod**. Adding capacity is equivalent to deploying a pod in a capacity environment and connecting that pod to your overall Horizon Cloud environment.
 
    ![ws name.](media/exb23.png)
    
