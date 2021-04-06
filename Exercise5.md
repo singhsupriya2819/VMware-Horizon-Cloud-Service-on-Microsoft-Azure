@@ -8,7 +8,7 @@
    ![ws name.](media/us48.png)
    
 
-3. Now enter the name of the pod and click on **Delete**.
+3. Now, enter the name of the pod and click on **Delete**.
 
    ![ws name.](media/us49.png)
 
