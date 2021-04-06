@@ -1,4 +1,4 @@
-# **Exercise 5: Cleanup of VMware Horizon Account**
+# **Exercise 5: Cleanup of the VMware Horizon Account**
 
 
 1. On the Getting Started page, Click on **Manage**.
