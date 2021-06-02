@@ -48,7 +48,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
  
 1. Under Desktop Details, provide the following information:
 
-  - **OS:** Windows Server 2019 Datacenter
+  - **OS:** Windows 10 Enterprise milti-session, 20H2 + Office 365 ProPlus
 
   - **Include GPU:** Slide **disable**
 
@@ -62,7 +62,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. Scroll down to the next panel.
 
-   ![ws name.](media/exc20.png)
+   ![ws name.](media/updt1.png)
 
 
 ### **Task 4: Provide Admin Credentials for the Desktop**
@@ -97,12 +97,16 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Horizon Agent Features, accept the default to install all features in the golden VM:
 
+  - **App Volume Agent:** Slide to **Enable** it.
+
+  **Note:** Installs the App Volumes Agent on the desktop.
+
   - **Enable Flash MMR:** Slide to **Enable** it.
  
   **Note:** Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
 
  
- - **3D support in RDSH:** Slide to **Disable** it.
+ - **3D support in Windows 10 MultiSession:** Slide to **Disable** it.
   
   **Note:** Provides support for vGPU-powered 3D RDS hosts.
 
@@ -144,7 +148,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. In the lower right corner, click **IMPORT**.
 
-   ![ws name.](media/us5.png)
+   ![ws name.](media/updt2.png)
 
 **Note: This process will take approximately 10 minutes to complete.**
 
