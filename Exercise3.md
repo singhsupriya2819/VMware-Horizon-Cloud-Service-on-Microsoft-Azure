@@ -298,11 +298,13 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
 ### **Task 4: Select the Applications to Publish**
 
-   ![ws name.](media/us22.png)
+   ![ws name.](media/updt3.png)
 
-1. In the Applications tab, select the applications to be published.
+1. In the Applications tab, select the applications to be published for example: Excel, Microsoft Edge, Outlook, Word and OneDrive.
 
-2. In the lower right corner, click **Next**.
+   **Note:** We can click on the **(2)** next page button near the lower right corner to navigate through the different pages of the list of applications.
+
+2. In the lower right corner, click **(3)** **Next**.
 
 
 ### Task 5: Provide Attributes
@@ -311,7 +313,7 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
 2. In the lower right corner, click **Next**.
 
-    ![ws name.](media/us23.png)
+    ![ws name.](media/updt4.png)
 
 
 ### Task 6: Verify the Summary Information
@@ -319,15 +321,43 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 1. In the Summary tab, review to verify that the selections are correct and complete.
 2. In the lower right corner, click **Finish**.
 
-    ![ws name.](media/exdu21.png)
+    ![ws name.](media/updt5.png)
     
     
 ### Task 7: Verify Addition of New Applications
 
-   ![ws name.](media/us24.png)
+   ![ws name.](media/updt6.png)
 
 In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
 
+
+### Task 8: Adding a Application Manually from Farm
+
+1. On *Application* page, click on **New** and select **Manually from Farm** from the drop-down menu.
+
+    ![ws name.](media/updt12.png)
+
+2. Enter the folowing details for **Remote Applications Definitions**.
+
+    ![ws name.](media/updt13.png)
+
+   - Name: **FileExplorer**
+   - Display Name: **File Explorer**
+   - Location: *Enter the location we used while creating pod*
+   - Pod: **pod-test*
+   - Farm: **FirstFarm**
+   - Application Path: **C:\Windows\explorer.exe**
+
+3. Click on **BROWSE** button and navigate to **C:\LabFiles\** , Now from file filter dropdown select **All files** and select **explorer.ico** and click on **Open**.
+
+    ![ws name.](media/updt14.png)
+
+4. Click on **SUBMIT** to publish the application.
+
+    ![ws name.](media/updt15.png)
+
+   >**Note:** If File Explorer does not appear in the list of applications then you might have to click on refresh button on top right corner of the list.
+    
 For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and search the guide for **Importing New Applications from an RDSH Farm Using Auto-Scan from Farm**.
 
 After you finish adding applications from the farm, proceed to the next section to explore assigning desktops and applications to users and groups.
