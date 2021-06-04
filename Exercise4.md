@@ -136,6 +136,7 @@ When you finish assigning session-based desktops to users and groups, this exerc
    ![ws name.](media/vmw21.png)
   
   >**Note:** If you are prompted with following warning then click on **Continue**.
+  >
   >![ws name.](media/updt9.png)
 
 2. The login window will appear asking for username and password to connect to the server.
