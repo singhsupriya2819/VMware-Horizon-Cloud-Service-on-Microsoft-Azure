@@ -65,10 +65,10 @@ To create a session desktop assignment, use the Assignments window after first v
 
 ### **Task 1: Assign New**
 
-1. In the navigation pane on the left, click **Assignments**.
+1. In the navigation pane on the left, click **Assign Desktops & Apps** and select **RDSH** from dropdown menu.
 2. In the Assignments window, click **New**.
 
-   ![ws name.](media/exeu14.png)
+   ![ws name.](media/updt7.png)
 
 
 ### **Task 2: Select Applications**
@@ -95,7 +95,7 @@ In the New Assignment window, select **Applications**.
 
 1. In the Applications tab, select the applications to add.
 
-   ![ws name.](media/us27.png)
+   ![ws name.](media/updt8.png)
 
 2. In the lower right, click **Next**.
 
@@ -112,7 +112,7 @@ In the New Assignment window, select **Applications**.
    
 1. In the Summary tab, review the configuration summary.
 
-   ![ws name.](media/us29.png)
+   ![ws name.](media/updt16.png)
 
 2. In the lower right corner, click **Submit**.
 
@@ -135,6 +135,8 @@ When you finish assigning session-based desktops to users and groups, this exerc
   
    ![ws name.](media/vmw21.png)
   
+  >**Note:** If you are prompted with following warning then click on **Continue**.
+  >![ws name.](media/updt9.png)
 
 2. The login window will appear asking for username and password to connect to the server.
 
@@ -153,7 +155,7 @@ When you finish assigning session-based desktops to users and groups, this exerc
   
 4. Double click on the Application we want to launch.
 
-  ![ws name.](media/vmw24.png)
+  ![ws name.](media/updt10.png)
   
   
 5. The Application will start loading.
