@@ -1,4 +1,4 @@
-# **Exercise 3: Deploying a Farm**
+# **Exercise 3: Deploying a Application Farm**
 
 ## About Farm Deployment
 
