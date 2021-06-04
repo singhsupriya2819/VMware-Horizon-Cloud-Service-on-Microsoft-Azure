@@ -10,7 +10,7 @@ You set up these options in the Horizon Cloud Service farm profile when you firs
 
 **Note:** For this set of exercises, you need a server image deployed.
 
-## **Exercise 3.1: Creating a Farm**
+## **Exercise 3.1: Creating a Application Farm**
 
 When the new image has been published, you can use it to create farms.
 
