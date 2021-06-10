@@ -166,11 +166,13 @@ When you finish assigning session-based desktops to users and groups, this exerc
 
 6. If the prompt appears, click on **Allow**.
 
-  ![ws name.](media/vmw26.png)
+  ![ws name.](media/updt11.png)
   
 7. The Application will launch and will be ready to use.
 
-   ![ws name.](media/vmw27.png)
+   ![ws name.](media/updt19.png)
+
+>**Note:** Microsoft Office applications might not be usable as MS Office 365 License is not provided to the AD user used in the lab.
 
 
 
