@@ -99,26 +99,24 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   - **App Volume Agent:** Slide to **Enable** it.
 
-  **Note:** Installs the App Volumes Agent on the desktop.
+    >**Note:** Installs the App Volumes Agent on the desktop.
 
-  - **Enable Flash MMR:** Slide to **Enable** it.
- 
-  **Note:** Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
+  - **Enable Flash MMR:** Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
 
  
  - **3D support in Windows 10 MultiSession:** Slide to **Disable** it.
   
-  **Note:** Provides support for vGPU-powered 3D RDS hosts.
+   >**Note:** Provides support for vGPU-powered 3D RDS hosts.
 
  
  - **MMR for Terminal Services:** Slide to **Enable** it. 
   
-  **Note:** Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
+   >**Note:** Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
 
  
  - **Client Drive Redirection:** Slide to **Enable** it.
   
-  **Note:** Allows you to share folders and drives on your local system with remote desktops and applications.
+   >**Note:** Allows you to share folders and drives on your local system with remote desktops and applications.
 
   - **Skype for Business:** Provides the ability to use the RDS desktops to make optimized audio and video calls with Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network.
   
@@ -127,7 +125,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
   
   - **Smart Card:** Slide to **Disable** it
   
-  **Note:** Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
+    >**Note:** Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
 
   
   - **VMware Print:** Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
