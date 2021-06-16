@@ -369,6 +369,29 @@ Review the Summary and click on **FINISH**.
 
 Click on the refresh icon and make sure that the Status of the Assignment is **Online* **(Depicted with a green tick)**.
 
-## Task 5: Verifying the working of App Volume.
+## Task 5: Verifying App Volume.
 
-1.
+1. Launch **Horizon Client** from Desktop of ADVM Virtual Machine and double click on **vdi.mydomain.local**.
+
+   ![ws name.](media/updt73.png)
+
+2. Use the following credentials to login.
+
+   ![ws name.](media/updt74.png)
+
+  - Username: <inject key="vdi Username 1" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+  
+  - Password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+  
+  - Domain: Leave on **DefaultDomain**
+
+
+3. Double click on **Sessiondesktop**.
+
+   ![ws name.](media/updt75.png)
+
+4. After Session Desktop is launched, the application can be seen present inside the session.
+
+   ![ws name.](media/updt76.png)
+   
+   
