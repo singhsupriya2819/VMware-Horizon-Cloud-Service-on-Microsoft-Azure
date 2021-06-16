@@ -1,6 +1,6 @@
-# Creating a Desktop Farm
+# **Exercise 5: Creating a Desktop Farm**
 
-## **Exercise 3.1: Creating a Farm**
+## **Exercise 5.1: Creating a Farm**
 
 When the new image has been published, you can use it to create farms.
 
