@@ -1,187 +1,158 @@
 # **Exercise 7: App Volumes**
 
-## **Exercise 3.1: Creating a Application Farm for App Volume**
+# **Exercise 2: Creating an Image**
 
-When the new image has been published, you can use it to create farms.
+**About Image Creation**
 
-### **Task 1: Create a New Farm**
+Microsoft provides a variety of VM templates in the Microsoft Azure Marketplace. Upon import, Horizon Cloud Service joins the VM to the domain, enables the RDS role, automates the Horizon and DaaS installations, and performs a bootstrap process, enabling secure pairing of the DaaS agent to the Horizon Cloud Service pod. All of this is automated, although the process can be performed manually if you want to convert an existing VM to a Horizon Cloud Service image yourself.
 
-   ![ws name.](media/vmw6.png)
+After the imported VM is configured with the necessary applications, Horizon Cloud Service converts the VM to an image by automatically running SYSPREP and sealing the OS. You can then use the image to create RDS session host farms and assign dedicated and floating VDI desktops.
 
-1. In the navigation bar of Horizon Cloud Service Administration Console, select **Inventory**.
-
-2. Select **Farms**.
-
-3. In the Farms window, click **New**.
+**Note:** With the March 2020 release of Horizon Cloud on Microsoft Azure, you have access to new operating system types in your drop-down menu. For more information, see [_Horizon Cloud on Microsoft Azure Support for Windows Virtual Desktop is Here](https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html) and [_VMware Horizon Cloud Service Release Notes - v3 - March 2020_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html).
 
 
-### **Task 2: Provide General Settings**
+## **Exercise 7.1: Importing VMs from Microsoft Azure Marketplace**
 
-   ![ws name.](media/updt32.png)
+In this exercise, you import a VM from the Microsoft Azure Marketplace, configure it with applications, and convert the VM to an image. With this image, you can then create new instances of the VM.
 
-1. In the New Farm window, **Definition** tab, provide the following information, and then scroll down.
-  
-   - **Name:** **ThirdFarm**
+Later in this Tutorial, a set of exercises create an RDS server farm, for which you need an image with a server OS. Another set of exercises create a pool of VDI desktops, for which you need a Windows 10 desktop OS.
 
-   - **Description:** Enter an optional description to help identify the farm in the system.
+This exercise demonstrates deploying a new image using a desktop OS, and the process for deploying a server OS is virtually the same.
 
-   - **VM Names:** **Farm3**
+### **Task 1: Navigate to Imported VMs**
 
-   - **Farm Type:** Select **Applications**
-   
-      a. **Desktops:** Provides session-based desktops, b. **Applications:** Provides access to remote applications
+1. In the navigation panel of the Horizon Cloud Service Administration Console, click **Inventory**.
+
+2. In the Inventory menu, click **Imported VMs**.
+
+3. In Imported VMs page, click on **IMPORT** button.
+
+   ![ws name.](media/us47.png)
+
+
+### **Task 2: Provide Destination Desktop Details**
  
-   - **Location:** Select the location in which you created pod in Exercise 1.
+1. In the Import Desktop Marketplace window under Destination Desktop, provide the following information:
+
+  - **Location:** Select the location we used while creating Pod in Exercise 1.
+
+  - **Pod:** Select **pod-test**
+
+2. Scroll down to the Virtual Machine Details panel.
+
+   ![ws name.](media/updt37.png)
+
+
+### **Task 3: Provide Desktop Details**
+
+**Note:** Please wait until the drop down against the **OS** field is loaded with a value
+
  
-   - **Pod:** Select **pod-test**.
+1. Under Desktop Details, provide the following information:
+
+  - **OS:** Windows 10 Enterprise, 2004
+
+  - **Include GPU:** Slide **disable**
+
+  - **Domain Join:** Slide **enable**
+  
+  - **Domain:** Select the Active Directory domain **<inject key="Domain NETBIOS Name" />** .
+
+  - **Enable Public IP Address:** Select **Yes** to configure a public IP address so you can access the VM through an RDP connection.
+
+  - **Optimize Windows Image:** **Enable** it to optimize Windows on image import, which improves VM performance and capacity utilization.
+
+2. Scroll down to the next panel.
+
+   ![ws name.](media/updt38.png)
+
+
+### **Task 4: Provide Admin Credentials for the Desktop**
+
+1. Under Admin Credentials for the Desktop, provide the required information:
+
+  - Username: **<inject key="AD VM Admin UserName" />**
+
+  - Password: **<inject key="AD VM Admin Password" />**
+  
+  - Verify Password: **<inject key="AD VM Admin Password" />**
+
+    ![ws name.](media/us6.png)
+
+2. Scroll to the next panel.
+
+   
+### **Task 5: Provide Properties**
+
+1. In the Admin Credentials for the Desktop panel and the Properties panel, provide the required information.
+
+  - **Name:** Enter **Win10AppVolume**
+
+  - **Description:** You can enter an optional description.
+
+2. Select **ADVANCED OPTIONS** to reveal the Horizon Agent Features panel.
+
+   ![ws name.](media/updt39.png)
+
+
+### **Task 6: Provide Horizon Agent Details**
+
+1. Under Horizon Agent Features, accept the default to install all features in the golden VM:
+
+  - **App Volume Agent:** Slide to **Enable** it.
+
+    >**Note:** Installs the App Volumes Agent on the desktop.
+
+  - **Enable Flash MMR:** Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
+
  
-2. Scroll down to provide additional general settings.
-
-
-### **Task 3: Provide More General Settings**
-
-   ![ws name.](media/us8.png)
-
-1. Provide the following additional general settings information:
-
-  - **Specify VM Subnet(s):** Toggle off the switch.
-
-  - **Filter Models:** From first drop-down select **Tag** then from the equals drop-down select **VMware recommended**
+ - **3D support in Windows 10 MultiSession:** Slide to **Disable** it.
   
-  - **Model:** Select the Azure VM size for the Farm. Some VM sizes are not available in all regions.
+   >**Note:** Provides support for vGPU-powered 3D RDS hosts.
+
+ 
+ - **MMR for Terminal Services:** Slide to **Enable** it. 
   
-  - **Disk Type:** Standard HDD
+   >**Note:** Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
+
+ 
+ - **Client Drive Redirection:** Slide to **Enable** it.
   
-  - **Disk Size:** 127 GiB
+   >**Note:** Allows you to share folders and drives on your local system with remote desktops and applications.
+
+  - **Skype for Business:** Provides the ability to use the RDS desktops to make optimized audio and video calls with Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network.
   
-  - **Image:** Select an available RDSH image from the list. Images that do not match the desktop model disk size are not displayed.
+  - **Webcam Support (Real Time Audio Video RTAV):** Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
+
   
-  - **Preferred Protocol:** **Blast Extreme**
-
-   ![ws name.](media/us46.png)
-
-  - **Preferred  Client Type:** Horizon Client
-
-  - **Join Domain:** Enabled
-
-  - **Encrypt Disks:** Leave it **Disabled**
-
-  - NSX Cloud Management: Leave it **Disabled**
-
-2. Scroll to the **Farm Size** section.
-
-
-### **Task 4: Set Farm Size**
-
-   ![ws name.](media/us9.png)
-
-1. In the **Farm Size** pane, provide the information to enable the farm to automatically scale up or down on demand:
-  - **Min Servers:** 1
-  - **Max Servers:** 3
-  **Note:** The minimum number of server instances is initially powered on. As demand increases, additional servers are powered on until reaching the maximum. As end-user demand shrinks, servers are powered off until reaching the minimum. Each server is completely empty of user sessions before the system powers it off.
-  - **Power Off Protect Time**: Accept the default of 30 minutes that a VM is protected from powering off after powering on due to a headroom error.
-  - **Sessions per Server:** Accept the default values.
-  **Note:** This number cannot be updated after the farm is created.
+  - **Smart Card:** Slide to **Disable** it
   
-2. **Do you have a valid license for this Windows OS:** Enable it and click on the check box saying **I confirm that I have an eligible license for this Windows OS.**
+    >**Note:** Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
 
-
-### **Task 5: Provide Advanced Properties**
-
-   ![ws name.](media/us10.png)
-
-1. Under **Advanced Properties**, provide the following information:
-
-  - **Computer OU**: <inject key="horizon OU path" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
   
-  - **Run Once Script**: Leave blank
+  - **VMware Print:** Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
 
-2. In the lower right corner, click **Next**.
+  - **Scanner Redirection:** Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
 
+ 
+ - **USB Redirection:** Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
 
-### **Task 6: Provide Rolling Maintenance Information**
+ 
+ - **URL Redirection:** Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
 
-   ![ws name.](media/updt33.png)
+  - **Serial Port Redirection:** Enables devices connected to serial ports on your local client system so those devices can be used with the remote desktop or application.
 
-1. In the Management tab, provide the information for Rolling Maintenance.
+  - **Geolocation Redirection:** Allows the geolocation information of the client system to be used by Internet Explorer in remote desktops.
 
-   - **Maintenance Type:** Select **Session** from drop-down menu.
+  - **Help Desk:** Slide and **Enable** it to install the Help Desk.
+
+2. In the lower right corner, click **IMPORT**.
+
+   ![ws name.](media/updt2.png)
+
+**Note: This process will take approximately 10 minutes to complete.**
+
+3. Wait for the agent status to turn **Import successful** under Imported VM section before proceeding with the lab. Once the import is successful, a **Green dot** appears under Status.
+
+   ![ws name.](media/exc23.png)
    
-   - **Rolling Maintainance After:** Set the value to **100** Sessions.
-   
-   - **Concurrent Quiescing Servers:** Set the value to **1**
-   
-   - **VM Action:** Select **Rebuild** from drop-down menu.
-
-2. Scroll to the Power Management panel.
-
-
-### **Task 7: Provide Power Management and Timeout Handling Information**
-
-
-   ![ws name.](media/updt34.png)
-
-1. In the Power Management panel, provide the information used to optimize the farm for your unique business needs. This is where you determine the thresholds at which new capacity is powered up or down, for automatic shutdown or deallocation of unused servers. Set the thresholds at which the system automatically grows and shrinks the number of powered-on server instances as it responds to demand and use:
-
-  - **Optimized Performance:** Keeps more hosts powered on than are needed to service the current end-user workload. As more users log in, Horizon Cloud Service continues to power on hosts in advance, up to the threshold of the maximum farm size. This option increases capacity costs by having the next server ready before requested, but decreases the chance of a delay when users make the request.
-  
-  - **Optimized Power:** Waits as long as possible before powering on the next server instance, and more progressively deallocates unused hosts, leaving fewer available resources for end users. This option decreases capacity costs by using the servers longer before powering new ones, but increases the chance of a delay when users try to log in. You can even set the minimum number to 0, so all servers automatically power down when no users need them. However, the next users who log in experience a delay while the server powers back on, which might take several minutes.
-  
-  - **Balanced:** Strikes a 50:50 balance between optimizing for performance (time-to-availability for users), and optimizing for power (minimizing between capacity costs).
-
-2. Scroll down to the Timeout Handling section.
-
-3. In the Timeout Handling panel, provide the required settings. This is where you configure how you want the system to handle different user session types.
-
-  - **Empty Session Timeout:** Specify how to handle idle user sessions: never timeout idle sessions, or timeout after a specified number of minutes. **Note:** When a session is disconnected, the session is preserved in memory. When a session is logged out, the session is not preserved in memory, and any unsaved documents are lost.
-  
-  - **When Timeout Occurs:** Leave blank.
-  
-  - **Log Off Disconnected Sessions:** Select **Timeout After** from the drop-down menu and set the value as **90** Minutes.
-  
-  - **Max Session Lifetime:** Specify the maximum number of minutes the system should allow for a single user session.
-  
-  - **Session Timeout Interval:** Enter **90** Minutes.
-
-  - **Schedule Power Management (Optional):** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
-
-
-### **Task 8: Load Balancing Settings**
-
-
-   ![ws name.](media/us11.png)
-
-1. Under Load Balancing Settings provide the following details:
-
-  - **Login Threshold:** Provide a recognizable name for this schedule.
-  
-  - **CPU Usage Threshold:** Select the day or days of the week to run the schedule.
-  
-  - **Memory Usage Threshold:** Select a time of the day to start the schedule. You might need to scroll to see all options.
-  
-  - **Disk Queue Length Threshold:** Select the time of the day to end the schedule.
-  
-  - **Disk Read Latency Threshold:** Set the time zone if it differs from the default.
-  
-  - **Disk Write Latency Threshold:** Enter the minimum number of servers to include.
-  
-  - **Local Index Threshold:** Set the threshold for local index.
-   
-   
-2. In the lower right corner, click **Next**.
-
-
-### **Task 9: Verify the Summary Information**
-
-   ![ws name.](media/updt35.png)
-
-1. In the Summary tab, review all settings to verify they are correct and complete.
-
-2. In the lower right corner, click **Submit**.
-
-
-### **Task 10: Verify in VMware Horizon Cloud Service**
-
-   ![ws name.](media/updt36.png)
-
-Under Status, verify that the green dot is displayed to indicate that the farm has been created properly.
