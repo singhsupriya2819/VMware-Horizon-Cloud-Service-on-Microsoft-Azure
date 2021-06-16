@@ -1,6 +1,6 @@
-# **Exercise 4: Assigning Resources**
+# **Exercise 6: Assigning Resources**
 
-## **Exercise 4.1: Creating RDSH Session Assignments**
+## **Exercise 6.1: Creating RDSH Session Assignments**
 
 ### **Task 1: Assign New**
 
