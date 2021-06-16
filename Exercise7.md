@@ -146,3 +146,65 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
    ![ws name.](media/exc23.png)
    
+
+**## Exercise 7.2: Converting the App Volume VM to an Image**
+
+### **Task 1: Start Creating a New Image**
+
+1. In the Horizon Cloud Service Administration Console navigation bar on the left, select **Inventory**.
+
+2. In the Inventory menu, select **Images**.
+
+3. In the Images window, click **New**.
+
+   ![ws name.](media/updt40.png)
+
+### **Task 2: Provide Desktop-to-Image Details**
+
+1. In the New Image window under **Convert Desktop to Image**, provide the following information:
+
+  - **Location:** Select the location to get a list of pods available to store the desktop.
+
+  - **Pod:** Select the pod **pod-test**.
+
+  - **Desktop:** From the list of desktops that can be converted to an image, select **Win10AppVolume**
+  
+   ![ws name.](media/updt41.png)
+
+
+### **Task 3: Provide OS Properties Details**
+
+1. Under **OS Properties**, provide the following information:
+
+  - **Image Name:** Provide a unique name to the image that will be used as the operating system on your virtual desktops.
+
+  - **Company Name:** Enter an identifying name, which is used as the default in desktops that are created with this image.
+
+  - **Timezone:** Set the time zone, to be the default time zone for all desktops created with this image.
+
+
+   ![ws name.](media/updt42.png)
+
+### **Task 4: Provide Admin Credentials**
+
+1. Under **Admin credentials for the desktop**, provide the account credentials for a valid administrator account in the selected image VM. Make sure to follow the complexity standards and other limitations.
+
+  - Username: **<inject key="AD VM Admin UserName" />**
+
+  - Password: **<inject key="AD VM Admin Password" />**
+  
+  - Confirm Password: **<inject key="AD VM Admin Password" />**
+
+  - **Note:** These credentials are the user name and password that were entered in the wizard when the App Volume VM was created in the Imported VMs window.
+
+   ![ws name.](media/updt43.png)
+
+2. In the lower right corner, click **Publish**.
+
+### **Task 5: Wait for the Published Status**
+
+1. Wait until the status changes to **Published** to use the assignable image for creating a farm.
+
+   ![ws name.](media/updt44.png)
+
+For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html), and search the guide for **Convert a Configured Master Virtual Machine to an Assignable Image**.
