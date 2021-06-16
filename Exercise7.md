@@ -208,3 +208,167 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    ![ws name.](media/updt44.png)
 
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html), and search the guide for **Convert a Configured Master Virtual Machine to an Assignable Image**.
+
+
+## **Exercise 7.2: Addding a Application from App Volume**
+
+
+### **Task 1: Add New Applications**
+
+1. In the Horizon Cloud Service Administration Console click on **Applications** in navigation bar.
+
+2. Then navigate to **App Volumes** tab and click on **New** then select **Create**.
+
+   ![ws name.](media/updt45.png)
+
+
+### **Task 2: Provide Definition Information**
+
+   ![ws name.](media/updt46.png)
+   
+   - **Application:** Select **New**
+   - **Package:** Enter **Notepad++**
+
+### **Task 3: Provide Pod Details**
+
+1. Provide following details of the Pod
+
+   ![ws name.](media/updt47.png)
+   
+   - **Location:** Enter the location which we used to create Pod in Exercise 1
+   - **Pod:** Select the name of the Pod we created in Exercise 1
+   - **Image:** Select **Win10AppVolume**
+
+2. In lower right corner click on **Save**.
+
+### **Task 7: Verify Addition of New Applications**
+
+   ![ws name.](media/updt48.png)
+
+   In the Applications window, the green dots indicate that each application is active.
+
+### **Task 8: Capture the App Package**
+
+1. Click on the name of the application which we deployed in the last task.
+
+   ![ws name.](media/updt49.png)
+   
+2. Wait for the status to turn **"Desktop ready for application capture"**
+
+   ![ws name.](media/updt50.png)
+
+3. Select the application and click on **START CAPTURE** button.
+
+   ![ws name.](media/updt52.png)
+   
+4. A Desktopsession will start in a new tab with App Package dialog saying *Packing*.
+
+   ![ws name.](media/updt53.png)
+
+
+### Task 9: Installing the App and creating the App Package
+
+1. Open Run in the desktop session and enter **\\10.0.0.4\c$\LabFiles** and click on **Ok** to navigate to the directry if allication installer.
+
+   ![ws name.](media/updt54.png)
+   
+2. Now double click on the application installer to run it and navigate through the installer by clicking on **Next**.
+
+   ![ws name.](media/updt55.png)
+
+3. At the last page of installer uncheck the box asking to run the application after installation and click on **Finish**.
+
+   ![ws name.](media/updt56.png)
+
+4. After application installation completes click on **Ok** under App Volume dialog box.
+
+   ![ws name.](media/updt57.png)
+
+5. Click on **Yes** to confirm the installation of application.
+
+   ![ws name.](media/updt58.png)
+   
+6. On a prompt to **Finalize Package** click on **Finalize**.
+
+   ![ws name.](media/updt63.png)
+
+7. Under **Restart Required** prompt click on **Ok** to restart the session.
+
+   ![ws name.](media/updt59.png)
+
+8. Now we will be disconnected from the session desktop, click on **Close** button to continue.
+
+   ![ws name.](media/updt60.png)
+   
+9. Now reconnect to session desktop by clicking on the session icon then enter the password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />  and click on **Login** button.
+
+   ![ws name.](media/updt61.png)
+
+10. There might be a promp asking you to wait until the session desktop restarts, wait for the session desktop to launch.
+
+   ![ws name.](media/updt62.png)
+
+11. After reconnecting to the session desktop wait for the package finalization to complete with a **Packaging Sucessful** prompt.
+
+   ![ws name.](media/updt64.png)
+   
+12. Now return back to the App Volume console and click on the refresh icon to see the status as green dot depicting the status of App Packaging was successful.
+
+   ![ws name.](media/updt65.png)
+
+13. We can also click on the **Bell icon** on top to check on the status of Application Package.
+
+   ![ws name.](media/updt66.png)
+
+## **Exercise 7.3: Creating a Desktop and Apps Assignment**
+
+
+### **Task 1: Assign New**
+
+1. In the navigation pane on the left, click **Assign Desktops & Apps** and select **VDI & App Volumes** from dropdown menu.
+
+2. In the Assignments window, click **New** and select **App Volumes**.
+
+   ![ws name.](media/updt67.png)
+
+### **Task 2: Provide Definition**
+
+1. Provide the following details and click on **Next**.
+
+   ![ws name.](media/updt68.png)
+   
+   - **Assignment Name:** Provide a rememberable Assignment Name.
+   - **OS Family:** Select **Windows 10 (64-bit)**
+
+
+### **Task 3: Select Applications**
+
+   ![ws name.](media/updt69.png)
+   
+In the Applications window select the application and click on **Next**.
+
+
+### **Task 4: Assign Users**
+
+   ![ws name.](media/updt70.png)
+
+   - **Domain:** Leave it to the default value.
+   - **Find Users:** Select **Horizon Users**
+
+Click on **Next**.
+
+### **Task 5: Review the Summary**
+
+   ![ws name.](media/updt71.png)
+
+Review the Summary and click on **FINISH**.
+
+### **Task 6: Verify in the Assignments Window**
+
+   ![ws name.](media/updt72.png)
+
+Click on the refresh icon and make sure that the Status of the Assignment is **Online* **(Depicted with a green tick)**.
+
+## Task 5: Verifying the working of App Volume.
+
+1.
