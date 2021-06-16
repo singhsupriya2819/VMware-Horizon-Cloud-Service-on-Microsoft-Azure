@@ -42,8 +42,15 @@
 	 {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise6.md",
         "Order": 10
+      },
+	 {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise7.md",
+        "Order": 11
+      },
+	{
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise8.md",
+        "Order": 12
       }
-	
     ]
   }
 ]
