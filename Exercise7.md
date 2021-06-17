@@ -1,5 +1,4 @@
-# **Exercise 7: App Volumes**
-
+# **Exercise 7: VMware App Volumes**
 
 ## **Exercise 7.1: Importing VMs from Microsoft Azure Marketplace**
 
