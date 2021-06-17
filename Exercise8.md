@@ -1,8 +1,8 @@
-# DEM
+# **Dynamic Environment Manager in Horizon Cloud on Azure**
 
 ## **Exercise 8.1: Explore the VMware Dynamic Environment Manager console**
 
-### **Task 1: Validate the deployment of the DEM**
+### **Task 1: Validate the deployment of the Dynamic Environment Manager**
 
 1. Open the explorer and navigate to **F:\** drive and validate the deployment of the DEM is successful. There are three folders created for DEM named **DEMConfig**, **DEMProfile** and **UserData**. These folders are shared as per DEM prerequisite.
   
@@ -29,7 +29,7 @@
 
     ![ws name.](media/updt82.png)
 
-### **Task 2: Explore Policies configured for DEM**
+### **Task 2: Explore Policies configured for Dynamic Environment Manager**
 
 1. In your ADVM virtual machine, Open **Run** promt and launch **gpmc.msc**.
 
@@ -40,7 +40,7 @@
    ![ws name.](media/updt84.png)
 
 
-## **Exercise 8.2: Performing DEM.
+## **Exercise 8.2: Experience Dynamic Environment Manager**
 
 ### **Task 1: Login into your Session Desktop**
 
