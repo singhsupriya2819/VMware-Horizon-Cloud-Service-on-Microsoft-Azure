@@ -146,7 +146,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    ![ws name.](media/exc23.png)
    
 
-**## Exercise 7.2: Converting the App Volume VM to an Image**
+## **Exercise 7.2: Converting the App Volume VM to an Image**
 
 ### **Task 1: Start Creating a New Image**
 
@@ -240,13 +240,13 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
 2. In lower right corner click on **Save**.
 
-### **Task 7: Verify Addition of New Applications**
+### **Task 4: Verify Addition of New Applications**
 
    ![ws name.](media/updt48.png)
 
    In the Applications window, the green dots indicate that each application is active.
 
-### **Task 8: Capture the App Package**
+### **Task 5: Capture the App Package**
 
 1. Click on the name of the application which we deployed in the last task.
 
@@ -265,7 +265,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
    ![ws name.](media/updt53.png)
 
 
-### Task 9: Installing the App and creating the App Package
+### Task 6: Installing the App and creating the App Package
 
 1. Open Run in the desktop session and enter **\\10.0.0.4\c$\LabFiles** and click on **Ok** to navigate to the directry if allication installer.
 
@@ -368,7 +368,7 @@ Review the Summary and click on **FINISH**.
 
 Click on the refresh icon and make sure that the Status of the Assignment is **Online* **(Depicted with a green tick)**.
 
-## Task 5: Verifying App Volume.
+## **Task 7: Verifying App Volume**
 
 1. Launch **Horizon Client** from Desktop of ADVM Virtual Machine and double click on **vdi.mydomain.local**.
 
