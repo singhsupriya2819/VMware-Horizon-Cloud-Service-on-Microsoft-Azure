@@ -66,7 +66,7 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 
 3. Enter the password for **vdiuser1** and click on **Login**.
 
-   -Password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+   - Password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
 
    ![ws name.](media/updt30.png)
 
