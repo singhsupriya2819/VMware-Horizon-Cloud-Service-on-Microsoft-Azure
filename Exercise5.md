@@ -76,8 +76,9 @@ When the new image has been published, you can use it to create farms.
    ![ws name.](media/us9.png)
 
 1. In the **Farm Size** pane, provide the information to enable the farm to automatically scale up or down on demand:
-  - **Min Servers:** 1
+  - **Min Servers:** 2
   - **Max Servers:** 3
+  
   **Note:** The minimum number of server instances is initially powered on. As demand increases, additional servers are powered on until reaching the maximum. As end-user demand shrinks, servers are powered off until reaching the minimum. Each server is completely empty of user sessions before the system powers it off.
   - **Power Off Protect Time**: Accept the default of 30 minutes that a VM is protected from powering off after powering on due to a headroom error.
   - **Sessions per Server:** Accept the default values.
@@ -101,29 +102,17 @@ When the new image has been published, you can use it to create farms.
 
 ### **Task 6: Provide Rolling Maintenance Information**
 
-   ![ws name.](media/exd23.png)
+   ![ws name.](media/updt33.png)
 
 1. In the Management tab, provide the information for Rolling Maintenance.
 
-   - **Maintenance Type:** Select the maintenance type, either according to:
+   - **Maintenance Type:** Select **Session**
    
-      a. **Scheduled:** Select a time cadence such as daily or weekly.
-      
-      b. **Session:** Specify the number of user sessions at which the farm should begin rolling maintenance.
+   - **Rolling Maintainance After:** **100** Sessions
    
-   - **Recurrence:** Indicate the type of recurrence.
+   - **Concurrent Quiescing VMs:** 1
    
-   - **Recurrence Day:** Indicate the day of the week.
-   
-   - **Scheduled Hour:** Indicate the hour of the recurrence.
-   
-   - **Concurrent Quiescing Servers:** Indicate the number of concurrent quiescing servers.
-   
-   - **VM Action:** Select the action that the system should perform on servers that are undergoing maintenance:
-   
-      a. **Restart:** Restart the sever VMs.
-      
-      b. **Rebuild:** Delete server VMs and then re-provision them from their RDS desktop image.
+   - **VM Action:** Select **Rebuild**
 
 2. Scroll to the Power Management panel.
 
@@ -131,7 +120,7 @@ When the new image has been published, you can use it to create farms.
 ### **Task 7: Provide Power Management and Timeout Handling Information**
 
 
-   ![ws name.](media/exc31.png)
+   ![ws name.](media/updt34.png)
 
 1. In the Power Management panel, provide the information used to optimize the farm for your unique business needs. This is where you determine the thresholds at which new capacity is powered up or down, for automatic shutdown or deallocation of unused servers. Set the thresholds at which the system automatically grows and shrinks the number of powered-on server instances as it responds to demand and use:
 
@@ -149,11 +138,11 @@ When the new image has been published, you can use it to create farms.
   
   - **When Timeout Occurs:** Leave blank.
   
-  - **Log Off Disconnected Sessions:** Specify when the system logs the user out of a disconnected session.
+  - **Log Off Disconnected Sessions:** Select **Timeout After** and set value as **90** Minutes.
   
   - **Max Session Lifetime:** Specify the maximum number of minutes the system should allow for a single user session.
   
-  - **Session Timeout Retrieval:** Leave blank.
+  - **Session Timeout Retrieval:** Set the value as **90** Minutes
 
   - **Schedule Power Management (Optional):** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
 
