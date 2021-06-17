@@ -28,8 +28,6 @@ When the new image has been published, you can use it to create farms.
    - **VM Names:** **Farm2**
 
    - **Farm Type:** Select **Desktops**
-   
-      a. **Desktops:** Provides session-based desktops, b. **Applications:** Provides access to remote applications
  
    - **Location:** Select the location in which you created pod in Exercise 1.
  
