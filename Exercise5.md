@@ -2,7 +2,7 @@
 
 ## **Exercise 5.1: Creating a Farm**
 
-When the new image has been published, you can use it to create farms.
+In this Exercise we will be creating a new farm to deploy Session Desktops using the *RDSHGoldenImage* Image we created in previous Exercise.
 
 ### **Task 1: Create a New Farm**
 
@@ -58,7 +58,7 @@ When the new image has been published, you can use it to create farms.
 
    ![ws name.](media/us46.png)
 
-  - **Preferred  Client Type:** Horizon Client
+  - **Preferred  Client Type:** Select **Horizon Client**
 
   - **Join Domain:** Enabled
 
@@ -71,7 +71,7 @@ When the new image has been published, you can use it to create farms.
 
 ### **Task 4: Set Farm Size**
 
-   ![ws name.](media/us9.png)
+   ![ws name.](media/updt95.png)
 
 1. In the **Farm Size** pane, provide the information to enable the farm to automatically scale up or down on demand:
   - **Min Servers:** 2
@@ -118,7 +118,7 @@ When the new image has been published, you can use it to create farms.
 ### **Task 7: Provide Power Management and Timeout Handling Information**
 
 
-   ![ws name.](media/updt34.png)
+   ![ws name.](media/updt96.png)
 
 1. In the Power Management panel, provide the information used to optimize the farm for your unique business needs. This is where you determine the thresholds at which new capacity is powered up or down, for automatic shutdown or deallocation of unused servers. Set the thresholds at which the system automatically grows and shrinks the number of powered-on server instances as it responds to demand and use:
 
@@ -130,11 +130,7 @@ When the new image has been published, you can use it to create farms.
 
 2. Scroll down to the Timeout Handling section.
 
-3. In the Timeout Handling panel, provide the required settings. This is where you configure how you want the system to handle different user session types.
-
-  - **Empty Session Timeout:** Specify how to handle idle user sessions: never timeout idle sessions, or timeout after a specified number of minutes. **Note:** When a session is disconnected, the session is preserved in memory. When a session is logged out, the session is not preserved in memory, and any unsaved documents are lost.
-  
-  - **When Timeout Occurs:** Leave blank.
+>**Note:** In the Timeout Handling panel, provide the required settings. This is where you configure how you want the system to handle different user session types.
   
   - **Log Off Disconnected Sessions:** Select **Timeout After** and set value as **90** Minutes.
   
@@ -143,6 +139,8 @@ When the new image has been published, you can use it to create farms.
   - **Session Timeout Retrieval:** Set the value as **90** Minutes
 
   - **Schedule Power Management (Optional):** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
+
+3. Click on **Next**.
 
 
 ### **Task 8: Load Balancing Settings**
@@ -185,4 +183,6 @@ When the new image has been published, you can use it to create farms.
 
 Under Status, verify that the green dot is displayed to indicate that the farm has been created properly.
 
-For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Create a Farm**.
+For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Create a Farm**. It may take aproximately 20 minutes for a Farm to be created.
+
+>**Note**: We may have to click on **Refresh** icon to get the succeed status.
