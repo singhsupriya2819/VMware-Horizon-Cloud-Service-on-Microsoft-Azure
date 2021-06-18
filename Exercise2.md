@@ -313,11 +313,11 @@ When the golden image VM is ready, it is made assignable. For this exercise, you
 
 1. Under **Admin credentials for the desktop**, provide the account credentials for a valid administrator account in the selected image VM. Make sure to follow the complexity standards and other limitations.
 
-  - Username: **<inject key="AD VM Admin UserName" />**
+  - Username: **<inject key="Desktop Local Admin UserName" />**
 
-  - Password: **<inject key="AD VM Admin Password" />**
+  - Password: **<inject key="Desktop Local Admin Password" />**
   
-  - Confirm Password: **<inject key="AD VM Admin Password" />**
+  - Confirm Password: **<inject key="Desktop Local Admin Password" />**
 
   - **Note:** These credentials are the user name and password that were entered in the wizard when the golden VM was created in the Imported VMs window.
 
