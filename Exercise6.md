@@ -85,4 +85,6 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 
    ![ws name.](media/updt99.png)
 
+7. Close the Horizon Client.
+
 Click on the **Next** button from lower right corner of the guide to move on the next page.
