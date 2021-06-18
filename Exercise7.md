@@ -433,5 +433,11 @@ Click on the refresh icon and make sure that the Status of the Assignment is **O
    ![ws name.](media/updt76.png)
    >**Note:** If the icon is not found on the desktop then the Application can be searched from Start Menu.
 
+
+5. To close the Session Desktop click on the **X** icon.
+
+   ![ws name.](media/updt99.png)
+
+
 Click on the **Next** button from lower right corner of the guide to move on the next page.
    
