@@ -48,7 +48,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
  
 1. Under Desktop Details, provide the following information:
 
-  - **OS:** Windows 10 Enterprise milti-session, 20H2 + Office 365 ProPlus
+  - **OS:** Select **Windows 10 Enterprise milti-session, 20H2 + Office 365 ProPlus** from dropdown menu.
 
   - **Include GPU:** Slide **disable**
 
@@ -154,6 +154,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
    ![ws name.](media/exc23.png)
    
+   >**Note:** We may have to click on refresh icon to see the updated status.
 
 ### **Task 7: Verify the VM Imported Successfully in Microsoft Azure**
 
