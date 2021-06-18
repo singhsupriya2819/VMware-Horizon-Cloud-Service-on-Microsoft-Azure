@@ -1,4 +1,4 @@
-# **Dynamic Environment Manager in Horizon Cloud on Azure**
+# **Exercise 8: Dynamic Environment Manager in Horizon Cloud on Azure**
 
 ## **Exercise 8.1: Explore the VMware Dynamic Environment Manager console**
 
