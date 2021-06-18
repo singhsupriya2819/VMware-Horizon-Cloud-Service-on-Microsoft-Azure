@@ -75,11 +75,11 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
    
 4. Double click on the **DesktopAssignment** to launch the Session Desktop.
 
-   ![ws name.](media/updt31.png)
+   ![ws name.](media/updt98.png)
 
 5. Now the Desktop session will launch and will be ready to use.
 
-   ![ws name.](media/updt98.png)
+   ![ws name.](media/updt31.png)
 
 6. To close the Session Desktop click on the **X** icon.
 
