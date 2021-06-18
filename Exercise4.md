@@ -174,6 +174,8 @@ When you finish assigning session-based desktops to users and groups, this exerc
 
 >**Note:** Microsoft Office applications might not be usable as MS Office 365 License is not provided to the AD user used in the lab.
 
+8. Close the Horizon Client.
 
 
+Click on the **Next** button from lower right corner of the guide to move on the next page.
 
