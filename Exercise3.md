@@ -358,9 +358,7 @@ In the Applications window, the green banner verifies that the new applications 
 
    >**Note:** If File Explorer does not appear in the list of applications then you might have to click on refresh button on top right corner of the list.
     
-For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and search the guide for **Importing New Applications from an RDSH Farm Using Auto-Scan from Farm**.
-
-After you finish adding applications from the farm, proceed to the next section to explore assigning desktops and applications to users and groups.
+For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and search the guide for **Importing New Applications from an RDSH Farm Manually**.
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.
