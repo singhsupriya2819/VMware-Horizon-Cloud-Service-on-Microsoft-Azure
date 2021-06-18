@@ -39,7 +39,9 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
  
 1. Under Desktop Details, provide the following information:
 
-  - **OS:** Windows 10 Enterprise, 2004
+   ![ws name.](media/updt38.png)
+
+  - **OS:** Select **Windows 10 Enterprise, 2004** from the dropdown menu.
 
   - **Include GPU:** Slide **disable**
 
@@ -51,10 +53,11 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   - **Optimize Windows Image:** **Enable** it to optimize Windows on image import, which improves VM performance and capacity utilization.
 
+  - **Remove Windows Store Apps:** **Enable** it to remove Windows Store apps, also known as AppX packages, and disable automatic app and Windows Store updates and downloads. This improves performance and helps avoid Microsoft Windows Sysprep issues.
+
 2. Scroll down to the next panel.
 
-   ![ws name.](media/updt38.png)
-
+   
 
 ### **Task 4: Provide Admin Credentials for the Desktop**
 
@@ -139,14 +142,15 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
    ![ws name.](media/updt2.png)
 
-**Note: This process will take approximately 10 minutes to complete.**
-
 3. Wait for the agent status to turn **Import successful** under Imported VM section before proceeding with the lab. Once the import is successful, a **Green dot** appears under Status.
 
    ![ws name.](media/exc23.png)
    
+>**Note: This process will take approximately 30 minutes to complete.**
+
 
 ## **Exercise 7.2: Converting the App Volume VM to an Image**
+
 
 ### **Task 1: Start Creating a New Image**
 
@@ -157,6 +161,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 3. In the Images window, click **New**.
 
    ![ws name.](media/updt40.png)
+
 
 ### **Task 2: Provide Desktop-to-Image Details**
 
@@ -170,12 +175,14 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
   
    ![ws name.](media/updt41.png)
 
+>**Note:** It may take few minutes for Agesnt status to turn **Active**.
+
 
 ### **Task 3: Provide OS Properties Details**
 
 1. Under **OS Properties**, provide the following information:
 
-  - **Image Name:** Provide a unique name to the image that will be used as the operating system on your virtual desktops.
+  - **Image Name:** Leave default value.
 
   - **Company Name:** Enter an identifying name, which is used as the default in desktops that are created with this image.
 
@@ -184,21 +191,25 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
    ![ws name.](media/updt42.png)
 
+
 ### **Task 4: Provide Admin Credentials**
 
 1. Under **Admin credentials for the desktop**, provide the account credentials for a valid administrator account in the selected image VM. Make sure to follow the complexity standards and other limitations.
 
-  - Username: **<inject key="AD VM Admin UserName" />**
+   ![ws name.](media/updt43.png)
+   
+   
+  - Username: **<inject key="Desktop Local Admin UserName" />**
 
-  - Password: **<inject key="AD VM Admin Password" />**
+  - Password: **<inject key="Desktop Local Admin Password" />**
   
-  - Confirm Password: **<inject key="AD VM Admin Password" />**
+  - Confirm Password: **<inject key="Desktop Local Admin Password" />**
 
   - **Note:** These credentials are the user name and password that were entered in the wizard when the App Volume VM was created in the Imported VMs window.
 
-   ![ws name.](media/updt43.png)
 
 2. In the lower right corner, click **Publish**.
+
 
 ### **Task 5: Wait for the Published Status**
 
@@ -225,7 +236,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    ![ws name.](media/updt46.png)
    
-   - **Application:** Select **New**
+   - **Application:** Select **New** and enter value as **Notepad++**
    - **Package:** Enter **Notepad++**
 
 ### **Task 3: Provide Pod Details**
@@ -246,28 +257,49 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    In the Applications window, the green dots indicate that each application is active.
 
+   >**Note:** We may have to click on refresh icon to see the Active status.
+
 ### **Task 5: Capture the App Package**
 
 1. Click on the name of the application which we deployed in the last task.
 
    ![ws name.](media/updt49.png)
    
-2. Wait for the status to turn **"Desktop ready for application capture"**
+2. Wait for the status to turn **"Desktop ready for application capture"**. It may take around 40 minutes for it to complete.
 
    ![ws name.](media/updt50.png)
+   
+   >**Note:** We may have to click on **Refresh** icon to get the status.
+
 
 3. Select the application and click on **START CAPTURE** button.
 
    ![ws name.](media/updt52.png)
-   
+
+4. Now we will be redirected to a new tab which is directed to broker URL, Enter the following credentials.
+
+   ![ws name.](media/updt100.png)
+
+  - Username: **<inject key="AD VM Admin UserName" />**
+
+  - Password: **<inject key="AD VM Admin Password" />**
+
+
+5. Double click on the **appcapture** session to launch it.
+
+   ![ws name.](media/updt101.png)
+
+
 4. A Desktopsession will start in a new tab with App Package dialog saying *Packing*.
 
    ![ws name.](media/updt53.png)
-
+   
+   >**Note:** It may take around 15 minutes for the Session to login.
+   
 
 ### Task 6: Installing the App and creating the App Package
 
-1. Open Run in the desktop session and enter **\\10.0.0.4\c$\LabFiles** and click on **Ok** to navigate to the directry if allication installer.
+1. Open Run in the desktop session and enter `\\10.0.0.4\c$\LabFiles` and click on **Ok** to navigate to the directry of the installer.
 
    ![ws name.](media/updt54.png)
    
@@ -275,9 +307,14 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    ![ws name.](media/updt55.png)
 
-3. At the last page of installer uncheck the box asking to run the application after installation and click on **Finish**.
+   >**Note:** If you get following prompt while executing the installer then click on **Run**.
+   >![ws name.](media/updt102.png)
+   
+
+3. At the last page of installer **uncheck** the box asking to *Run the application after installation* and click on **Finish**.
 
    ![ws name.](media/updt56.png)
+
 
 4. After application installation completes click on **Ok** under App Volume dialog box.
 
@@ -289,7 +326,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
    
 6. On a prompt to **Finalize Package** click on **Finalize**.
 
-   ![ws name.](media/updt63.png)
+   ![ws name.](media/updt103.png)
 
 7. Under **Restart Required** prompt click on **Ok** to restart the session.
 
@@ -299,7 +336,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    ![ws name.](media/updt60.png)
    
-9. Now reconnect to session desktop by clicking on the session icon then enter the password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />  and click on **Login** button.
+9. Now reconnect to session desktop by clicking on the session icon then enter the password: **<inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**  and click on **Login** button.
 
    ![ws name.](media/updt61.png)
 
@@ -314,6 +351,8 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 12. Now return back to the App Volume console and click on the refresh icon to see the status as green dot depicting the status of App Packaging was successful.
 
    ![ws name.](media/updt65.png)
+
+   >**Note:** It may take few minutes for the changes to be reflected.
 
 13. We can also click on the **Bell icon** on top to check on the status of Application Package.
 
@@ -366,7 +405,7 @@ Review the Summary and click on **FINISH**.
 
    ![ws name.](media/updt72.png)
 
-Click on the refresh icon and make sure that the Status of the Assignment is **Online* **(Depicted with a green tick)**.
+Click on the refresh icon and make sure that the Status of the Assignment is **Online** *(Depicted with a green tick)*.
 
 ## **Task 7: Verifying App Volume**
 
@@ -385,12 +424,14 @@ Click on the refresh icon and make sure that the Status of the Assignment is **O
   - Domain: Leave on **DefaultDomain**
 
 
-3. Double click on **Sessiondesktop**.
+3. Double click on **DesktopAssignment**.
 
-   ![ws name.](media/updt75.png)
+   ![ws name.](media/updt98.png)
 
-4. After Session Desktop is launched, the application can be seen present inside the session.
+4. After SessionDesktop is launched, the application can be seen present inside the session.
 
    ![ws name.](media/updt76.png)
-   
+   >**Note:** If the icon is not found on the desktop then the Application can be searched from Start Menu.
+
+Click on the **Next** button from lower right corner of the guide to move on the next page.
    
