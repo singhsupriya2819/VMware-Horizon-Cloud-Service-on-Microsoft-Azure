@@ -365,6 +365,8 @@ For more information, see General Purpose virtual machine sizes.
 
    ![ws name.](media/us3.png)
 
+   >**Note:** If a tag is already created by default then skip to next Exercise.
+
 2. In the _Enter tags_ window type **Do Not Use** and click on **ADD**..
 
    ![ws name.](media/us4.png)
