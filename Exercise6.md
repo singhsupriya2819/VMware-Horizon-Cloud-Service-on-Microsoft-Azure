@@ -1,5 +1,7 @@
 # **Exercise 6: Assigning Resources**
 
+In this exercise we will be assigning the Session Desktop to the users and will be accessing them using Horizon Client.
+
 ## **Exercise 6.1: Creating RDSH Session Assignments**
 
 ### **Task 1: Assign New**
@@ -7,10 +9,10 @@
 1. In the navigation pane on the left, click **Assign Desktops & Apps** and select **RDSH** from dropdown menu.
 2. In the Assignments window, click **New**.
 
-   ![ws name.](media/updt7.png)
+   ![ws name.](media/updt97.png)
 
 
-### **Task 2: Select Applications**
+### **Task 2: Select Desktops**
 
    ![ws name.](media/updt23.png)
 
@@ -68,8 +70,13 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 
    - Password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
 
-   ![ws name.](media/updt30.png)
 
-4. Now the Desktop session will launch and will be ready to use.
+   ![ws name.](media/updt30.png)
+   
+4. Double click on the **DesktopAssignment** to launch the Session Desktop.
+
+5. Now the Desktop session will launch and will be ready to use.
 
    ![ws name.](media/updt31.png)
+
+Click on the Next button from lower right corner of the guide to move on the next page.
