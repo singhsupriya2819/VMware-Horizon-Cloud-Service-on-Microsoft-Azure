@@ -56,7 +56,7 @@ In the New Assignment window, select **Desktops**.
 
 For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html).
 
-### **Task 7: Launch Horizon Client to access the application**
+### **Task 7: Launch Horizon Client to access the Session Desktop**
 
 1. In AdVM, open VMHorizon Client given on the desktop.
 
@@ -75,8 +75,14 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
    
 4. Double click on the **DesktopAssignment** to launch the Session Desktop.
 
-5. Now the Desktop session will launch and will be ready to use.
-
    ![ws name.](media/updt31.png)
 
-Click on the Next button from lower right corner of the guide to move on the next page.
+5. Now the Desktop session will launch and will be ready to use.
+
+   ![ws name.](media/updt98.png)
+
+6. To close the Session Desktop click on the **X** icon.
+
+   ![ws name.](media/updt99.png)
+
+Click on the **Next** button from lower right corner of the guide to move on the next page.
