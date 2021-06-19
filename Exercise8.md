@@ -4,7 +4,7 @@
 
 ### **Task 1: Validate the deployment of the Dynamic Environment Manager**
 
-1. Open the explorer and navigate to **F:\** drive and validate the deployment of the DEM is successful. There are three folders created for DEM named **DEMConfig**, **DEMProfile** and **UserData**. These folders are shared as per DEM prerequisite.
+1. In AdVM open the explorer and navigate to `F:\` drive and validate the deployment of the DEM is successful. There are three folders created for DEM named **DEMConfig**, **DEMProfile** and **UserData**. These folders are shared as per DEM prerequisite.
   
   ![ws name.](media/updt77.png)
 
@@ -27,7 +27,8 @@
 
 6.	Navigate to **User Environment** > **Windows Settings** > **Hide Drives** > **Hide some drives**  and click on **Edit**. Now you can see that A, B, C drive are hidden.
 
-    ![ws name.](media/updt82.png)
+    ![ws name.](media/updt103.png)
+
 
 ### **Task 2: Explore Policies configured for Dynamic Environment Manager**
 
@@ -54,15 +55,20 @@
 
 3. Enter the password for **vdiuser1** and click on **Login**.
 
-   - Password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+   - Password: **<inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
+
 
    ![ws name.](media/updt30.png)
+   
 
-4. Now the Desktop session will launch and will be ready to use.
+4. Double click on the **DesktopAssignment** to launch the SessionDesktop.
 
-5. Launch the **README** text file on the Desktop and note down the machine name on which you are loggged on to.
+   ![ws name.](media/updt98.png)
 
-   ![ws name.](media/updt85.png)
+
+5. Launch the **README** text file on the Desktop and note down the machine name on which you are logged into.
+
+   ![ws name.](media/updt104.png)
 
 6. Navigate to **Format** > **Fonts**. Change the font of the notepad and click **OK**.
 
@@ -74,9 +80,9 @@
 
    ![ws name.](media/updt87.png)
 
-9. Open the **Home** drive and see user’s profile folders are created inside home drive. Create a **.txt** test file in Home Drive.
+9. Open the **Home** drive `(H:)` and see user’s profile folders are created inside home drive. Create a **.txt** test file in Home Drive.
 
-   ![ws name.](media/updt00.png)
+   ![ws name.](media/updt105.png)
 
 10. **Right click** on the desktop and click on **Personalize**.
 
@@ -86,17 +92,20 @@
 
    ![ws name.](media/updt89.png)
 
-12. The new background should be configured.
+12. The new background should be applied.
 
    ![ws name.](media/updt90.png)
 
-13. Login to Horizon cloud console if not already and navigate to **Inventory** > **Farms** > SecondFarm *(Desktop Farm)* > **Session Hosts**. 
+13. Click on the **X** icon to close the DesktopSession.
 
-   ![ws name.](media/updt00.png)
+14. Login to Horizon cloud console if not already and navigate to **Inventory** > **Farms** > **SecondFarm** *(Desktop Farm)*. 
 
-14. Select the Name of the machine we noted in *Step 5* and click on **USER LOGIN MODE** and click on **Prevent New Logins and Reconnections (Disabled)**
+   ![ws name.](media/updt106.png)
+
+
+15. Navigate to the **Session Hosts** tab and select the Name of the machine we noted in *Step 5* and click on **USER LOGIN MODE** and click on **Prevent New Logins and Reconnections (Disabled)**
    
-   ![ws name.](media/updt00.png)
+   ![ws name.](media/updt107.png)
    
 15. On a prompt asking *Prevent New Logins and Reconnections (Disabled)*, Click on **Continue**.
 
