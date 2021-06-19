@@ -6,7 +6,7 @@ Microsoft provides a variety of VM templates in the Microsoft Azure Marketplace.
 
 After the imported VM is configured with the necessary applications, Horizon Cloud Service converts the VM to an image by automatically running SYSPREP and sealing the OS. You can then use the image to create RDS session host farms and assign dedicated and floating VDI desktops.
 
-**Note:** With the March 2020 release of Horizon Cloud on Microsoft Azure, you have access to new operating system types in your drop-down menu. For more information, see [_Horizon Cloud on Microsoft Azure Support for Windows Virtual Desktop is Here](https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html) and [_VMware Horizon Cloud Service Release Notes - v3 - March 2020_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html).
+**Note:** With the March 2020 release of Horizon Cloud on Microsoft Azure, you have access to new operating system types in your drop-down menu. For more information, see [_Horizon Cloud on Microsoft Azure Support for Azure Virtual Desktop is Here](https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html) and [_VMware Horizon Cloud Service Release Notes - v3 - March 2020_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html).
 
 
 ## **Exercise 2.1: Importing VMs from Microsoft Azure Marketplace**
