@@ -27,7 +27,7 @@
 
 6.	Navigate to **User Environment** > **Windows Settings** > **Hide Drives** > **Hide some drives**  and click on **Edit**. Now you can see that A, B, C drive are hidden.
 
-    ![ws name.](media/updt103.png)
+   ![ws name.](media/updt103.png)
 
 
 ### **Task 2: Explore Policies configured for Dynamic Environment Manager**
