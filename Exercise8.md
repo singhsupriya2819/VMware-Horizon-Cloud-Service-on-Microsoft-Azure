@@ -144,5 +144,5 @@
 
 23. Open the **File explorer** and go to **Home** drive, verify if the fill is still retained. 
 
-   ![ws name.](media/updt95.png)
+   ![ws name.](media/updt.png)
    
