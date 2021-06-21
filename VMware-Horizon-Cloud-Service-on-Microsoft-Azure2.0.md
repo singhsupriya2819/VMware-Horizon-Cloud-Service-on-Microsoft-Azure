@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-**Note:** This Quick-Start Tutorial was updated with content relevant for the March 2020 release of Horizon Cloud on Microsoft Azure. For more details about this release, see [Horizon Cloud on Microsoft Azure Support for Windows Virtual Desktop is Here](https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html) and [VMware Horizon Cloud Service Release Notes - v3 - March 2020](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html).
+**Note:** This Quick-Start Tutorial was updated with content relevant for the March 2020 release of Horizon Cloud on Microsoft Azure. For more details about this release, see [Horizon Cloud on Microsoft Azure Support for Azure Virtual Desktop is Here](https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html) and [VMware Horizon Cloud Service Release Notes - v3 - March 2020](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html).
 
 This Quick-Start Tutorial introduces you to VMware Horizon® Cloud Service™ on Microsoft Azure. This solution combines the management functionality of the Horizon Cloud Service control plane with the cost-saving capacities of Microsoft Azure. You can take advantage of the Horizon Cloud Service to manage your desktops and remote applications. This includes managing VDI and RDS-hosted applications on Microsoft Azure infrastructure, as well as the flexibility to choose the deployment option that best meets the needs of your organization or use cases.
 
