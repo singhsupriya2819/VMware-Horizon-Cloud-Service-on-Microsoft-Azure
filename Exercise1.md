@@ -345,7 +345,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
 You can optionally select which VM types and sizes to allow, add sizes to favorites, and customize how VM names are displayed.
 
-Microsoft supports a wide variety of VM types and sizes, which you can learn about at [_Sizes for Windows virtual machines in Azure_](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes). Instead of reviewing the entire list of available VM types, you can save time by creating your own sub-set of your favorite types and sizes. You can create this sub-set during deployment, and you can update it at any time afterward. If you set the option to choose your VM type, your end users can review the sub-set and quickly make their selection.
+Microsoft supports a wide variety of VM types and sizes, which you can learn about at [_Sizes for Azure virtual machines in Azure_](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes). Instead of reviewing the entire list of available VM types, you can save time by creating your own sub-set of your favorite types and sizes. You can create this sub-set during deployment, and you can update it at any time afterward. If you set the option to choose your VM type, your end users can review the sub-set and quickly make their selection.
 
 For more information, see General Purpose virtual machine sizes.
 
