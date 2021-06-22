@@ -97,7 +97,10 @@
 
    ![ws name.](media/updt90.png)
 
-13. Click on the **X** icon to close the DesktopSession.
+13. Sign Out from the DesktopSession by going to **Start Menu**, then clicking on **User** icon and selecting **Sign Out**.
+
+   ![ws name.](media/updt111.png)
+    
 
 14. Login to Horizon cloud console if not already and navigate to **Inventory** > **Farms** > **SecondFarm** *(Desktop Farm)*. 
 
@@ -136,11 +139,11 @@
    
 21. We can see that the desktop wallpaper is retained from our last change as done in *Step 11*. 
 
-    ![ws name.](media/updt93.png)
+    ![ws name.](media/updt113.png)
     
 22. Open the **README** file on desktop and validate you are logged into new Session Desktop and the font in notepad is also retained.
 
-   ![ws name.](media/updt109.png)
+   ![ws name.](media/updt112.png)
 
 23. Open the **File explorer** and go to **Home** drive, verify if the file is still retained. 
 
