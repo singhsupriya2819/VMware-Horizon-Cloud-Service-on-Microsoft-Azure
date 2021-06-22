@@ -130,7 +130,7 @@
 
    ![ws name.](media/updt30.png)
 
-20. While logging into Session Desktop, you see that *VMware Dynamic Eniroment manager policy* getting applied.
+20. While logging into Session Desktop, you see that *VMware Dynamic Enviroment manager policy* getting applied.
 
    ![ws name.](media/updt92.png)
    
