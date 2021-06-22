@@ -68,9 +68,8 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
   - Password: **<inject key="Desktop Local Admin Password" />**
   
   - Verify Password: **<inject key="Desktop Local Admin Password" />**
-
-
-    ![ws name.](media/us6.png)
+     
+     ![ws name.](media/us6.png)
 
 2. Scroll to the next panel.
 
