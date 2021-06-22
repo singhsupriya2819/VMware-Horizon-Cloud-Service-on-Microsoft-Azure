@@ -163,7 +163,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    ![ws name.](media/updt40.png)
 
 
-### **Task 2: Provide Desktop-to-Image Details**
+### **Task 2: Provide Convert Virtual Machine to Image Details**
 
 1. In the New Image window under **Convert Desktop to Image**, provide the following information:
 
@@ -175,7 +175,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
   
    ![ws name.](media/updt41.png)
 
->**Note:** It may take few minutes for Agesnt status to turn **Active**.
+>**Note:** It may take few minutes for Agent status to turn **Active**.
 
 
 ### **Task 3: Provide OS Properties Details**
