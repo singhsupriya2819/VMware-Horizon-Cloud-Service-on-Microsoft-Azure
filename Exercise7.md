@@ -63,11 +63,11 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Admin Credentials for the Desktop, provide the required information:
 
-  - Username: **<inject key="Desktop Local Admin Password" />**
+  - Username: **<inject key="Desktop Local Admin UserName" />**
   
-  - Password: **<inject key="AD VM Admin Password" />**
+  - Password: **<inject key="Desktop Local Admin Password" />**
   
-  - Verify Password: **<inject key="AD VM Admin Password" />**
+  - Verify Password: **<inject key="Desktop Local Admin Password" />**
 
 
     ![ws name.](media/us6.png)
