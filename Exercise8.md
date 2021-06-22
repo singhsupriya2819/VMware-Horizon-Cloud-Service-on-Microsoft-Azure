@@ -114,7 +114,7 @@
    
 16. Wait till you see the agent status as Disabled.
 
-   ![ws name.](media/updt00.png)
+   ![ws name.](media/updt108.png)
 
 17. In AdVM, open VMHorizon Client given on the desktop.
 
@@ -140,9 +140,9 @@
     
 22. Open the **README** file on desktop and validate you are logged into new Session Desktop and the font in notepad is also retained.
 
-   ![ws name.](media/updt94.png)
+   ![ws name.](media/updt109.png)
 
-23. Open the **File explorer** and go to **Home** drive, verify if the fill is still retained. 
+23. Open the **File explorer** and go to **Home** drive, verify if the file is still retained. 
 
-   ![ws name.](media/updt.png)
+   ![ws name.](media/updt105.png)
    
