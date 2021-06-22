@@ -69,7 +69,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
   
   - Verify Password: **<inject key="Desktop Local Admin Password" />**
      
-     ![ws name.](media/us6.png)
+     ![ws name.](media/updt110.png)
 
 2. Scroll to the next panel.
 
@@ -196,7 +196,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under **Admin credentials for the desktop**, provide the account credentials for a valid administrator account in the selected image VM. Make sure to follow the complexity standards and other limitations.
 
-   ![ws name.](media/updt43.png)
+   ![ws name.](media/updt110.png)
    
    
   - Username: **<inject key="Desktop Local Admin UserName" />**
