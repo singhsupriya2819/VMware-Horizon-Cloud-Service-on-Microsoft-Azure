@@ -20,7 +20,7 @@ This Quick-Start Tutorial introduces you to Horizon Cloud Service on Microsoft A
 
 This guide is intended for security architects, engineers, and administrators who want to familiarize themselves with, or are in the process of implementing, a Horizon Cloud Service on Microsoft Azure infrastructure.
 
-It is assumed that you have familiarity with Windows data center technologies such as Microsoft Azure and Active Directory, and knowledge of VMware Horizon 7 and VMware Unified Access Gateway. You should also be familiar with virtualization technology, cloud computing, network routing, and firewall security architecture. Knowledge of compatibility is also useful when using VMware Horizon Cloud Service on Microsoft Azure (see [VMware Product Interoperability Matrices](https://interopmatrix.vmware.com/#/Interoperability)).
+It is assumed that you have familiarity with Windows data center technologies such as Microsoft Azure and Active Directory, and knowledge of VMware Horizon and VMware Unified Access Gateway. You should also be familiar with virtualization technology, cloud computing, network routing, and firewall security architecture. Knowledge of compatibility is also useful when using VMware Horizon Cloud Service on Microsoft Azure (see [VMware Product Interoperability Matrices](https://interopmatrix.vmware.com/#/Interoperability)).
 
 Note: Not all sections of this guide are necessarily applicable to your particular deployment. Optional sections are marked as such. If you have questions about the specifics of your order, see [Getting Started with Horizon Cloud](https://www.vmware.com/products/horizon-cloud-virtual-desktops/getting-started.html), or reach out to your VMware sales representative.
 
