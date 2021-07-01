@@ -14,7 +14,7 @@ Figure 1 demonstrates the automated provisioning of a Horizon Cloud Service pod 
 
 2. Your VMware Horizon Cloud Service control plane is granted permission to create and manage resources with the use of a service principal in Microsoft Azure.
 
-3. You provide additional prerequisites such as Active Directory, as well as optional components such as Deployment Engine, Workspace ONE Connector, and RDS license, from either Microsoft Azure or Horizon Cloud on premises.
+3. You provide additional prerequisites such as Active Directory, as well as optional components such as Deployment Engine (Jumpbox), Workspace ONE Connector, and RDS license, from either Microsoft Azure or Horizon Cloud on premises.
 
 4. The Horizon Cloud Service control plane initiates the deployment of the Horizon Cloud Service pod, VMware Unified Access Gateway™ appliances for secure remote access, and other infrastructure components that assist with the configuration and management of the Horizon Cloud Service infrastructure.
 
@@ -48,7 +48,7 @@ Horizon Cloud Service on Microsoft Azure deploys three appliances from your Micr
 
   - **Horizon Cloud Service Pod:** Manages all infrastructure resources. While all policy definition and management happen in the cloud, all of the real work––creating resources on Microsoft Azure infrastructure and making it available to users––happens in the Horizon Cloud Service pod.
   - **Unified Access Gateway Appliances:** Provide secure Internet access to published applications and published desktops. Two appliances, either external or internal, need to be running to share the load and connections and maintain operational SLA of the pod.
-  - **Jumpbox:** A temporary Linux-based VM used during environment buildout, as well as for subsequent environment updates and upgrades.
+  - **Deployment Engine (Jumpbox):** A temporary Linux-based VM used during environment buildout, as well as for subsequent environment updates and upgrades.
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.
