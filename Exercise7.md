@@ -140,7 +140,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. In the lower right corner, click **IMPORT**.
 
-   ![ws name.](media/updt2.png)
+   ![ws name.](media/updtd2.png)
 
 3. Wait for the agent status to turn **Import successful** under Imported VM section before proceeding with the lab. Once the import is successful, a **Green dot** appears under Status.
 
