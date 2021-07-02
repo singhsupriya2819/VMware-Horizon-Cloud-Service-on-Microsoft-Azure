@@ -292,6 +292,10 @@ To complete the Active Directory configuration, provide information about the do
 
    ![ws name.](media/exb38.png)
 
+**Note:** You might also be prompted with a _What's New in Horizon Cloud_ popup, click on  **Close** to continue.
+
+   ![ws name.](media/exb338.png)
+
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Register Your First Active Directory Domain**.
 
 ### **Task 8: Extend Session Timeout for Horizon Portal**
