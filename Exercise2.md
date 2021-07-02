@@ -97,14 +97,12 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Horizon Agent Features, accept the default to install all features in the golden VM:
 
-  - App Volume Agent: **ENABLE**
-  
->Description: Installs the App Volumes Agent on the desktop.
+- App Volume Agent: **ENABLE**
+   - Description: Installs the App Volumes Agent on the desktop.
 
 
 - Enable Flash MMR: **DISABLE**
-
->Description: Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
+   - Description: Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
 
 
 - 3D support in Windows 10 MultiSession: DISABLE
