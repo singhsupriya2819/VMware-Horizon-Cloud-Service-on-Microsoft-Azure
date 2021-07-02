@@ -37,7 +37,7 @@
 
    ![ws name.](media/updt83.png)
    
-2. Navigate the **mydomain.local** > **Horizon OU** and click on **Flex GPO**. Click on **Settings** on the right hand side and see all the policies configured for DEM.
+2. Navigate the **mydomain.local** > **Horizon OU** and click on **FlexEngine**. Click on **Settings** on the right hand side and see all the policies configured for DEM.
 
    ![ws name.](media/updt84.png)
 
