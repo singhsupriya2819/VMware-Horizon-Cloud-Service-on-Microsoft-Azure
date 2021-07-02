@@ -22,7 +22,7 @@ Before you assign a desktop to a user or group, it is best practice to check the
 ### **Task 2: Examine Utilization Data**
     
 1. Scroll down to the **Utilization** pane, and hover over the diagram. In this example, 7% of the allocated capacity is being used. Utilization is measured as follows:
-  - **Horizon 7:** Average CPU, memory, and storage usage from vCenter(s) hosting connected Horizon 7 pods
+  - **Horizon:** Average CPU, memory, and storage usage from vCenter(s) hosting connected Horizon pods
   - **Microsoft Azure:** Desktop percentage is the number of connected to allocated desktops across Azure pods. Capacity percentage is number of allocated desktops.
 
 2. In the bar graph, you can select and deselect metrics to hide data and enhance focus.
@@ -49,7 +49,6 @@ Before you assign a desktop to a user or group, it is best practice to check the
 
 2. Note the amount used so that you can compare after assigning the desktop.
 
-For information about the capacity model, see [Service Description: VMware Horizon® Cloud Service™ on IBM Cloud](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/support/vmware-horizon-cloud-hosted-service-description.pdf).
 
 After verifying that the Desktop Capacity Allocation is sufficient, you can proceed to the next exercise to assign a desktop and see how the capacity allocation is affected.
 

@@ -149,6 +149,43 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 - Help Desk: **ENABLE**
    - Description: Installs the Help Desk.
 
+
+- Webcam Support (Real Time Audio Video RTAV): **ENABLE**
+   - Description: Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
+
+
+- Smart Card: **DISABLE**
+   - Description: Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
+
+
+- VMware Print: **ENABLE**
+   - Description: Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
+
+
+- Scanner Redirection: **ENABLE**
+   - Description: Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
+
+- USB Redirection: **ENABLE**
+   - Description: Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
+
+
+- URL Redirection: **DISABLE**
+   - Description: Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
+
+
+- Serial Port Redirection: **ENABLE**
+   - Description: Enables devices connected to serial ports on your local client system so those devices can be used with the remote desktop or application.
+
+
+- Geolocation Redirection: **ENABLE**
+   - Description: Allows the geolocation information of the client system to be used by Internet Explorer in remote desktops.
+
+
+- Help Desk: **ENABLE**
+   - Description: Installs the Help Desk.
+
+
+
 2. In the lower right corner, click **IMPORT**.
 
    ![ws name.](media/updtd2.png)
