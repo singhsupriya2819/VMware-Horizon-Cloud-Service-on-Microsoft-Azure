@@ -326,7 +326,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
    
 6. On a prompt to **Finalize Package** click on **Finalize**.
 
-   ![ws name.](media/updt103.png)
+   ![ws name.](media/updt63.png)
 
 7. Under **Restart Required** prompt click on **Ok** to restart the session.
 
