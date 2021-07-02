@@ -161,8 +161,6 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 2. Click on **VALIDATE & PROCEED**.
 
-   ![ws name.](media/vmw40.png)
-
 ### **Task 8: Review Summary**
 
 1. Review the summary, verify that the information is correct and complete, and then click **SUBMIT**.
