@@ -99,9 +99,6 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 ### **Task 5: Provide Pod Setup Details**
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
-
-   - Site: Choose **Existing** and select the **Default-Site** from the dropdown. 
-      **Note**: In case **Default-Site** is not available, choose **New** and provide the name **Site-1**
    
    - Pod Name: **pod-test**
     
@@ -111,7 +108,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    - Description: _Enter an optional description for this pod._
 
-   ![ws name.](media/us32.png)
+   ![ws name.](media/us322.png)
 
 2. Scroll down to the next panel.
 
@@ -160,11 +157,9 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    - Inherit Pod tags: **Enable**
 
-    ![ws name.](media/us33.png)
+    ![ws name.](media/us333.png)
 
 2. Click on **VALIDATE & PROCEED**.
-
-   ![ws name.](media/vmw40.png)
 
 ### **Task 8: Review Summary**
 
@@ -291,6 +286,10 @@ To complete the Active Directory configuration, provide information about the do
 **Note**: Once you login back to Horizon Cloud service portal after deploying the pod and completing the bind operation, we may be prompted with a popup to choose whether or not to join the VMware Customer Experience Improvement Program(CEIP). Move the slider to **Yes**, and click on **Save**.
 
    ![ws name.](media/exb38.png)
+
+**Note:** You might also be prompted with a _What's New in Horizon Cloud_ popup, click on  **Close** to continue.
+
+   ![ws name.](media/exb338.png)
 
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Register Your First Active Directory Domain**.
 

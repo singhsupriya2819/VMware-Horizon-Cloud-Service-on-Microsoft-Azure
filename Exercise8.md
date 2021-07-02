@@ -37,9 +37,9 @@
 
    ![ws name.](media/updt83.png)
    
-2. Navigate the **mydomain.local** > **Horizon OU** and click on **Flex GPO**. Click on **Settings** on the right hand side and see all the policies configured for DEM.
+2. Navigate the **mydomain.local** > **Horizon OU** and click on **FlexEngine**. Click on **Settings** on the right hand side and see all the policies configured for DEM.
 
-   ![ws name.](media/updt84.png)
+   ![ws name.](media/updt884.png)
 
 
 ## **Exercise 8.2: Experience Dynamic Environment Manager**
@@ -133,19 +133,23 @@
 
    ![ws name.](media/updt30.png)
 
-20. While logging into Session Desktop, you see that *VMware Dynamic Enviroment manager policy* getting applied.
+20. Double click on the **DesktopAssignment** to launch the SessionDesktop.
+
+   ![ws name.](media/updt98.png)
+
+21. While logging into Session Desktop, you see that *VMware Dynamic Enviroment manager policy* getting applied.
 
    ![ws name.](media/updt92.png)
    
-21. We can see that the desktop wallpaper is retained from our last change as done in *Step 11*. 
+22. We can see that the desktop wallpaper is retained from our last change as done in *Step 11*. 
 
-    ![ws name.](media/updt113.png)
+   ![ws name.](media/updt113.png)
     
-22. Open the **README** file on desktop and validate you are logged into new Session Desktop and the font in notepad is also retained.
+23. Open the **README** file on desktop and validate you are logged into new Session Desktop and the font in notepad is also retained.
 
    ![ws name.](media/updt112.png)
 
-23. Open the **File explorer** and go to **Home** drive, verify if the file is still retained. 
+24. Open the **File explorer** and go to **Home** drive, verify if the file is still retained. 
 
    ![ws name.](media/updt105.png)
    

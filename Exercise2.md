@@ -159,7 +159,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. In the lower right corner, click **IMPORT**.
 
-   ![ws name.](media/updt2.png)
+   ![ws name.](media/updtd2.png)
 
 **Note: This process will take approximately 10 minutes to complete.**
 

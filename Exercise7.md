@@ -91,7 +91,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Horizon Agent Features, accept the default to install all features in the golden VM:
 
-- App Volume Agent: **ENABLE**
+ - App Volume Agent: **ENABLE**
    - Description: Installs the App Volumes Agent on the desktop.
 
 
@@ -150,10 +150,45 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    - Description: Installs the Help Desk.
 
 
+- Webcam Support (Real Time Audio Video RTAV): **ENABLE**
+   - Description: Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
+
+
+- Smart Card: **DISABLE**
+   - Description: Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
+
+
+- VMware Print: **ENABLE**
+   - Description: Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
+
+
+- Scanner Redirection: **ENABLE**
+   - Description: Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
+
+- USB Redirection: **ENABLE**
+   - Description: Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
+
+
+- URL Redirection: **DISABLE**
+   - Description: Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
+
+
+- Serial Port Redirection: **ENABLE**
+   - Description: Enables devices connected to serial ports on your local client system so those devices can be used with the remote desktop or application.
+
+
+- Geolocation Redirection: **ENABLE**
+   - Description: Allows the geolocation information of the client system to be used by Internet Explorer in remote desktops.
+
+
+- Help Desk: **ENABLE**
+   - Description: Installs the Help Desk.
+
+
 
 2. In the lower right corner, click **IMPORT**.
 
-   ![ws name.](media/updt2.png)
+   ![ws name.](media/updtd2.png)
 
 3. Wait for the agent status to turn **Import successful** under Imported VM section before proceeding with the lab. Once the import is successful, a **Green dot** appears under Status.
 
@@ -339,7 +374,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
    
 6. On a prompt to **Finalize Package** click on **Finalize**.
 
-   ![ws name.](media/updt103.png)
+   ![ws name.](media/updt63.png)
 
 7. Under **Restart Required** prompt click on **Ok** to restart the session.
 
@@ -453,4 +488,5 @@ Click on the refresh icon and make sure that the Status of the Assignment is **O
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.
+
    

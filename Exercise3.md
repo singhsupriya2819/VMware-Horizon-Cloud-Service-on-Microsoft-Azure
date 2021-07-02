@@ -157,9 +157,9 @@ When the new image has been published, you can use it to create farms.
 
   - **Empty Session Timeout:** Specify how to handle idle user sessions: never timeout idle sessions, or timeout after a specified number of minutes. **Note:** When a session is disconnected, the session is preserved in memory. When a session is logged out, the session is not preserved in memory, and any unsaved documents are lost.
   
-  - **When Timeout Occurs:** Leave blank.
+  - **When Timeout Occurs:** Disconnect.
   
-  - **Log Off Disconnected Sessions:** Specify when the system logs the user out of a disconnected session.
+  - **Log Off Disconnected Sessions:** Never.
   
   - **Max Session Lifetime:** Specify the maximum number of minutes the system should allow for a single user session.
   
