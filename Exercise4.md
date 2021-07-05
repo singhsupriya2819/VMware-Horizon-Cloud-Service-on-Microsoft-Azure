@@ -94,7 +94,7 @@ In the New Assignment window, select **Applications**.
 
 1. In the Applications tab, select the applications to add.
 
-   ![ws name.](media/updt8.png)
+   ![ws name.](media/updtd8.png)
 
 2. In the lower right, click **Next**.
 

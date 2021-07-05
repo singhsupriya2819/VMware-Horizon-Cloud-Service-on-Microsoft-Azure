@@ -313,7 +313,7 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
 2. In the lower right corner, click **Next**.
 
-    ![ws name.](media/updt4.png)
+    ![ws name.](media/updtd4.png)
 
 
 ### **Task 6: Verify the Summary Information**
@@ -321,12 +321,12 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 1. In the Summary tab, review to verify that the selections are correct and complete.
 2. In the lower right corner, click **Finish**.
 
-    ![ws name.](media/updt5.png)
+    ![ws name.](media/updtd5.png)
     
     
 ### **Task 7: Verify Addition of New Applications**
 
-   ![ws name.](media/updt6.png)
+   ![ws name.](media/updtd6.png)
 
 >In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
 
