@@ -96,6 +96,9 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 ### **Task 5: Provide Pod Setup Details**
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
+
+   - Site: Choose **Existing** and select the **Default-Site** from the dropdown.
+      **Note**: In case **Default-Site** is not available, choose **New** and provide the name **Site-1** (_This option might not be appear for some user_)
    
    - Pod Name: **pod-test**
     
@@ -105,7 +108,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    - Description: _Enter an optional description for this pod._
 
-   ![ws name.](media/us322.png)
+   ![ws name.](media/us32.png)
 
 2. Scroll down to the next panel.
 
