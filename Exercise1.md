@@ -264,9 +264,9 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 6: Notice Change in Login Windows**
 
-1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window. Copy and paste the VMware account username and password that we copied earlier in the notepad, and click on **Login**.
+1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window. Copy and paste the VMware account username and password from *Environment Detials* tab, and click on **Login**.
 
-   ![ws name.](media/vmw46.png)
+   ![ws name.](media/exb21.png)
 
 2. Now login window will ask you to login using the Active Directory credentials. Enter the following values:
 
