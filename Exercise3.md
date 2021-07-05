@@ -90,7 +90,7 @@ When the new image has been published, you can use it to create farms.
   - **Max Servers:** 3
   **Note:** The minimum number of server instances is initially powered on. As demand increases, additional servers are powered on until reaching the maximum. As end-user demand shrinks, servers are powered off until reaching the minimum. Each server is completely empty of user sessions before the system powers it off.
   - **Power Off Protect Time**: Accept the default of 30 minutes that a VM is protected from powering off after powering on due to a headroom error.
-  - **Sessions per Server:** Accept the default values.
+  - **Sessions per VM:** Accept the default values.
   **Note:** This number cannot be updated after the farm is created.
   
 2. **Do you have a valid license for this Windows OS:** Enable it and click on the check box saying **I confirm that I have an eligible license for this Windows OS.**
