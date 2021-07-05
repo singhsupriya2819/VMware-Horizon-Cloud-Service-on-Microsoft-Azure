@@ -105,15 +105,15 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    - Description: Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
 
 
-- 3D support in Windows 10 MultiSession: DISABLE
+- 3D support in Windows 10 MultiSession: **DISABLE**
    - Description: Provides support for vGPU-powered 3D RDS hosts.
 
 
-- MMR for Terminal Services: ENABLE
+- MMR for Terminal Services: **ENABLE**
    - Description: Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
 
 
-- Client Drive Redirection: ENABLE
+- Client Drive Redirection: **ENABLE**
    - Description: Allows you to share folders and drives on your local system with remote desktops and applications.
 
 
