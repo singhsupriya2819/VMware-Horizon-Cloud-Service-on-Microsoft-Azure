@@ -298,7 +298,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
   - Password: **<inject key="AD VM Admin Password" />**
 
 
-5. Double click on the **appcapture** session to launch it.
+5. Click on the **appcapture** session to launch it.
 
    ![ws name.](media/updt101.png)
 
