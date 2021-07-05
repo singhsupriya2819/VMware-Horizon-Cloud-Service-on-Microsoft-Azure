@@ -38,8 +38,9 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
 
 ### **Task 2: Log in to VMware Horizon Cloud Service**
 
-1. Open Microsoft Edge browser shortcut given on the desktop in ADVM, and browse the URL given below.
+1. Open **Horizon Portal** shortcut given on the desktop in ADVM.
 
+>**Note:** We should be directed to the following URL
    ```https://cloud.horizon.vmware.com/login2/login```
 
    ![ws name.](media/vmw34.png)
@@ -48,11 +49,7 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
   
    ![ws name.](media/vmw45.png)
    
-3. Now open notepad and paste the credentials there.
-
-   ![ws name.](media/vmw46.png)
-
-4. Go to Login page, copy the username and password from notepad and paste under _My VMWare Credentials_, then click on **Login**.
+3. Go to Login page and enter the username and password we copied from *Environment Details* page, then click on **Login**.
 
    ![ws name.](media/exb21.png)
 
