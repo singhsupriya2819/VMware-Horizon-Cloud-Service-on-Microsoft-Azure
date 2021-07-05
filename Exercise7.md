@@ -348,6 +348,8 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 8. Now we will be disconnected from the session desktop, click on **Close** button to continue.
 
    ![ws name.](media/updt60.png)
+
+>**Note:** Wait for 5 Minutes before performing *Step 8* as it might take some time for VM to restart.
    
 9. Now reconnect to session desktop by clicking on the session icon then enter the password: **<inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**  and click on **Login** button.
 
