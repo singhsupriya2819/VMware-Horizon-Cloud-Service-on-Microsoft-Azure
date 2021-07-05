@@ -328,35 +328,8 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
    ![ws name.](media/updt6.png)
 
-In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
+>In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
 
-
-### **Task 8: Adding a Application Manually from Farm**
-
-1. On *Application* page, click on **New** and select **Manually from Farm** from the drop-down menu.
-
-    ![ws name.](media/updt12.png)
-
-2. Enter the folowing details for **Remote Applications Definitions**.
-
-    ![ws name.](media/updt13.png)
-
-   - Name: **FileExplorer**
-   - Display Name: **File Explorer**
-   - Location: *Enter the location we used while creating pod*
-   - Pod: **pod-test*
-   - Farm: **FirstFarm**
-   - Application Path: **C:\Windows\explorer.exe**
-
-3. Click on **BROWSE** button and navigate to `C:\LabFiles\` , Now from file filter dropdown select **All files** and select **explorer.ico** and click on **Open**.
-
-    ![ws name.](media/updt14.png)
-
-4. Click on **SUBMIT** to publish the application.
-
-    ![ws name.](media/updt15.png)
-
-   >**Note:** If File Explorer does not appear in the list of applications then you might have to click on refresh button on top right corner of the list.
     
 For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and search the guide for **Importing New Applications from an RDSH Farm Manually**.
 
