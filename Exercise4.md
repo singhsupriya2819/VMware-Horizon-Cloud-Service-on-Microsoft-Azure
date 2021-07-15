@@ -171,7 +171,7 @@ When you finish assigning session-based desktops to users and groups, this exerc
 
    ![ws name.](media/updt19.png)
 
->**Note:** Microsoft Office applications might not be usable as MS Office 365 License is not provided to the AD user used in the lab.
+
 
 8. Close the Horizon Client.
 
