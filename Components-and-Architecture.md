@@ -8,13 +8,13 @@ The Horizon Cloud Service on Microsoft Azure system architecture includes the st
    
    **Figure 1:** Basic Horizon Cloud Service on Microsoft Azure System Architecture
    
-Figure 1 demonstrates the automated provisioning of a Horizon Cloud Service pod on your Microsoft Azure capacity. **Note:** Deployments into Microsoft Azure were previously referred to as nodes. (For a more detailed diagram, see [VMware Horizon Cloud Service on Microsoft Azure Requirements Checklist For New Pod Deployments - Updated for the March 2020 Service Release](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-5F69086E-E061-48F3-93D9-9705B8B5FD8A.html), under **Reference Architecture**.)
+Figure 1 demonstrates the automated provisioning of a Horizon Cloud Service pod on your Microsoft Azure capacity. **Note:** Deployments into Microsoft Azure were previously referred to as nodes. (For a more detailed diagram, see [VMware Horizon Cloud Service on Microsoft Azure Requirements Checklist For New Pod Deployments - Updated As Appropriate for Pods That Deploy Starting From the May 2021 Service Release Date](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-5F69086E-E061-48F3-93D9-9705B8B5FD8A.html), under **Reference Architecture**.)
 
 1. Your Microsoft Azure infrastructure-as-a-service (IaaS) provides capacity.
 
 2. Your VMware Horizon Cloud Service control plane is granted permission to create and manage resources with the use of a service principal in Microsoft Azure.
 
-3. You provide additional prerequisites such as Active Directory, as well as optional components such as Deployment Engine, Workspace ONE Connector, and RDS license, from either Microsoft Azure or Horizon Cloud on premises.
+3. You provide additional prerequisites such as Active Directory, as well as optional components such as Deployment Engine (Jumpbox), Workspace ONE Connector, and RDS license, from either Microsoft Azure or Horizon Cloud on premises.
 
 4. The Horizon Cloud Service control plane initiates the deployment of the Horizon Cloud Service pod, VMware Unified Access Gateway™ appliances for secure remote access, and other infrastructure components that assist with the configuration and management of the Horizon Cloud Service infrastructure.
 
@@ -39,7 +39,7 @@ Horizon Cloud Service Administration Console: The web-based portal, a component 
   - **Optional VMware Dynamic Environment Manager (formerly known as User Environment Manager):** A scalable management solution that provides personalization of Windows and apps; dynamic policy configuration across virtual, physical, and cloud-based Windows desktop environments, for managing a user’s persona across devices and locations; and [privilege elevation](https://www.youtube.com/watch?v=YlMbz13dQpE&index=25&list=PLfr3uvmY7hBwGeHiVIfo7rGA7rk4yemEV) to aid in your privilege management strategy. VMware Dynamic Environment Manager seamlessly integrates with Horizon Cloud Service, and provides a consistent user experience across physical, virtual, and cloud-hosted PCs and RD Session Host servers. If you are already using VMware Dynamic Environment Manager on physical or virtual desktops or RD Session Host servers, your knowledge transfers immediately to Horizon Cloud Service on Microsoft Azure. For more information, see [VMware Dynamic Environment Manager](https://techzone.vmware.com/quick-start-tutorial-vmware-horizon-cloud-service-microsoft-azure).
   - **Optional VMware Workspace ONE:** You can choose to deploy a Workspace ONE connector in your data center.
   - **Optional True SSO Enrollment server:** You can choose to deploy a True SSO Enrollment server in your data center.
-  - **NEW! VMware Types & Sizes:** A new feature to configure a subset of virtual machines (VMs) available for images. Microsoft Azure provides a variety of types of virtual machines (VM) and classifies them based on the memory, storage, and compute types. The length of the list of VMs makes it somewhat unwieldy, so this new feature enables you to select a subset to display to your end users as a pop-up list. During deployment, you can configure the list to include a sub-set of all available types and sizes, and you can change it any time after deployment. For more information, see [Sizes for Windows Virtual Machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes).
+  - **NEW! VMware Types & Sizes:** A new feature to configure a subset of virtual machines (VMs) available for images. Microsoft Azure provides a variety of types of virtual machines (VM) and classifies them based on the memory, storage, and compute types. The length of the list of VMs makes it somewhat unwieldy, so this new feature enables you to select a subset to display to your end users as a pop-up list. During deployment, you can configure the list to include a sub-set of all available types and sizes, and you can change it any time after deployment. For more information, see [Sizes for Azure Virtual Machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes).
 
 
 ## **Horizon Cloud Service on Microsoft Azure Components**
@@ -48,7 +48,7 @@ Horizon Cloud Service on Microsoft Azure deploys three appliances from your Micr
 
   - **Horizon Cloud Service Pod:** Manages all infrastructure resources. While all policy definition and management happen in the cloud, all of the real work––creating resources on Microsoft Azure infrastructure and making it available to users––happens in the Horizon Cloud Service pod.
   - **Unified Access Gateway Appliances:** Provide secure Internet access to published applications and published desktops. Two appliances, either external or internal, need to be running to share the load and connections and maintain operational SLA of the pod.
-  - **Jumpbox:** A temporary Linux-based VM used during environment buildout, as well as for subsequent environment updates and upgrades.
+  - **Deployment Engine (Jumpbox):** A temporary Linux-based VM used during environment buildout, as well as for subsequent environment updates and upgrades.
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.

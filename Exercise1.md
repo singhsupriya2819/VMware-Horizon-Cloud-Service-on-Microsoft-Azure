@@ -38,8 +38,9 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
 
 ### **Task 2: Log in to VMware Horizon Cloud Service**
 
-1. Open Microsoft Edge browser shortcut given on the desktop in ADVM, and browse the URL given below.
+1. Open **Horizon Portal** shortcut given on the desktop in ADVM.
 
+>**Note:** We should be directed to the following URL
    ```https://cloud.horizon.vmware.com/login2/login```
 
    ![ws name.](media/vmw34.png)
@@ -48,11 +49,7 @@ For more information, see [_Getting Started with VMware Horizon Cloud Service on
   
    ![ws name.](media/vmw45.png)
    
-3. Now open notepad and paste the credentials there.
-
-   ![ws name.](media/vmw46.png)
-
-4. Go to Login page, copy the username and password from notepad and paste under _My VMWare Credentials_, then click on **Login**.
+3. Go to Login page and enter the username and password we copied from *Environment Details* page, then click on **Login**.
 
    ![ws name.](media/exb21.png)
 
@@ -100,8 +97,8 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. In the Details panel of the Pod Setup tab, provide the following information:
 
-   - Site: Choose **Existing** and select the **Default-Site** from the dropdown. 
-      **Note**: In case **Default-Site** is not available, choose **New** and provide the name **Site-1**
+   - Site: Choose **Existing** and select the **Default-Site** from the dropdown.
+      **Note**: In case **Default-Site** is not available, choose **New** and provide the name **Site-1** (_This option might not be appear for some user_)
    
    - Pod Name: **pod-test**
     
@@ -160,11 +157,9 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    - Inherit Pod tags: **Enable**
 
-    ![ws name.](media/us33.png)
+    ![ws name.](media/us333.png)
 
 2. Click on **VALIDATE & PROCEED**.
-
-   ![ws name.](media/vmw40.png)
 
 ### **Task 8: Review Summary**
 
@@ -269,9 +264,9 @@ To complete the Active Directory configuration, provide information about the do
 
 ### **Task 6: Notice Change in Login Windows**
 
-1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window. Copy and paste the VMware account username and password that we copied earlier in the notepad, and click on **Login**.
+1. When you finish registering the pod with your Active Directory domain, the system returns you to the login window. Copy and paste the VMware account username and password from *Environment Detials* tab, and click on **Login**.
 
-   ![ws name.](media/vmw46.png)
+   ![ws name.](media/exb21.png)
 
 2. Now login window will ask you to login using the Active Directory credentials. Enter the following values:
 
@@ -291,6 +286,10 @@ To complete the Active Directory configuration, provide information about the do
 **Note**: Once you login back to Horizon Cloud service portal after deploying the pod and completing the bind operation, we may be prompted with a popup to choose whether or not to join the VMware Customer Experience Improvement Program(CEIP). Move the slider to **Yes**, and click on **Save**.
 
    ![ws name.](media/exb38.png)
+
+**Note:** You might also be prompted with a _What's New in Horizon Cloud_ popup, click on  **Close** to continue.
+
+   ![ws name.](media/exb338.png)
 
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Register Your First Active Directory Domain**.
 
@@ -345,7 +344,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
 You can optionally select which VM types and sizes to allow, add sizes to favorites, and customize how VM names are displayed.
 
-Microsoft supports a wide variety of VM types and sizes, which you can learn about at [_Sizes for Windows virtual machines in Azure_](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes). Instead of reviewing the entire list of available VM types, you can save time by creating your own sub-set of your favorite types and sizes. You can create this sub-set during deployment, and you can update it at any time afterward. If you set the option to choose your VM type, your end users can review the sub-set and quickly make their selection.
+Microsoft supports a wide variety of VM types and sizes, which you can learn about at [_Sizes for Azure virtual machines in Azure_](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes). Instead of reviewing the entire list of available VM types, you can save time by creating your own sub-set of your favorite types and sizes. You can create this sub-set during deployment, and you can update it at any time afterward. If you set the option to choose your VM type, your end users can review the sub-set and quickly make their selection.
 
 For more information, see General Purpose virtual machine sizes.
 
@@ -365,6 +364,8 @@ For more information, see General Purpose virtual machine sizes.
 
    ![ws name.](media/us3.png)
 
+   >**Note:** If a tag is already created by default then skip to next Exercise.
+
 2. In the _Enter tags_ window type **Do Not Use** and click on **ADD**..
 
    ![ws name.](media/us4.png)
@@ -378,6 +379,59 @@ For more information, see General Purpose virtual machine sizes.
    ![ws name.](media/vmw44.png)
 
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
+
+
+## **Exercise 1.5: Verifying DNS with Load Balancer**
+
+1. In your ADVM desktop double click on **Azure Portal** shortcut.
+
+2. Enter following credentials when asked for credentials:
+
+   - Username: Enter **<inject key="AzureAdUserEmail" />** and click on **Next**.
+   
+   - Password: Enter **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+
+> **Note:**  If there is a popup entitled **Help us protect your account**, click on **Skip for now (14 days until this is required)**.
+
+> ![ws name.](media/us51.png)
+   
+>  - If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+>  - If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+
+3. In Azure Portal search for *Load Balancers* and select it from the search results.
+
+   ![ws name.](media/updt114.png)
+
+4. Now from the list of Load Balancers, Select the Load balancer ending with name *uag-lb*.
+
+   ![ws name.](media/updt115.png)
+
+5. Note down the IP Address of the Load balancer from the essentials section.
+
+   ![ws name.](media/updt116.png)
+
+6. Now inside your AdVM open **Start** and search for *DNS* and select the search result with type *Desktop app*.
+
+   ![ws name.](media/updt117.png)
+
+7. Here navigate to **adVM** >> **Forward lookup Zones** >> **mydomain.local**.
+
+   ![ws name.](media/updt118.png)
+
+8. Now right click on **mydomain.local** and select **New Host (A or AAAA)**.
+
+   ![ws name.](media/updt119.png)
+
+9. Under New Host window provide the following details and click on **Add Host**.
+
+   ![ws name.](media/updt120.png)
+
+   - Name: **vdi**
+   - IP address: **Enter the IP address we noted down from the Load Balancer**
+   
+10. A Prompt may appear saying *The Host record was sucesfully created*, Click **OK** on that.
+
+   ![ws name.](media/updt121.png)
 
 After you finish creating and defining the subset of VM types and sizes that you want, you are ready to proceed to create a new image in the next exercise.
 

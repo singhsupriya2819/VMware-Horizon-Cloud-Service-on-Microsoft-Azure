@@ -4,38 +4,53 @@
     "Language": "English",
     "Files": [
 	    {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/main/VMware-Horizon-Cloud-Service-on-Microsoft-Azure2.0.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/VMware-Horizon-Cloud-Service-on-Microsoft-Azure2.0.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/main/Technical-Introduction-and-Features.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Technical-Introduction-and-Features.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/main/Components-and-Architecture.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Components-and-Architecture.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/main/Pre-requisite.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Pre-requisite.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/main/Exercise1.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise1.md",
         "Order": 5
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/main/Exercise2.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise2.md",
         "Order": 6
       },
 	{
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/main/Exercise3.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise3.md",
         "Order": 7
       },
     {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/main/Exercise4.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise4.md",
         "Order": 8
+      },
+	 {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise5.md",
+        "Order": 9
+      },
+	 {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise6.md",
+        "Order": 10
+      },
+	 {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise7.md",
+        "Order": 11
+      },
+	{
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/VMware-Phase2/Exercise8.md",
+        "Order": 12
       }
-	
     ]
   }
 ]

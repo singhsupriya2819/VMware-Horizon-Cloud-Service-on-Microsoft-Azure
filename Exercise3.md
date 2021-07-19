@@ -1,4 +1,4 @@
-# **Exercise 3: Deploying a Farm**
+# **Exercise 3: Deploying a Application Farm**
 
 ## About Farm Deployment
 
@@ -10,7 +10,7 @@ You set up these options in the Horizon Cloud Service farm profile when you firs
 
 **Note:** For this set of exercises, you need a server image deployed.
 
-## **Exercise 3.1: Creating a Farm**
+## **Exercise 3.1: Creating a Application Farm**
 
 When the new image has been published, you can use it to create farms.
 
@@ -90,7 +90,7 @@ When the new image has been published, you can use it to create farms.
   - **Max Servers:** 3
   **Note:** The minimum number of server instances is initially powered on. As demand increases, additional servers are powered on until reaching the maximum. As end-user demand shrinks, servers are powered off until reaching the minimum. Each server is completely empty of user sessions before the system powers it off.
   - **Power Off Protect Time**: Accept the default of 30 minutes that a VM is protected from powering off after powering on due to a headroom error.
-  - **Sessions per Server:** Accept the default values.
+  - **Sessions per VM:** Accept the default values.
   **Note:** This number cannot be updated after the farm is created.
   
 2. **Do you have a valid license for this Windows OS:** Enable it and click on the check box saying **I confirm that I have an eligible license for this Windows OS.**
@@ -157,9 +157,9 @@ When the new image has been published, you can use it to create farms.
 
   - **Empty Session Timeout:** Specify how to handle idle user sessions: never timeout idle sessions, or timeout after a specified number of minutes. **Note:** When a session is disconnected, the session is preserved in memory. When a session is logged out, the session is not preserved in memory, and any unsaved documents are lost.
   
-  - **When Timeout Occurs:** Leave blank.
+  - **When Timeout Occurs:** Disconnect.
   
-  - **Log Off Disconnected Sessions:** Specify when the system logs the user out of a disconnected session.
+  - **Log Off Disconnected Sessions:** Never.
   
   - **Max Session Lifetime:** Specify the maximum number of minutes the system should allow for a single user session.
   
@@ -206,7 +206,7 @@ When the new image has been published, you can use it to create farms.
 
    ![ws name.](media/us12.png)
 
-Under Status, verify that the green dot is displayed to indicate that the farm has been created properly.
+Under Status, verify that the green dot is displayed to indicate that the farm has been created properly. It may take aproximately 20 minutes for status to turn succesful.
 
 For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Create a Farm**.
 
@@ -233,7 +233,7 @@ You can set up automatic shutdown or deallocation of unused servers.
     ![ws name.](media/us14.png)
       
       
-### **Task 3: Verify Automatic Creation of Resource Groups**
+### **Task 2: Verify Automatic Creation of Resource Groups**
 
 1. From the navigation bar, select **Resource groups**.
 
@@ -246,7 +246,7 @@ You can set up automatic shutdown or deallocation of unused servers.
 Horizon Cloud Service streamlines administration tasks, such as the automatic creation of resource groups, which contain all farm-related components. 
 
 
-### **Task 4: Automatic Definition of Network Security Group Rules**
+### **Task 3: Automatic Definition of Network Security Group Rules**
 
 
 1. In Azure portal search for **Network security groups** and click on it.
@@ -298,39 +298,40 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
 ### **Task 4: Select the Applications to Publish**
 
-   ![ws name.](media/us22.png)
+   ![ws name.](media/updt3.png)
 
-1. In the Applications tab, select the applications to be published.
+1. In the Applications tab, select the applications to be published for example: Excel, Microsoft Edge, Outlook, OneNote, Word and OneDrive.
 
-2. In the lower right corner, click **Next**.
+   **Note:** We can click on the **(2)** next page button near the lower right corner to navigate through the different pages of the list of applications.
+
+2. In the lower right corner, click **(3)** **Next**.
 
 
-### Task 5: Provide Attributes
+### **Task 5: Provide Attributes**
 
 1. In the Attributes tab, provide the appropriate attributes.
 
 2. In the lower right corner, click **Next**.
 
-    ![ws name.](media/us23.png)
+    ![ws name.](media/updtd4.png)
 
 
-### Task 6: Verify the Summary Information
+### **Task 6: Verify the Summary Information**
 
 1. In the Summary tab, review to verify that the selections are correct and complete.
 2. In the lower right corner, click **Finish**.
 
-    ![ws name.](media/exdu21.png)
+    ![ws name.](media/updtd5.png)
     
     
-### Task 7: Verify Addition of New Applications
+### **Task 7: Verify Addition of New Applications**
 
-   ![ws name.](media/us24.png)
+   ![ws name.](media/updtd6.png)
 
-In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
+>In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
 
-For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and search the guide for **Importing New Applications from an RDSH Farm Using Auto-Scan from Farm**.
-
-After you finish adding applications from the farm, proceed to the next section to explore assigning desktops and applications to users and groups.
+    
+For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and search the guide for **Importing New Applications from an RDSH Farm Manually**.
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.

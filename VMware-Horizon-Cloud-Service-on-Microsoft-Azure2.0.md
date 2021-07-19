@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-**Note:** This Quick-Start Tutorial was updated with content relevant for the March 2020 release of Horizon Cloud on Microsoft Azure. For more details about this release, see [Horizon Cloud on Microsoft Azure Support for Windows Virtual Desktop is Here](https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html) and [VMware Horizon Cloud Service Release Notes - v3 - March 2020](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html).
+**Note:** This Quick-Start Tutorial was updated with content relevant for the March 2020 release of Horizon Cloud on Microsoft Azure. For more details about this release, see [Horizon Cloud on Microsoft Azure Support for Azure Virtual Desktop is Here](https://blogs.vmware.com/euc/2020/03/windows-virtual-desktop-support.html) and [VMware Horizon Cloud Service Release Notes - v3 - March 2020](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/rn/horizon-cloud-service-relnotes-30.html).
 
 This Quick-Start Tutorial introduces you to VMware Horizon® Cloud Service™ on Microsoft Azure. This solution combines the management functionality of the Horizon Cloud Service control plane with the cost-saving capacities of Microsoft Azure. You can take advantage of the Horizon Cloud Service to manage your desktops and remote applications. This includes managing VDI and RDS-hosted applications on Microsoft Azure infrastructure, as well as the flexibility to choose the deployment option that best meets the needs of your organization or use cases.
 
@@ -20,7 +20,7 @@ This Quick-Start Tutorial introduces you to Horizon Cloud Service on Microsoft A
 
 This guide is intended for security architects, engineers, and administrators who want to familiarize themselves with, or are in the process of implementing, a Horizon Cloud Service on Microsoft Azure infrastructure.
 
-It is assumed that you have familiarity with Windows data center technologies such as Microsoft Azure and Active Directory, and knowledge of VMware Horizon 7 and VMware Unified Access Gateway. You should also be familiar with virtualization technology, cloud computing, network routing, and firewall security architecture. Knowledge of compatibility is also useful when using VMware Horizon Cloud Service on Microsoft Azure (see [VMware Product Interoperability Matrices](https://interopmatrix.vmware.com/#/Interoperability)).
+It is assumed that you have familiarity with Windows data center technologies such as Microsoft Azure and Active Directory, and knowledge of VMware Horizon and VMware Unified Access Gateway. You should also be familiar with virtualization technology, cloud computing, network routing, and firewall security architecture. Knowledge of compatibility is also useful when using VMware Horizon Cloud Service on Microsoft Azure (see [VMware Product Interoperability Matrices](https://interopmatrix.vmware.com/#/Interoperability)).
 
 Note: Not all sections of this guide are necessarily applicable to your particular deployment. Optional sections are marked as such. If you have questions about the specifics of your order, see [Getting Started with Horizon Cloud](https://www.vmware.com/products/horizon-cloud-virtual-desktops/getting-started.html), or reach out to your VMware sales representative.
 

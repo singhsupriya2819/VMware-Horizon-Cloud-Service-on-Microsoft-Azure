@@ -22,7 +22,7 @@ Before you assign a desktop to a user or group, it is best practice to check the
 ### **Task 2: Examine Utilization Data**
     
 1. Scroll down to the **Utilization** pane, and hover over the diagram. In this example, 7% of the allocated capacity is being used. Utilization is measured as follows:
-  - **Horizon 7:** Average CPU, memory, and storage usage from vCenter(s) hosting connected Horizon 7 pods
+  - **Horizon:** Average CPU, memory, and storage usage from vCenter(s) hosting connected Horizon pods
   - **Microsoft Azure:** Desktop percentage is the number of connected to allocated desktops across Azure pods. Capacity percentage is number of allocated desktops.
 
 2. In the bar graph, you can select and deselect metrics to hide data and enhance focus.
@@ -49,7 +49,6 @@ Before you assign a desktop to a user or group, it is best practice to check the
 
 2. Note the amount used so that you can compare after assigning the desktop.
 
-For information about the capacity model, see [Service Description: VMware Horizon® Cloud Service™ on IBM Cloud](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/support/vmware-horizon-cloud-hosted-service-description.pdf).
 
 After verifying that the Desktop Capacity Allocation is sufficient, you can proceed to the next exercise to assign a desktop and see how the capacity allocation is affected.
 
@@ -65,10 +64,10 @@ To create a session desktop assignment, use the Assignments window after first v
 
 ### **Task 1: Assign New**
 
-1. In the navigation pane on the left, click **Assignments**.
+1. In the navigation pane on the left, click **Assign Desktops & Apps** and select **RDSH** from dropdown menu.
 2. In the Assignments window, click **New**.
 
-   ![ws name.](media/exeu14.png)
+   ![ws name.](media/updt7.png)
 
 
 ### **Task 2: Select Applications**
@@ -95,7 +94,7 @@ In the New Assignment window, select **Applications**.
 
 1. In the Applications tab, select the applications to add.
 
-   ![ws name.](media/us27.png)
+   ![ws name.](media/updtd8.png)
 
 2. In the lower right, click **Next**.
 
@@ -112,7 +111,7 @@ In the New Assignment window, select **Applications**.
    
 1. In the Summary tab, review the configuration summary.
 
-   ![ws name.](media/us29.png)
+   ![ws name.](media/updt16.png)
 
 2. In the lower right corner, click **Submit**.
 
@@ -135,6 +134,9 @@ When you finish assigning session-based desktops to users and groups, this exerc
   
    ![ws name.](media/vmw21.png)
   
+  >**Note:** If you are prompted with following warning then click on **Continue**.
+  >
+  >![ws name.](media/updt9.png)
 
 2. The login window will appear asking for username and password to connect to the server.
 
@@ -143,9 +145,9 @@ When you finish assigning session-based desktops to users and groups, this exerc
   
 3. Enter following credentials:
 
-  - Username: <inject key="vdi Username 1" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+  - Username: **<inject key="vdi Username 1" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
   
-  - Password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+  - Password: **<inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
   
   - Domain: Leave on **DefaultDomain**
 
@@ -153,7 +155,7 @@ When you finish assigning session-based desktops to users and groups, this exerc
   
 4. Double click on the Application we want to launch.
 
-  ![ws name.](media/vmw24.png)
+  ![ws name.](media/updt10.png)
   
   
 5. The Application will start loading.
@@ -163,12 +165,16 @@ When you finish assigning session-based desktops to users and groups, this exerc
 
 6. If the prompt appears, click on **Allow**.
 
-  ![ws name.](media/vmw26.png)
+  ![ws name.](media/updt11.png)
   
 7. The Application will launch and will be ready to use.
 
-   ![ws name.](media/vmw27.png)
+   ![ws name.](media/updt19.png)
 
 
 
+8. Close the Horizon Client.
+
+
+Click on the **Next** button from lower right corner of the guide to move on the next page.
 
