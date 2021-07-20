@@ -381,7 +381,7 @@ For more information, see General Purpose virtual machine sizes.
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
 
 
-## **Exercise 1.5: Verifying DNS with Load Balancer**
+## **Exercise 1.5: Create a DNS record for Pod's Load Balancer**
 
 1. In your ADVM desktop double click on **Azure Portal** shortcut.
 
@@ -402,7 +402,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    ![ws name.](media/updt114.png)
 
-4. Now from the list of Load Balancers, Select the Load balancer ending with name *uag-lb*.
+4. Now from the list of Load Balancers, Select the Load balancer ending with name **uag-lb**.
 
    ![ws name.](media/updt115.png)
 
@@ -433,7 +433,6 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
    ![ws name.](media/updt121.png)
 
-After you finish creating and defining the subset of VM types and sizes that you want, you are ready to proceed to create a new image in the next exercise.
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.
