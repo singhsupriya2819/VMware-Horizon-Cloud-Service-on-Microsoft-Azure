@@ -275,7 +275,8 @@ You can customize the Windows operating system of the new golden image VM, set w
 
 11. In PowerShell ISE paste the script below and run it.
 
-   ![ws name.](media/221.png)
+  ![ws name.](media/221.png)
+
 
     ```
     Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
