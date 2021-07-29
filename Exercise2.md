@@ -283,7 +283,7 @@ You can customize the Windows operating system of the new golden image VM, set w
     choco install adobereader -y -force
     ```
 
-![ws name.](media/221.png)
+![ws name.](media/updt221.png)
 
 >**Note:** Wait for the script to complete and then close the Powershell ISE
 
