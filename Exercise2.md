@@ -275,8 +275,6 @@ You can customize the Windows operating system of the new golden image VM, set w
 
 11. In PowerShell ISE paste the script below and run it.
 
-  ![ws name.](media/221.png)
-
 
     ```
     Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -284,6 +282,8 @@ You can customize the Windows operating system of the new golden image VM, set w
     choco install vscode -y -force
     choco install adobereader -y -force
     ```
+
+![ws name.](media/221.png)
 
 >**Note:** Wait for the script to complete and then close the Powershell ISE
 
