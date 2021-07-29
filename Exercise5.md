@@ -136,7 +136,7 @@ In this Exercise we will be creating a new farm to deploy Session Desktops using
   
   - **Max Session Lifetime:** Specify the maximum number of minutes the system should allow for a single user session.
   
-  - **Session Timeout Retrieval:** Set the value as **90** Minutes
+  - **Session Timeout Interval:** Set the value as **90** Minutes
 
   - **Schedule Power Management (Optional):** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
 

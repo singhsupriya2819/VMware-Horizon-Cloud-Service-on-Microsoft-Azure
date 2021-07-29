@@ -300,7 +300,7 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 
    ![ws name.](media/updt3.png)
 
-1. In the Applications tab, select the applications to be published for example: Excel, Microsoft Edge, Outlook, OneNote, Word and OneDrive.
+1. In the Applications tab, select the applications to be published for example: Microsoft Edge, Visual Studio Code, Acrobat Reader DC, Notepad and Google Chrome.
 
    **Note:** We can click on the **(2)** next page button near the lower right corner to navigate through the different pages of the list of applications.
 

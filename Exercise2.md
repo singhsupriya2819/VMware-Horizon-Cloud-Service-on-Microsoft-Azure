@@ -269,11 +269,28 @@ You can customize the Windows operating system of the new golden image VM, set w
     change user /execute 
     ```
 
-10. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
+10. Go to start and search for **PowerShell ISE** and launch it.
 
-11. Make any customizations or configurations you want to the RDS desktops, such as adding custom wallpaper, setting default fonts or colors or themes, adjusting the taskbar default settings, and so on.
+   ![ws name.](media/updt220.png)
 
-12. When you finish do not shut down the Windows operating system, instead **Disconnect**.
+11. In PowerShell ISE paste the script below and run it.
+
+   ![ws name.](media/221.png)
+
+    ```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    choco install googlechrome -y -force
+    choco install vscode -y -force
+    choco install adobereader -y -force
+    ```
+
+>**Note:** Wait for the script to complete and then close the Powershell ISE
+
+12. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
+
+13. Make any customizations or configurations you want to the RDS desktops, such as adding custom wallpaper, setting default fonts or colors or themes, adjusting the taskbar default settings, and so on.
+
+14. When you finish do not shut down the Windows operating system, instead **Disconnect**.
 
     ![ws name.](media/us43.png)    
 
