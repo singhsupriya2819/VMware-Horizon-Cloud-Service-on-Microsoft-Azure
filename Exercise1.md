@@ -311,7 +311,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
 1. Expand **Settings** pane, click on **Broker**.
 
-**Note:** A precreated broker might already exist. In that case skip to Exercise 1.4, else continue with the steps below. 
+**Note:** A pre-created broker might already exist. In that case skip to Exercise 1.4, else continue with the steps below. 
 
 2. Click on **Select**.
 

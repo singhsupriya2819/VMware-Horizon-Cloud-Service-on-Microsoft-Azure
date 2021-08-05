@@ -1,6 +1,6 @@
 # Components and Architecture
 
-## About System Architecture and Components
+## **About System Architecture and Components**
 
 The Horizon Cloud Service on Microsoft Azure system architecture includes the standard Horizon Cloud Service components, as well as unique components and integrations that provide additional capabilities.
 
@@ -30,7 +30,7 @@ Horizon Cloud Service consists of the following major components:
   - **Infrastructure:** You can choose Microsoft Azure infrastructure, VMware cloud-hosted infrastructure, or your own hyper-converged infrastructure (HCI). This guide focuses on the Microsoft Azure infrastructure option.
   - **Active Directory:** You can choose to deploy AD on premises or in cloud.
   - **Image:** Also called image template, a desktop or RDSH server image that can be used in a Horizon Cloud Service tenant to create desktop or application assignments. It is used as the base image from which virtual machines (VMs) are cloned.
-  - **VMware Horizon Client™:** Software-based client installed on a desktop, thin client, mobile device, or tablet that facilitates connectivity to Horizon Cloud-hosted desktops and applications.
+  - **VMware Horizon Client:** Software-based client installed on a desktop, thin client, mobile device, or tablet that facilitates connectivity to Horizon Cloud-hosted desktops and applications.
   - **Horizon Cloud Service tenant appliance:** A hardened Linux appliance that provides desktop and application brokering, provisioning, and entitlement services. It hosts the end-user and administrative portals.
   - **Desktop and services subnets:** Unique IP subnets that you assign to allow for desktop, application, and administrative connectivity. The Desktop Zone uses the desktop subnet for virtual desktops and RDSH servers. The Services Zone uses the services subnet for tenant appliances and other utility services.
   - **Horizon Cloud Service Control Plane:** The central location to conduct all administrative functions and policy management. From the cloud-based control plane, you can manage your RDS farms and assign applications to users and groups from any browser on any machine with an Internet connection. The cloud control plane provides access to manage all Horizon Cloud Service pods deployed into your Microsoft Azure infrastructure in a single, centralized user interface, no matter which regional data center you use.
