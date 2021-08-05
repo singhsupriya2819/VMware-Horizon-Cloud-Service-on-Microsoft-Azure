@@ -69,13 +69,13 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Admin Credentials for the Desktop, provide the required information:
 
-  - Username: **<inject key="AD VM Admin UserName" />**
+  - Username: **<inject key="Desktop Local Admin UserName" />**
 
-  - Password: **<inject key="AD VM Admin Password" />**
+  - Password: **<inject key="Desktop Local Admin Password" />**
   
-  - Verify Password: **<inject key="AD VM Admin Password" />**
+  - Verify Password: **<inject key="Desktop Local Admin Password" />**
 
-    ![ws name.](media/us6.png)
+    ![ws name.](media/updt110.png)
 
 2. Scroll to the next panel.
 
@@ -97,56 +97,68 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Horizon Agent Features, accept the default to install all features in the golden VM:
 
-  - **App Volume Agent:** Slide to **Enable** it.
+- App Volume Agent: **ENABLE**
+   - Description: Installs the App Volumes Agent on the desktop.
 
-    >**Note:** Installs the App Volumes Agent on the desktop.
+- Enable Flash MMR: **DISABLE**
+   - Description: Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
 
-  - **Enable Flash MMR:** Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
 
- 
- - **3D support in Windows 10 MultiSession:** Slide to **Disable** it.
-  
-   >**Note:** Provides support for vGPU-powered 3D RDS hosts.
+- 3D support in Windows 10 MultiSession: **DISABLE**
+   - Description: Provides support for vGPU-powered 3D RDS hosts.
 
- 
- - **MMR for Terminal Services:** Slide to **Enable** it. 
-  
-   >**Note:** Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
 
- 
- - **Client Drive Redirection:** Slide to **Enable** it.
-  
-   >**Note:** Allows you to share folders and drives on your local system with remote desktops and applications.
+- MMR for Terminal Services: **ENABLE**
+   - Description: Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
 
-  - **Skype for Business:** Provides the ability to use the RDS desktops to make optimized audio and video calls with Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network.
-  
-  - **Webcam Support (Real Time Audio Video RTAV):** Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
 
-  
-  - **Smart Card:** Slide to **Disable** it
-  
-    >**Note:** Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
+- Client Drive Redirection: **ENABLE**
+   - Description: Allows you to share folders and drives on your local system with remote desktops and applications.
 
-  
-  - **VMware Print:** Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
 
-  - **Scanner Redirection:** Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
+- Skype for Business: **ENABLE**
+   - Description: Provides the ability to use the RDS desktops to make optimized audio and video calls with Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network.
 
- 
- - **USB Redirection:** Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
 
- 
- - **URL Redirection:** Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
+- Webcam Support (Real Time Audio Video RTAV): **ENABLE**
+   - Description: Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
 
-  - **Serial Port Redirection:** Enables devices connected to serial ports on your local client system so those devices can be used with the remote desktop or application.
 
-  - **Geolocation Redirection:** Allows the geolocation information of the client system to be used by Internet Explorer in remote desktops.
+- Smart Card: **DISABLE**
+   - Description: Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
 
-  - **Help Desk:** Slide and **Enable** it to install the Help Desk.
+
+- VMware Print: **ENABLE**
+   - Description: Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
+
+
+- Scanner Redirection: **ENABLE**
+   - Description: Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
+
+- USB Redirection: **ENABLE**
+   - Description: Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
+
+
+- URL Redirection: **DISABLE**
+   - Description: Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
+
+
+- Serial Port Redirection: **ENABLE**
+   - Description: Enables devices connected to serial ports on your local client system so those devices can be used with the remote desktop or application.
+
+
+- Geolocation Redirection: **ENABLE**
+   - Description: Allows the geolocation information of the client system to be used by Internet Explorer in remote desktops.
+
+
+- Help Desk: **ENABLE**
+   - Description: Installs the Help Desk.
+
+
 
 2. In the lower right corner, click **IMPORT**.
 
-   ![ws name.](media/updt2.png)
+   ![ws name.](media/updtd2.png)
 
 **Note: This process will take approximately 10 minutes to complete.**
 
@@ -257,11 +269,29 @@ You can customize the Windows operating system of the new golden image VM, set w
     change user /execute 
     ```
 
-10. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
+10. Go to start and search for **PowerShell ISE** and launch it.
 
-11. Make any customizations or configurations you want to the RDS desktops, such as adding custom wallpaper, setting default fonts or colors or themes, adjusting the taskbar default settings, and so on.
+   ![ws name.](media/updt220.png)
 
-12. When you finish do not shut down the Windows operating system, instead **Disconnect**.
+11. In PowerShell ISE paste the script below and run it.
+
+
+    ```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    choco install googlechrome -y -force
+    choco install vscode -y -force
+    choco install adobereader -y -force
+    ```
+
+![ws name.](media/updt221.png)
+
+>**Note:** Wait for the script to complete and then close the Powershell ISE
+
+12. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
+
+13. Make any customizations or configurations you want to the RDS desktops, such as adding custom wallpaper, setting default fonts or colors or themes, adjusting the taskbar default settings, and so on.
+
+14. When you finish do not shut down the Windows operating system, instead **Disconnect**.
 
     ![ws name.](media/us43.png)    
 

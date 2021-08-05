@@ -63,13 +63,13 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Admin Credentials for the Desktop, provide the required information:
 
-  - Username: **<inject key="AD VM Admin UserName" />**
-
-  - Password: **<inject key="AD VM Admin Password" />**
+  - Username: **<inject key="Desktop Local Admin UserName" />**
   
-  - Verify Password: **<inject key="AD VM Admin Password" />**
-
-    ![ws name.](media/us6.png)
+  - Password: **<inject key="Desktop Local Admin Password" />**
+  
+  - Verify Password: **<inject key="Desktop Local Admin Password" />**
+     
+     ![ws name.](media/updt110.png)
 
 2. Scroll to the next panel.
 
@@ -91,56 +91,69 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under Horizon Agent Features, accept the default to install all features in the golden VM:
 
-  - **App Volume Agent:** Slide to **Enable** it.
+ - App Volume Agent: **ENABLE**
+   - Description: Installs the App Volumes Agent on the desktop.
 
-    >**Note:** Installs the App Volumes Agent on the desktop.
 
-  - **Enable Flash MMR:** Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
+- Enable Flash MMR: **DISABLE**
+   - Description: Redirects Flash multimedia content sent to the client system and plays in a Flash container window using the Flash Player ActiveX version.
 
- 
- - **3D support in Windows 10 MultiSession:** Slide to **Disable** it.
-  
-   >**Note:** Provides support for vGPU-powered 3D RDS hosts.
 
- 
- - **MMR for Terminal Services:** Slide to **Enable** it. 
-  
-   >**Note:** Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
+- 3D support in Windows 10 MultiSession: **DISABLE**
+   - Description: Provides support for vGPU-powered 3D RDS hosts.
 
- 
- - **Client Drive Redirection:** Slide to **Enable** it.
-  
-   >**Note:** Allows you to share folders and drives on your local system with remote desktops and applications.
 
-  - **Skype for Business:** Provides the ability to use the RDS desktops to make optimized audio and video calls with Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network.
-  
-  - **Webcam Support (Real Time Audio Video RTAV):** Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
+- MMR for Terminal Services: **ENABLE**
+   - Description: Redirects multimedia content directly to the client computer, which plays the media content, offloading the demand on the RDS desktop and improving performance optimization.
 
-  
-  - **Smart Card:** Slide to **Disable** it
-  
-    >**Note:** Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
 
-  
-  - **VMware Print:** Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
+- Client Drive Redirection: **ENABLE**
+   - Description: Allows you to share folders and drives on your local system with remote desktops and applications.
 
-  - **Scanner Redirection:** Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
 
- 
- - **USB Redirection:** Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
+- Skype for Business: **ENABLE**
+   - Description: Provides the ability to use the RDS desktops to make optimized audio and video calls with Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network.
 
- 
- - **URL Redirection:** Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
 
-  - **Serial Port Redirection:** Enables devices connected to serial ports on your local client system so those devices can be used with the remote desktop or application.
+- Webcam Support (Real Time Audio Video RTAV): **ENABLE**
+   - Description: Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
 
-  - **Geolocation Redirection:** Allows the geolocation information of the client system to be used by Internet Explorer in remote desktops.
 
-  - **Help Desk:** Slide and **Enable** it to install the Help Desk.
+- Smart Card: **DISABLE**
+   - Description: Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
+
+
+- VMware Print: **ENABLE**
+   - Description: Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
+
+
+- Scanner Redirection: **ENABLE**
+   - Description: Redirects scanning and imaging devices that are connected to the client systems so those devices can be used with the desktop or remote application.
+
+- USB Redirection: **ENABLE**
+   - Description: Enables redirection of USB devices that are connected to your local client system so those devices can be used with the desktop or remote application.
+
+
+- URL Redirection: **DISABLE**
+   - Description: Collects performance data from monitored software and hardware objects in your Horizon environment and provides predictive analysis and real-time information about problems in your Horizon infrastructure.
+
+
+- Serial Port Redirection: **ENABLE**
+   - Description: Enables devices connected to serial ports on your local client system so those devices can be used with the remote desktop or application.
+
+
+- Geolocation Redirection: **ENABLE**
+   - Description: Allows the geolocation information of the client system to be used by Internet Explorer in remote desktops.
+
+
+- Help Desk: **ENABLE**
+   - Description: Installs the Help Desk.
+
+
 
 2. In the lower right corner, click **IMPORT**.
 
-   ![ws name.](media/updt2.png)
+   ![ws name.](media/updtd2.png)
 
 3. Wait for the agent status to turn **Import successful** under Imported VM section before proceeding with the lab. Once the import is successful, a **Green dot** appears under Status.
 
@@ -163,7 +176,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    ![ws name.](media/updt40.png)
 
 
-### **Task 2: Provide Desktop-to-Image Details**
+### **Task 2: Provide Convert Virtual Machine to Image Details**
 
 1. In the New Image window under **Convert Desktop to Image**, provide the following information:
 
@@ -175,7 +188,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
   
    ![ws name.](media/updt41.png)
 
->**Note:** It may take few minutes for Agesnt status to turn **Active**.
+>**Note:** It may take few minutes for Agent status to turn **Active**.
 
 
 ### **Task 3: Provide OS Properties Details**
@@ -196,7 +209,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 1. Under **Admin credentials for the desktop**, provide the account credentials for a valid administrator account in the selected image VM. Make sure to follow the complexity standards and other limitations.
 
-   ![ws name.](media/updt43.png)
+   ![ws name.](media/updt110.png)
    
    
   - Username: **<inject key="Desktop Local Admin UserName" />**
@@ -285,7 +298,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
   - Password: **<inject key="AD VM Admin Password" />**
 
 
-5. Double click on the **appcapture** session to launch it.
+5. Click on the **appcapture** session to launch it.
 
    ![ws name.](media/updt101.png)
 
@@ -326,7 +339,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
    
 6. On a prompt to **Finalize Package** click on **Finalize**.
 
-   ![ws name.](media/updt103.png)
+   ![ws name.](media/updt63.png)
 
 7. Under **Restart Required** prompt click on **Ok** to restart the session.
 
@@ -335,6 +348,8 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 8. Now we will be disconnected from the session desktop, click on **Close** button to continue.
 
    ![ws name.](media/updt60.png)
+
+>**Note:** Wait for 5 Minutes before performing *Step 8* as it might take some time for VM to restart.
    
 9. Now reconnect to session desktop by clicking on the session icon then enter the password: **<inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**  and click on **Login** button.
 

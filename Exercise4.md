@@ -22,7 +22,7 @@ Before you assign a desktop to a user or group, it is best practice to check the
 ### **Task 2: Examine Utilization Data**
     
 1. Scroll down to the **Utilization** pane, and hover over the diagram. In this example, 7% of the allocated capacity is being used. Utilization is measured as follows:
-  - **Horizon 7:** Average CPU, memory, and storage usage from vCenter(s) hosting connected Horizon 7 pods
+  - **Horizon:** Average CPU, memory, and storage usage from vCenter(s) hosting connected Horizon pods
   - **Microsoft Azure:** Desktop percentage is the number of connected to allocated desktops across Azure pods. Capacity percentage is number of allocated desktops.
 
 2. In the bar graph, you can select and deselect metrics to hide data and enhance focus.
@@ -95,7 +95,7 @@ In the New Assignment window, select **Applications**.
 
 1. In the Applications tab, select the applications to add.
 
-   ![ws name.](media/updt8.png)
+   ![ws name.](media/updtd8.png)
 
 2. In the lower right, click **Next**.
 
@@ -146,9 +146,9 @@ When you finish assigning session-based desktops to users and groups, this exerc
   
 3. Enter following credentials:
 
-  - Username: <inject key="vdi Username 1" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+  - Username: **<inject key="vdi Username 1" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
   
-  - Password: <inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+  - Password: **<inject key="all Account Password" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
   
   - Domain: Leave on **DefaultDomain**
 
@@ -172,7 +172,7 @@ When you finish assigning session-based desktops to users and groups, this exerc
 
    ![ws name.](media/updt19.png)
 
->**Note:** Microsoft Office applications might not be usable as MS Office 365 License is not provided to the AD user used in the lab.
+
 
 8. Close the Horizon Client.
 

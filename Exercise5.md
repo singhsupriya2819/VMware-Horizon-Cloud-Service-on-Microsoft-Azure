@@ -79,7 +79,7 @@ In this Exercise we will be creating a new farm to deploy Session Desktops using
   
   **Note:** The minimum number of server instances is initially powered on. As demand increases, additional servers are powered on until reaching the maximum. As end-user demand shrinks, servers are powered off until reaching the minimum. Each server is completely empty of user sessions before the system powers it off.
   - **Power Off Protect Time**: Accept the default of 30 minutes that a VM is protected from powering off after powering on due to a headroom error.
-  - **Sessions per Server:** Accept the default values.
+  - **Sessions per VM:** Accept the default values.
   **Note:** This number cannot be updated after the farm is created.
   
 2. **Do you have a valid license for this Windows OS:** Enable it and click on the check box saying **I confirm that I have an eligible license for this Windows OS.**
@@ -136,7 +136,7 @@ In this Exercise we will be creating a new farm to deploy Session Desktops using
   
   - **Max Session Lifetime:** Specify the maximum number of minutes the system should allow for a single user session.
   
-  - **Session Timeout Retrieval:** Set the value as **90** Minutes
+  - **Session Timeout Interval:** Set the value as **90** Minutes
 
   - **Schedule Power Management (Optional):** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
 

@@ -8,7 +8,6 @@ This Hands-on Lab introduces you to VMware Horizon Cloud on Azure. This solution
 
 This Hands-on Lab is relevant for VMware Horizon Cloud Services on Microsoft Azure 2.0, and describes the process of deploying Horizon Cloud Service components into your Microsoft Azure capacity. This process creates an entity called the Horizon Cloud Service pod (previously referred to as a node), which pairs with the control plane. You then use the control plane to create RDSH and session farms, and to manage and deliver Virtual Windows Enterprise 10 Multi-session and remote applications to your end users. You can also leverage the automation to perform basic VDI agent updates to floating and dedicated desktops.
 
-
 ## **Purpose**
 
 This Hands-on Lab introduces you to Horizon Cloud Service on Microsoft Azure, and helps you to evaluate this product through a series of practical exercises. The Overview section describes the benefits, features, architecture, and components, and component interoperability. The subsequent sections provide exercises to help you deploy the Horizon Cloud Service pod into your Microsoft Azure capacity, and then to explore and evaluate this product and its core capabilities and key features.
@@ -20,7 +19,7 @@ This Hands-on Lab introduces you to Horizon Cloud Service on Microsoft Azure, an
 
 This guide is intended for security architects, engineers, and administrators who want to familiarize themselves with, or are in the process of implementing, a Horizon Cloud Service on Microsoft Azure infrastructure.
 
-It is assumed that you have familiarity with Windows data center technologies such as Microsoft Azure and Active Directory, and knowledge of VMware Horizon 7 and VMware Unified Access Gateway. You should also be familiar with virtualization technology, cloud computing, network routing, and firewall security architecture. Knowledge of compatibility is also useful when using VMware Horizon Cloud Service on Microsoft Azure (see [VMware Product Interoperability Matrices](https://interopmatrix.vmware.com/#/Interoperability)).
+It is assumed that you have familiarity with Windows data center technologies such as Microsoft Azure and Active Directory, and knowledge of VMware Horizon and VMware Unified Access Gateway. You should also be familiar with virtualization technology, cloud computing, network routing, and firewall security architecture. Knowledge of compatibility is also useful when using VMware Horizon Cloud Service on Microsoft Azure (see [VMware Product Interoperability Matrices](https://interopmatrix.vmware.com/#/Interoperability)).
 
 Note: Not all sections of this guide are necessarily applicable to your particular deployment. Optional sections are marked as such. If you have questions about the specifics of your order, see [Getting Started with Horizon Cloud](https://www.vmware.com/products/horizon-cloud-virtual-desktops/getting-started.html), or reach out to your VMware sales representative.
 

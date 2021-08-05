@@ -48,7 +48,7 @@ With the Horizon Cloud Service on Microsoft Azure offering, [Microsoft and VMwar
   - **Low-cost hourly billing:** You benefit from consumption-based pricing for capacity, as well as no upfront costs or termination fees.
 
 
-For more information, see [VMware Horizon Cloud Service](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and under **Release Notes**, select **Horizon Cloud Service - v2.0 - July 2019**.
+For more information, see [VMware Horizon Cloud Service](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and under **VMware Horizon Cloud Service Release Notes**.
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.
