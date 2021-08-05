@@ -1,21 +1,23 @@
 # Prerequisites
 
 
-This lab requires few prerequisites to be met to sucessfully complete the lab. We have preconfigured all the prerequisites for you, there is no action needed from your end.
+This lab requires few prerequisites to be met in order to successfully complete the lab.
 
-Following are the resources that are precreated.
+We have pre-configured all the prerequisites for you, there is no action needed from your end. However, as you progress through this hands-on lab, you will be able to see and experience all the resources previously created.
+
+Following are the resources that are pre-created:
 
 ### **Resource Groups**
 
-There are two precreated resource groups i.e.:
+There are two pre-created resource groups i.e.:
 
-  - **AD-RG**: Resource agroup to create adVnet virtual network.
+  - **AD-RG**: Resource group to create adVnet virtual network.
   - **Horizon-Network-RG**: Resource group to create HZN-Vnet virtual network.
 
 
 ### **Virtual Networks**
 
-There are two precreated virtual network i.e:
+There are two pre-created virtual network i.e:
 
   - **adVNET**: Virtual network to deploy adVM.
   - **HZN-Vnet**: Virtual network for horizon resources.
@@ -23,17 +25,17 @@ There are two precreated virtual network i.e:
 
 ### **VNet Peering**
 
-We have preconfigured the bi-directional peering between virtual networks adVNET and HZN-Vnet. By doing this, the Horizon resources deployed in HZN-Vnet will be able to communicate to adVNET, where Active Directory is deployed.
+We have pre-configured the bi-directional peering between virtual networks adVNET and HZN-Vnet. By doing this, the Horizon resources deployed in HZN-Vnet will be able to communicate to adVNET, where Active Directory is deployed.
 
 
 ### **DNS Server**
 
-We have preconfigured the DNS Server, which is required during the Horizon Cloud Service pod deployment. Horizon Cloud Service uses the default Microsoft Azure-provided DNS for the deployment for outbound DNS resolution, but requires Active Directory to resolve the Active Directory domain controllers. The virtual network will support both internal and external name resolution.
+We have pre-configured the DNS Server, which is required during the Horizon Cloud Service pod deployment. Horizon Cloud Service uses the default Microsoft Azure-provided DNS for the deployment for outbound DNS resolution, but requires Active Directory to resolve the Active Directory domain controllers. The virtual network will support both internal and external name resolution.
 
 
 ### **Service Principal with Contributor Role**
 
-Horizon Cloud Service needs a service principal to access and use your Microsoft Azure subscription capacity. A service principal defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant. We have precreated a Service Principal in the lab tenant with Contributor role.
+Horizon Cloud Service needs a service principal to access and use your Microsoft Azure subscription capacity. A service principal defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant. We have pre-created a Service Principal in the lab tenant with Contributor role.
 
    - **Service Principal:** Like a certificate, the service principal object defines the policy and permissions for use of an application in a specific tenant, and is used to grant Horizon Cloud Service permission to access and modify your Microsoft Azure tenant
 
@@ -63,4 +65,3 @@ VMware Horizon Cloud Service require below Resource Providers to be registered i
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.
-

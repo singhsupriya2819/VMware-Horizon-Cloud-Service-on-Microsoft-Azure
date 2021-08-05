@@ -49,6 +49,7 @@ Before you assign a desktop to a user or group, it is best practice to check the
 
 2. Note the amount used so that you can compare after assigning the desktop.
 
+For information about the capacity model, see [Service Description: VMware Horizon Cloud Service on IBM Cloud](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/support/vmware-horizon-cloud-hosted-service-description.pdf).
 
 After verifying that the Desktop Capacity Allocation is sufficient, you can proceed to the next exercise to assign a desktop and see how the capacity allocation is affected.
 

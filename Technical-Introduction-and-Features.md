@@ -9,9 +9,9 @@ The Horizon Cloud Service provides a single cloud control plane from which you c
   - **On-premises capacity -** Hyper-converged infrastructure from partners such as Dell EMC, Hitachi, and QTC
   - **VMware Cloud on AWS capacity -** Cloud-hosted capacity managed by VMware
 
-The first option, Microsoft Azure, is the focus of this Quick Start Tutorial. You can connect your Microsoft Azure instance to your Horizon Cloud Service control plane for a comprehensive cloud-hosted solution for delivering virtualized Windows apps and desktops.
+The first option, Microsoft Azure, is the focus of this Hands-on Labs. You can connect your Microsoft Azure instance to your Horizon Cloud Service control plane for a comprehensive cloud-hosted solution for delivering virtualized Windows apps and desktops.
 
-Setting up the environment involves deploying the required VMware software into your Microsoft Azure capacity. The deployed VMware software creates an appropriately configured entity called a Horizon Cloud Service pod, which pairs with the control plane. After the pod is deployed, you use the control plane to create RDSH farms and entitle remote desktops and applications to your end users, as well as to assign dedicated and floating Windows 10 desktops.
+Setting up the environment involves deploying the required VMware software into your Microsoft Azure capacity. The deployed VMware software creates an appropriately configured entity called a Horizon Cloud Service pod, which pairs with the control plane. After the pod is deployed, you use the control plane to create RDSH farms and entitle remote desktops and applications to your end users, as well as to assign dedicated and floating Windows Enterprise 10 Multi-session desktops.
 
 For more information, see the [Horizon Cloud Service on Microsoft Azure datasheet](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/products/horizon-cloud-virtual-desktops/vmware-horizon-cloud-azure-datsheet.pdf).
 
@@ -42,7 +42,7 @@ With the Horizon Cloud Service on Microsoft Azure offering, [Microsoft and VMwar
   - **Cloud monitoring:** You do not need a third party or additional tool to monitor or manage your Horizon Cloud Service on Microsoft Azure deployment. Our new cloud-based monitoring feature allows you to keep an eye on your deployment from a single UI.
   - **True multi-cloud deployments:** You can choose between cloud capacity managed by VMware, bring your own hyper-converged infrastructure, or bring your own public cloud capacity from Microsoft Azure.
   - **Dynamic Environment Manager (formerly known as User Environment Manager):** With this solution, you get personalization and dynamic policy configuration across any virtual, physical, and cloud-based Windows desktop environment, engineered to deliver workplace productivity while driving down the cost of day-to-day desktop support and operations.
-  - **Workspace ONE:** This solution integrates with VMware Workspace ONE™ to provide your users with a single workspace to access all their applications.
+  - **Workspace ONE:** This solution integrates with VMware Workspace ONE to provide your users with a single workspace to access all their applications.
   - **Leverage Microsoft Azure services and regions:** You can host virtual desktops and apps across more data centers and more locations by integrating with Azure, one of the fastest-growing IaaS providers with one of the largest number of global regions.
   - **Expanded geographic reach:** You can leverage any region from the many global Microsoft Azure data centers, and configure and deploy desktops in minutes.
   - **Low-cost hourly billing:** You benefit from consumption-based pricing for capacity, as well as no upfront costs or termination fees.
