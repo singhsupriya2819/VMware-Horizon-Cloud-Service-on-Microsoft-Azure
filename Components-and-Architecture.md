@@ -48,7 +48,7 @@ Horizon Cloud Service on Microsoft Azure deploys three appliances from your Micr
 
   - **Horizon Cloud Service Pod:** Manages all infrastructure resources. While all policy definition and management happen in the cloud, all of the real work––creating resources on Microsoft Azure infrastructure and making it available to users––happens in the Horizon Cloud Service pod.
   - **Unified Access Gateway Appliances:** Provide secure Internet access to published applications and published desktops. Two appliances, either external or internal, need to be running to share the load and connections and maintain operational SLA of the pod.
-  - **Jumpbox:** A temporary Linux-based VM used during environment buildout, as well as for subsequent environment updates and upgrades.
+  - **Jumpbox:** A temporary Windows VM used during environment build out, as well as for subsequent environment updates and upgrades.
 
 
 Click on the **Next** button from lower right corner of the guide to move on the next page.
