@@ -169,8 +169,51 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    ![ws name.](media/exb28.png)
 
+### **Task 9: Go through the Predeployed Resources
 
-### **Task 9: Verify That the Pod Is Deployed**
+In this task we will go through the predeployed resources in Azure Portal while the Pod is getting deployed
+
+1. Open **Microsoft Azure portal(```portal.azure.com```)** in a new tab in your browser.
+
+2. Enter following credentials when asked for credentials:
+
+   - Username: Enter **<inject key="AzureAdUserEmail" />** and click on **Next**.
+   
+   - Password: Enter **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+
+> **Note:**  If there is a popup entitled **Help us protect your account**, click on **Skip for now (14 days until this is required)**.
+
+> ![ws name.](media/us51.png)
+   
+>  - If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+>  - If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+
+3. In Azure Portal search for **Resource Group** and click on it.
+
+   ![ws name.](media/updt223.png)
+
+4. Now from the list of Resource Groups click on **AD-RG** and explore the resouces used by **AdVM**.
+
+   ![ws name.](media/updt224.png)
+
+5. Now click on **Horizon-Network-RG** and select **HZN-Vnet**.
+
+   ![ws name.](media/updt225.png)
+
+6. Select **Subnets** under settings and explore the subnets created under **HZN-Vnet**.
+
+   ![ws name.](media/updt226.png)
+
+7. Now under Settings, Click on **Peerings** and select the Virtual network peering created.
+
+   ![ws name.](media/updt227.png)
+
+8. Review the Virtual network peering between *HZN-Vnet* and *Horizon-Network-RG*.
+
+   ![ws name.](media/updt228.png)
+
+
+### **Task 10: Verify That the Pod Is Deployed**
 
 1. We will wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
 
@@ -310,7 +353,7 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
 1. Expand **Settings** pane, click on **Broker**.
 
-**Note:** A pre-created broker might already exist. In that case skip to Exercise 1.4, else continue with the steps below. 
+**Note:** A precreated broker might already exist. In that case skip to Exercise 1.4, else continue with the steps below. 
 
 2. Click on **Select**.
 
