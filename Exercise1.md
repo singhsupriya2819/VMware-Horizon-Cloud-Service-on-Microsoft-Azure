@@ -165,7 +165,8 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
 1. Review the summary, verify that the information is correct and complete, and then click **SUBMIT**.
 
-**Note: This process will take approximately 60 to 120 minutes to complete.**
+>**Note: This process will take approximately 45 to 60 minutes to complete. While the Pod is getting deployed, we will now dive into the Azure Portal and get familiarised with different Azure resources that are precreated during the lab provisioning.**
+>**Let's continue to the next task and we will come back here after the Pod is deployed.**
 
    ![ws name.](media/exb28.png)
 
@@ -196,21 +197,39 @@ In this task we will go through the predeployed resources in Azure Portal while 
 
    ![ws name.](media/updt224.png)
 
-5. Now click on **Horizon-Network-RG** and select **HZN-Vnet**.
+5. Here under **AD-RG** click on **AdVM**.
 
-   ![ws name.](media/updt225.png)
+   ![ws name.](media/updt229.png)
 
-6. Select **Subnets** under settings and explore the subnets created under **HZN-Vnet**.
+6. Here we can see the conviguration for AdVM through **Overview**.
 
-   ![ws name.](media/updt226.png)
+   ![ws name.](media/updt230.png)
 
-7. Now under Settings, Click on **Peerings** and select the Virtual network peering created.
+7. Click on **Networking** under **Settings** blade and note down the value for **NIC Private IP**.
+
+   ![ws name.](media/updt231.png)
+
+8. Now in the Azure Portal search for **Virtual Network** and click on it.
+
+   ![ws name.](media/updt232.png)
+
+9. Here we can see that there are 3 Virtual Networks.
+
+   ![ws name.](media/updt233.png)
+
+- adVNet: This Vnet is used by AdVM domain controller.
+- HZN-Vnet: This is the VNet where Pod is currently deploying.
+- vNet: This VNet is only for labs internal purpose so please ignore it.
+
+5. Now click on **Horizon-Network-RG** and select **HZN-Vnet**, then under **Settings** click on **DNS servers** and see that the *DNS Server IP configuration* is same as the IP address we noted in *AdVM Domain Controller*.
+
+   ![ws name.](media/updt234.png)
+
+6. Under Settings, Click on **Peerings** and see the Virtual network peering created.
+
+>*VNet peering (or virtual network peering) enables you to connect virtual networks. A VNet peering connection between virtual networks enables you to route traffic between them privately through IPv4 addresses. Virtual machines in the peered VNets can communicate with each other as if they are within the same network.*
 
    ![ws name.](media/updt227.png)
-
-8. Review the Virtual network peering between *HZN-Vnet* and *Horizon-Network-RG*.
-
-   ![ws name.](media/updt228.png)
 
 
 ### **Task 10: Verify That the Pod Is Deployed**
