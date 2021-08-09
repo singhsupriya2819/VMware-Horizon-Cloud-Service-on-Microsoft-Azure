@@ -170,7 +170,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
 
    ![ws name.](media/exb28.png)
 
-### **Task 9: Go through the Predeployed Resources
+### **Task 9: Go through the Predeployed Resources**
 
 In this task we will go through the predeployed resources in Azure Portal while the Pod is getting deployed
 
@@ -232,7 +232,66 @@ In this task we will go through the predeployed resources in Azure Portal while 
    ![ws name.](media/updt227.png)
 
 
-### **Task 10: Verify That the Pod Is Deployed**
+### **Task 10: Create a DNS record for Pod's Load Balancer**
+
+In this task we will create a DNS record for the Pod's load balancer, while the Pod is getting deployed.
+
+
+1. In your ADVM desktop double click on **Azure Portal** shortcut.
+
+2. Enter following credentials when asked for credentials:
+
+   - Username: Enter **<inject key="AzureAdUserEmail" />** and click on **Next**.
+   
+   - Password: Enter **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+
+> **Note:**  If there is a popup entitled **Help us protect your account**, click on **Skip for now (14 days until this is required)**.
+
+> ![ws name.](media/us51.png)
+   
+>  - If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+>  - If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+
+3. In Azure Portal search for *Load Balancers* and select it from the search results.
+
+   ![ws name.](media/updt114.png)
+
+4. Now from the list of Load Balancers, Select the Load balancer ending with name **uag-lb**.
+
+>**Note:** It may take few minutes for the Load Balancer to appear as it gets deployed with the Pod.
+
+   ![ws name.](media/updt115.png)
+
+5. Note down the IP Address of the Load balancer from the essentials section.
+
+   ![ws name.](media/updt116.png)
+
+6. Now inside your AdVM open **Start** and search for *DNS* and select the search result with type *Desktop app*.
+
+   ![ws name.](media/updt117.png)
+
+7. Here navigate to **adVM** >> **Forward lookup Zones** >> **mydomain.local**.
+
+   ![ws name.](media/updt118.png)
+
+8. Now right click on **mydomain.local** and select **New Host (A or AAAA)**.
+
+   ![ws name.](media/updt119.png)
+
+9. Under New Host window provide the following details and click on **Add Host**.
+
+   ![ws name.](media/updt120.png)
+
+   - Name: **vdi**
+   - IP address: **Enter the IP address we noted down from the Load Balancer**
+   
+10. A Prompt may appear saying *The Host record was sucesfully created*, Click **OK** on that.
+
+   ![ws name.](media/updt121.png)
+
+
+
+### **Task 11: Verify That the Pod Is Deployed**
 
 1. We will wait until the green check mark appears, which indicates that the Horizon Cloud Service pod and all supporting infrastructure components are deployed.
 
@@ -441,59 +500,6 @@ For more information, see General Purpose virtual machine sizes.
    ![ws name.](media/vmw44.png)
 
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Managing VM Types and Sizes for Farms and Assignments**.
-
-
-## **Exercise 1.5: Create a DNS record for Pod's Load Balancer**
-
-1. In your ADVM desktop double click on **Azure Portal** shortcut.
-
-2. Enter following credentials when asked for credentials:
-
-   - Username: Enter **<inject key="AzureAdUserEmail" />** and click on **Next**.
-   
-   - Password: Enter **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
-
-> **Note:**  If there is a popup entitled **Help us protect your account**, click on **Skip for now (14 days until this is required)**.
-
-> ![ws name.](media/us51.png)
-   
->  - If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
->  - If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
-
-3. In Azure Portal search for *Load Balancers* and select it from the search results.
-
-   ![ws name.](media/updt114.png)
-
-4. Now from the list of Load Balancers, Select the Load balancer ending with name **uag-lb**.
-
-   ![ws name.](media/updt115.png)
-
-5. Note down the IP Address of the Load balancer from the essentials section.
-
-   ![ws name.](media/updt116.png)
-
-6. Now inside your AdVM open **Start** and search for *DNS* and select the search result with type *Desktop app*.
-
-   ![ws name.](media/updt117.png)
-
-7. Here navigate to **adVM** >> **Forward lookup Zones** >> **mydomain.local**.
-
-   ![ws name.](media/updt118.png)
-
-8. Now right click on **mydomain.local** and select **New Host (A or AAAA)**.
-
-   ![ws name.](media/updt119.png)
-
-9. Under New Host window provide the following details and click on **Add Host**.
-
-   ![ws name.](media/updt120.png)
-
-   - Name: **vdi**
-   - IP address: **Enter the IP address we noted down from the Load Balancer**
-   
-10. A Prompt may appear saying *The Host record was sucesfully created*, Click **OK** on that.
-
-   ![ws name.](media/updt121.png)
 
 
 
