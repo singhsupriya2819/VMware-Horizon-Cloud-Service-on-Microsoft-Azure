@@ -100,7 +100,7 @@ To fill the below given fields, navigate to **Environment Details tab >  Service
    - Site: Choose **Existing** and select the **Default-Site** from the dropdown.
       **Note**: In case **Default-Site** is not available, choose **New** and provide the name **Site-1** (_This option might not be appear for some user_)
    
-   - Pod Name: **pod-test**
+   - Pod Name: **<inject key="POD Name" />**
     
    - Location: _Click_ **Add** _to specify a location, which you can use to group pods according to categories that you provide, such as Business Unit A, Business Unit B, and so on. As you enter a city name, it should auto-populate. If your city name is not recognized, it will not be placed correctly on the Dashboard map. In this case, select the closest city available._
     
