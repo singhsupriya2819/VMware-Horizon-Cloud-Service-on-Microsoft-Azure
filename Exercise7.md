@@ -233,7 +233,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Administration Guide_](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service-on-Microsoft-Azure/index.html), and search the guide for **Convert a Configured Master Virtual Machine to an Assignable Image**.
 
 
-## **Exercise 7.2: Addding a Application from App Volume**
+## **Exercise 7.2: Adding a Application from App Volume**
 
 
 ### **Task 1: Add New Applications**
