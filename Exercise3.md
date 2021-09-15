@@ -43,7 +43,7 @@ When the new image has been published, you can use it to create farms.
  
    - **Location:** Select the location in which you created pod in Exercise 1.
  
-   - **Pod:** Select **pod-test**.
+   - **Pod:** Select **<inject key="POD Name" />**
  
 2. Scroll down to provide additional general settings.
 
@@ -290,7 +290,7 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 1. In the New Application window fill the following details asked in the definition page.
 
   - **Location:** Select a location from the pop-up menu.
-  - **Pod:** **pod-test**.
+  - **Pod:** **<inject key="POD Name" />**
   - **Farm:** **FirstFarm**.
 
 2. In the lower right corner, click **Next**.
