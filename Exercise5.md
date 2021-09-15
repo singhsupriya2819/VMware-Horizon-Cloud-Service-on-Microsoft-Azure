@@ -31,7 +31,7 @@ In this Exercise we will be creating a new farm to deploy Session Desktops using
  
    - **Location:** Select the location in which you created pod in Exercise 1.
  
-   - **Pod:** Select **pod-test**.
+   - **Pod:** Select **<inject key="POD Name" />**
  
 2. Scroll down to provide additional general settings.
 
