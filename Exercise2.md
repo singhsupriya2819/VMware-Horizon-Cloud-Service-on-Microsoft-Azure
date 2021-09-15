@@ -263,11 +263,7 @@ You can customize the Windows operating system of the new golden image VM, set w
 
   - Install the third-party user applications you want to provide to your end users in their RDS desktops or as remote applications.
   
-  - Return to the command prompt, and issue the following command to switch the server back into RD-Execute mode:
-    
-    ``` 
-    change user /execute 
-    ```
+ 
 
 10. Go to start and search for **PowerShell ISE** and launch it.
 
@@ -286,6 +282,12 @@ You can customize the Windows operating system of the new golden image VM, set w
 ![ws name.](media/updt221.png)
 
 >**Note:** Wait for the script to complete and then close the Powershell ISE
+
+ - Return to the command prompt, and issue the following command to switch the server back into RD-Execute mode:
+    
+    ``` 
+    change user /execute 
+    ```
 
 12. In the operating system, install any custom drivers you want in the RDS desktops, such as GPU-backed VMs that leverage NVIDIA GPUs.
 
