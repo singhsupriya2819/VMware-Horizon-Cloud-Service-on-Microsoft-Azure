@@ -25,7 +25,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   - **Location:** Select the location we used while creating Pod in Exercise 1.
 
-  - **Pod:** Select **pod-test**
+  - **Pod:** Select **<inject key="POD Name" />**
 
 2. Scroll down to the Virtual Machine Details panel.
 
@@ -182,7 +182,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
   - **Location:** Select the location to get a list of pods available to store the desktop.
 
-  - **Pod:** Select the pod **pod-test**.
+  - **Pod:** Select the pod **<inject key="POD Name" />**
 
   - **Desktop:** From the list of desktops that can be converted to an image, select **Win10AppVolume**
   
