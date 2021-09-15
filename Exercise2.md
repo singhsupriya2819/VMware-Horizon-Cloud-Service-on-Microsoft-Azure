@@ -281,7 +281,7 @@ You can customize the Windows operating system of the new golden image VM, set w
     choco install googlechrome -y -force
     choco install vscode -y -force
     choco install adobereader -y -force
-    ```
+    
 
 ![ws name.](media/updt221.png)
 
