@@ -124,10 +124,6 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
    - Description: Allows you to run Skype, Webex, Google Hangouts, and other online conferencing applications on remote desktops with client local webcam and audio devices.
 
 
-- Smart Card: **DISABLE**
-   - Description: Lets you redirect smart cards from client to remote sessions for both SSO and in-session leverage.
-
-
 - VMware Print: **ENABLE**
    - Description: Allows you to print to any printer configured for your local computer from a remote desktop or application without installing printer drivers on the remote desktop.
 
@@ -158,7 +154,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. In the lower right corner, click **IMPORT**.
 
-   ![ws name.](media/updtd2.png)
+   ![ws name.](media/upload3new.png)
 
 **Note: This process will take approximately 10 minutes to complete.**
 
@@ -239,6 +235,8 @@ You can customize the Windows operating system of the new golden image VM, set w
 7. Once you are connected, make sure the Virtual Machine resembles the image below. 
 
    ![ws name.](media/us44.png)
+    
+    **Note:** If the VM starts shutting down automatically, please restart the VM and login to RDP.
     
 8. You can add end-user applications and video GPU drivers, and any other required configurations to the VM.
 
