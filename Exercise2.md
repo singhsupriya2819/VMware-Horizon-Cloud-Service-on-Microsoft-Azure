@@ -154,7 +154,7 @@ This exercise demonstrates deploying a new image using a desktop OS, and the pro
 
 2. In the lower right corner, click **IMPORT**.
 
-   ![ws name.](media/updtd3new.png)
+   ![ws name.](media/upload3new.png)
 
 **Note: This process will take approximately 10 minutes to complete.**
 
@@ -235,6 +235,8 @@ You can customize the Windows operating system of the new golden image VM, set w
 7. Once you are connected, make sure the Virtual Machine resembles the image below. 
 
    ![ws name.](media/us44.png)
+   
+**Note:** If the VM starts shutting down automatically, please restart the VM and login to RDP.
     
 8. You can add end-user applications and video GPU drivers, and any other required configurations to the VM.
 
