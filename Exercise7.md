@@ -388,10 +388,9 @@ For more information, see [_VMware Horizon Cloud Service on Microsoft Azure Admi
 
 1. Provide the following details and click on **Next**.
 
-   ![ws name.](media/updt68.png)
+   ![ws name.](media/updt68.1.png)
    
    - **Assignment Name:** Provide a rememberable Assignment Name.
-   - **OS Family:** Select **Windows 10 (64-bit)**
 
 
 ### **Task 3: Select Applications**
