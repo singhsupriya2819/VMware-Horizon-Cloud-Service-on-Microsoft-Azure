@@ -163,7 +163,7 @@ When the new image has been published, you can use it to create farms.
   
   - **Max Session Lifetime:** Specify the maximum number of minutes the system should allow for a single user session.
   
-  - **Session Timeout Retrieval:** Leave blank.
+  - **Session Timeout Retrieval:** Let it be default.
 
   - **Schedule Power Management (Optional):** You can define specific schedules for each assignment in each pod to grow or shrink a given assignment or farm based on set-times. Power management schedules takes precedence over automated power management features applied as part of a user assignment or an RDSH farm in a Horizon Cloud on Microsoft Azure deployment.
 
@@ -171,7 +171,7 @@ When the new image has been published, you can use it to create farms.
 ### **Task 8: Load Balancing Settings**
 
 
-   ![ws name.](media/us11.png)
+   ![ws name.](media/us11.1.png)
 
 1. Under Load Balancing Settings provide the following details:
 
